@@ -1,0 +1,91 @@
+object CalcMediaF: TCalcMediaF
+  Left = 339
+  Height = 561
+  Top = 154
+  Width = 684
+  Caption = 'Calcular Media'
+  ClientHeight = 561
+  ClientWidth = 684
+  Color = clMoneyGreen
+  DesignTimePPI = 120
+  LCLVersion = '3.4.0.0'
+  object editNota1: TEdit
+    Left = 116
+    Height = 28
+    Top = 124
+    Width = 100
+    TabOrder = 0
+  end
+  object editNota2: TEdit
+    Left = 116
+    Height = 28
+    Top = 176
+    Width = 100
+    TabOrder = 1
+  end
+  object editNota3: TEdit
+    Left = 116
+    Height = 28
+    Top = 232
+    Width = 100
+    TabOrder = 2
+  end
+  object editnota4: TEdit
+    Left = 116
+    Height = 28
+    Top = 288
+    Width = 100
+    TabOrder = 3
+  end
+  object btnCalcMedia: TButton
+    Left = 328
+    Height = 31
+    Top = 341
+    Width = 136
+    Caption = 'Calcular Media'
+    TabOrder = 4
+    OnClick = btnCalcMediaClick
+  end
+  object editMedia: TEdit
+    Left = 120
+    Height = 28
+    Top = 344
+    Width = 100
+    TabOrder = 5
+  end
+  object Label1: TLabel
+    Left = 56
+    Height = 20
+    Top = 128
+    Width = 59
+    Caption = 'Pessoa 1:'
+  end
+  object Label2: TLabel
+    Left = 56
+    Height = 20
+    Top = 184
+    Width = 59
+    Caption = 'Pessoa 2:'
+  end
+  object Label3: TLabel
+    Left = 56
+    Height = 20
+    Top = 240
+    Width = 59
+    Caption = 'Pessoa 3:'
+  end
+  object Label4: TLabel
+    Left = 56
+    Height = 20
+    Top = 296
+    Width = 59
+    Caption = 'Pessoa 4:'
+  end
+  object Label5: TLabel
+    Left = 56
+    Height = 20
+    Top = 350
+    Width = 45
+    Caption = 'Media:'
+  end
+end

@@ -1,0 +1,79 @@
+object OpSobreF: TOpSobreF
+  Left = 339
+  Height = 610
+  Top = 154
+  Width = 1064
+  Caption = 'Sobre'
+  ClientHeight = 610
+  ClientWidth = 1064
+  Color = clMoneyGreen
+  DesignTimePPI = 120
+  OnClose = FormClose
+  LCLVersion = '3.4.0.0'
+  object lblInforSist: TLabel
+    Left = 256
+    Height = 47
+    Top = 48
+    Width = 464
+    Caption = 'Informações do Sistema'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -40
+    Font.Name = 'Century'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lblIinguagem: TLabel
+    Left = 200
+    Height = 28
+    Top = 176
+    Width = 591
+    Caption = 'Linguagem de desenvolvimento: Lazarus(delphi) Pascal'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -23
+    Font.Name = 'Century'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblBancoDeDados: TLabel
+    Left = 200
+    Height = 28
+    Top = 210
+    Width = 316
+    Caption = 'Banco de dados: PostgresSQL'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -23
+    Font.Name = 'Century'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblAnoDeDesenvolvimento: TLabel
+    Left = 200
+    Height = 28
+    Top = 248
+    Width = 340
+    Caption = 'Software Desenvolvido em 2024'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -23
+    Font.Name = 'Century'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblEmpresa1: TLabel
+    Left = 472
+    Height = 56
+    Top = 336
+    Width = 96
+    Caption = 'Empresa'#13#10' Accion'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -23
+    Font.Name = 'Century'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+end

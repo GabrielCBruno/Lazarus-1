@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="prjSalario.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="msalario.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="SalarioMF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="mSalario"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="145"/>
+        <CursorPos Y="175"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="msalario.pas"/>
+        <Caret Line="146" Column="55" TopLine="108"/>
+      </Position>
+      <Position>
+        <Filename Value="msalario.pas"/>
+        <Caret Line="150" Column="36" TopLine="112"/>
+      </Position>
+      <Position>
+        <Filename Value="msalario.pas"/>
+        <Caret Line="156" Column="24" TopLine="124"/>
+      </Position>
+      <Position>
+        <Filename Value="msalario.pas"/>
+        <Caret Line="80" TopLine="60"/>
+      </Position>
+      <Position>
+        <Filename Value="msalario.pas"/>
+        <Caret Line="83" Column="20" TopLine="67"/>
+      </Position>
+      <Position>
+        <Filename Value="msalario.pas"/>
+        <Caret Line="80" TopLine="67"/>
+      </Position>
+      <Position>
+        <Filename Value="msalario.pas"/>
+        <Caret Line="84" TopLine="67"/>
+      </Position>
+      <Position>
+        <Filename Value="msalario.pas"/>
+        <Caret Line="85" TopLine="68"/>
+      </Position>
+      <Position>
+        <Filename Value="msalario.pas"/>
+        <Caret Line="86" TopLine="69"/>
+      </Position>
+      <Position>
+        <Filename Value="msalario.pas"/>
+        <Caret Line="87" TopLine="70"/>
+      </Position>
+      <Position>
+        <Filename Value="msalario.pas"/>
+        <Caret Line="88" TopLine="71"/>
+      </Position>
+      <Position>
+        <Filename Value="msalario.pas"/>
+        <Caret Line="89" TopLine="72"/>
+      </Position>
+      <Position>
+        <Filename Value="msalario.pas"/>
+        <Caret Line="88" TopLine="71"/>
+      </Position>
+      <Position>
+        <Filename Value="msalario.pas"/>
+        <Caret Line="89" TopLine="72"/>
+      </Position>
+      <Position>
+        <Filename Value="msalario.pas"/>
+        <Caret Line="90" TopLine="73"/>
+      </Position>
+      <Position>
+        <Filename Value="msalario.pas"/>
+        <Caret Line="91" TopLine="74"/>
+      </Position>
+      <Position>
+        <Filename Value="msalario.pas"/>
+        <Caret Line="90" TopLine="73"/>
+      </Position>
+      <Position>
+        <Filename Value="msalario.pas"/>
+        <Caret Line="91" TopLine="74"/>
+      </Position>
+      <Position>
+        <Filename Value="msalario.pas"/>
+        <Caret Line="92" TopLine="75"/>
+      </Position>
+      <Position>
+        <Filename Value="msalario.pas"/>
+        <Caret Line="93" TopLine="76"/>
+      </Position>
+      <Position>
+        <Filename Value="msalario.pas"/>
+        <Caret Line="94" TopLine="77"/>
+      </Position>
+      <Position>
+        <Filename Value="msalario.pas"/>
+        <Caret Line="95" TopLine="78"/>
+      </Position>
+      <Position>
+        <Filename Value="msalario.pas"/>
+        <Caret Line="96" TopLine="79"/>
+      </Position>
+      <Position>
+        <Filename Value="msalario.pas"/>
+        <Caret Line="97" TopLine="80"/>
+      </Position>
+      <Position>
+        <Filename Value="msalario.pas"/>
+        <Caret Line="98" TopLine="81"/>
+      </Position>
+      <Position>
+        <Filename Value="msalario.pas"/>
+        <Caret Line="170" Column="56" TopLine="138"/>
+      </Position>
+      <Position>
+        <Filename Value="msalario.pas"/>
+        <Caret Line="171" Column="56" TopLine="139"/>
+      </Position>
+      <Position>
+        <Filename Value="msalario.pas"/>
+        <Caret Line="174" Column="77" TopLine="140"/>
+      </Position>
+      <Position>
+        <Filename Value="msalario.pas"/>
+        <Caret Line="178" Column="17" TopLine="146"/>
+      </Position>
+      <Position>
+        <Filename Value="msalario.pas"/>
+        <Caret Line="176" Column="15" TopLine="144"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

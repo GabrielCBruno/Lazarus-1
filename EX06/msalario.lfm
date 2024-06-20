@@ -1,0 +1,412 @@
+object SalarioMF: TSalarioMF
+  Left = 384
+  Height = 689
+  Top = 184
+  Width = 1067
+  Caption = 'Salario Mensal'
+  ClientHeight = 689
+  ClientWidth = 1067
+  DesignTimePPI = 120
+  LCLVersion = '3.4.0.0'
+  object Mes1: TEdit
+    Left = 96
+    Height = 28
+    Top = 64
+    Width = 100
+    TabOrder = 0
+  end
+  object Mes2: TEdit
+    Left = 96
+    Height = 28
+    Top = 104
+    Width = 100
+    TabOrder = 1
+  end
+  object Mes3: TEdit
+    Left = 96
+    Height = 28
+    Top = 144
+    Width = 100
+    TabOrder = 2
+  end
+  object Mes4: TEdit
+    Left = 96
+    Height = 28
+    Top = 184
+    Width = 100
+    TabOrder = 3
+  end
+  object Mes5: TEdit
+    Left = 96
+    Height = 28
+    Top = 224
+    Width = 100
+    TabOrder = 4
+  end
+  object Mes6: TEdit
+    Left = 96
+    Height = 28
+    Top = 264
+    Width = 100
+    TabOrder = 5
+  end
+  object Mes7: TEdit
+    Left = 96
+    Height = 28
+    Top = 304
+    Width = 100
+    TabOrder = 6
+  end
+  object Mes8: TEdit
+    Left = 96
+    Height = 28
+    Top = 352
+    Width = 100
+    TabOrder = 7
+  end
+  object Mes9: TEdit
+    Left = 96
+    Height = 28
+    Top = 392
+    Width = 100
+    TabOrder = 8
+  end
+  object Mes10: TEdit
+    Left = 96
+    Height = 28
+    Top = 432
+    Width = 100
+    TabOrder = 9
+  end
+  object Mes11: TEdit
+    Left = 96
+    Height = 28
+    Top = 472
+    Width = 100
+    TabOrder = 10
+  end
+  object Mes12: TEdit
+    Left = 96
+    Height = 28
+    Top = 512
+    Width = 100
+    TabOrder = 11
+  end
+  object btnCalcular: TButton
+    Left = 672
+    Height = 31
+    Top = 560
+    Width = 94
+    Caption = 'Calcular'
+    TabOrder = 12
+    OnClick = btnCalcularClick
+  end
+  object lblTotalBruto: TLabel
+    Left = 8
+    Height = 20
+    Top = 568
+    Width = 73
+    Caption = 'Total Bruto'
+  end
+  object lblValorTotalBruto: TLabel
+    Left = 120
+    Height = 20
+    Top = 568
+    Width = 34
+    Caption = 'Valor'
+  end
+  object Porcent1: TEdit
+    Left = 256
+    Height = 28
+    Top = 64
+    Width = 100
+    TabOrder = 13
+  end
+  object lblSalarioL1: TLabel
+    Left = 424
+    Height = 20
+    Top = 72
+    Width = 100
+    Caption = 'Salario Liquido'
+  end
+  object Porcent2: TEdit
+    Left = 256
+    Height = 28
+    Top = 104
+    Width = 100
+    TabOrder = 14
+  end
+  object Porcent3: TEdit
+    Left = 256
+    Height = 28
+    Top = 144
+    Width = 100
+    TabOrder = 15
+  end
+  object Porcent4: TEdit
+    Left = 256
+    Height = 28
+    Top = 184
+    Width = 100
+    TabOrder = 16
+  end
+  object Porcent5: TEdit
+    Left = 256
+    Height = 28
+    Top = 224
+    Width = 100
+    TabOrder = 17
+  end
+  object Porcent6: TEdit
+    Left = 256
+    Height = 28
+    Top = 264
+    Width = 100
+    TabOrder = 18
+  end
+  object Porcent7: TEdit
+    Left = 256
+    Height = 28
+    Top = 304
+    Width = 100
+    TabOrder = 19
+  end
+  object Porcent8: TEdit
+    Left = 256
+    Height = 28
+    Top = 352
+    Width = 100
+    TabOrder = 20
+  end
+  object Porcent9: TEdit
+    Left = 256
+    Height = 28
+    Top = 392
+    Width = 100
+    TabOrder = 21
+  end
+  object Porcent10: TEdit
+    Left = 256
+    Height = 28
+    Top = 432
+    Width = 100
+    TabOrder = 22
+  end
+  object Porcent11: TEdit
+    Left = 256
+    Height = 28
+    Top = 472
+    Width = 100
+    TabOrder = 23
+  end
+  object Porcent12: TEdit
+    Left = 256
+    Height = 28
+    Top = 512
+    Width = 100
+    TabOrder = 24
+  end
+  object lblTotalLiquido: TLabel
+    Left = 432
+    Height = 20
+    Top = 568
+    Width = 87
+    Caption = 'Total Liquido'
+  end
+  object lblValorTotalLiquido1: TLabel
+    Left = 552
+    Height = 20
+    Top = 568
+    Width = 34
+    Caption = 'Valor'
+  end
+  object lblSalarioL2: TLabel
+    Left = 424
+    Height = 20
+    Top = 112
+    Width = 100
+    Caption = 'Salario Liquido'
+  end
+  object lblSalarioL3: TLabel
+    Left = 424
+    Height = 20
+    Top = 152
+    Width = 100
+    Caption = 'Salario Liquido'
+  end
+  object lblSalarioL4: TLabel
+    Left = 424
+    Height = 20
+    Top = 192
+    Width = 100
+    Caption = 'Salario Liquido'
+  end
+  object lblSalarioL5: TLabel
+    Left = 424
+    Height = 20
+    Top = 232
+    Width = 100
+    Caption = 'Salario Liquido'
+  end
+  object lblSalarioL6: TLabel
+    Left = 424
+    Height = 20
+    Top = 272
+    Width = 100
+    Caption = 'Salario Liquido'
+  end
+  object lblSalarioL7: TLabel
+    Left = 424
+    Height = 20
+    Top = 312
+    Width = 100
+    Caption = 'Salario Liquido'
+  end
+  object lblSalarioL8: TLabel
+    Left = 424
+    Height = 20
+    Top = 352
+    Width = 100
+    Caption = 'Salario Liquido'
+  end
+  object lblSalarioL9: TLabel
+    Left = 424
+    Height = 20
+    Top = 392
+    Width = 100
+    Caption = 'Salario Liquido'
+  end
+  object lblSalarioL10: TLabel
+    Left = 424
+    Height = 20
+    Top = 440
+    Width = 100
+    Caption = 'Salario Liquido'
+  end
+  object lblSalarioL11: TLabel
+    Left = 424
+    Height = 20
+    Top = 480
+    Width = 100
+    Caption = 'Salario Liquido'
+  end
+  object lblSalarioL12: TLabel
+    Left = 424
+    Height = 20
+    Top = 520
+    Width = 100
+    Caption = 'Salario Liquido'
+  end
+  object lblDesconto: TLabel
+    Left = 272
+    Height = 20
+    Top = 24
+    Width = 79
+    Caption = 'Desconto %'
+  end
+  object lblSalario: TLabel
+    Left = 120
+    Height = 20
+    Top = 24
+    Width = 46
+    Caption = 'Salario'
+  end
+  object Jan: TLabel
+    Left = 44
+    Height = 20
+    Top = 72
+    Width = 21
+    Caption = 'Jan'
+  end
+  object Fev: TLabel
+    Left = 44
+    Height = 20
+    Top = 112
+    Width = 22
+    Caption = 'Fev'
+  end
+  object Mar: TLabel
+    Left = 44
+    Height = 20
+    Top = 152
+    Width = 26
+    Caption = 'Mar'
+  end
+  object Abril: TLabel
+    Left = 44
+    Height = 20
+    Top = 192
+    Width = 32
+    Caption = 'Abril'
+  end
+  object Mai: TLabel
+    Left = 44
+    Height = 20
+    Top = 232
+    Width = 25
+    Caption = 'Mai'
+  end
+  object Jun: TLabel
+    Left = 44
+    Height = 20
+    Top = 272
+    Width = 21
+    Caption = 'Jun'
+  end
+  object Jul: TLabel
+    Left = 44
+    Height = 20
+    Top = 312
+    Width = 17
+    Caption = 'Jul'
+  end
+  object Ago: TLabel
+    Left = 44
+    Height = 20
+    Top = 360
+    Width = 28
+    Caption = 'Ago'
+  end
+  object Setem: TLabel
+    Left = 44
+    Height = 20
+    Top = 400
+    Width = 42
+    Caption = 'Setem'
+  end
+  object Out: TLabel
+    Left = 44
+    Height = 20
+    Top = 440
+    Width = 24
+    Caption = 'Out'
+  end
+  object Nov: TLabel
+    Left = 44
+    Height = 20
+    Top = 482
+    Width = 27
+    Caption = 'Nov'
+  end
+  object Dez: TLabel
+    Left = 44
+    Height = 20
+    Top = 520
+    Width = 26
+    Caption = 'Dez'
+  end
+  object Label1: TLabel
+    Left = 80
+    Height = 20
+    Top = 640
+    Width = 217
+    Caption = 'Valor Total SalLiquido e SalBruto'
+  end
+  object lblValorBrutoELiquido: TLabel
+    Left = 368
+    Height = 20
+    Top = 640
+    Width = 34
+    Caption = 'Valor'
+  end
+end

@@ -1,0 +1,121 @@
+inherited CadProdutosF: TCadProdutosF
+  Caption = 'Cadastro de Produtos'
+  inherited Panel1: TPanel
+    TabOrder = 1
+  end
+  object lblCadastroDeProdutos: TLabel[1]
+    Left = 152
+    Height = 50
+    Top = 32
+    Width = 453
+    Caption = 'Cadastro de Produtos'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -43
+    Font.Name = 'Century'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lblIdProduto: TLabel[2]
+    Left = 24
+    Height = 28
+    Top = 112
+    Width = 155
+    Caption = 'ID do Produto:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -23
+    Font.Name = 'Century'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblValorDeVenda: TLabel[3]
+    Left = 400
+    Height = 28
+    Top = 152
+    Width = 171
+    Caption = 'Valor de Venda:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -23
+    Font.Name = 'Century'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object edtIdDoProduto: TEdit[4]
+    Left = 184
+    Height = 28
+    Top = 112
+    Width = 156
+    TabOrder = 0
+  end
+  object edtValorDeVenda: TEdit[5]
+    Left = 576
+    Height = 28
+    Top = 152
+    Width = 100
+    TabOrder = 4
+  end
+  object lblDescricaoSimples: TLabel[6]
+    Left = 24
+    Height = 28
+    Top = 152
+    Width = 199
+    Caption = 'Descrição Simples:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -23
+    Font.Name = 'Century'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object edtDescricaoSimples: TEdit[7]
+    Left = 224
+    Height = 28
+    Top = 152
+    Width = 168
+    TabOrder = 3
+  end
+  object lblDescricaoCompleta: TLabel[8]
+    Left = 24
+    Height = 28
+    Top = 208
+    Width = 218
+    Caption = 'Descrição Completa:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -23
+    Font.Name = 'Century'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object mmDescricaoCompleta: TMemo[9]
+    Left = 248
+    Height = 113
+    Top = 208
+    Width = 428
+    TabOrder = 5
+  end
+  object lblTipoDoProduto1: TLabel[10]
+    Left = 352
+    Height = 28
+    Top = 112
+    Width = 175
+    Caption = 'Tipo do Produto:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -23
+    Font.Name = 'Century'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object cbxTipoDoProduto: TComboBox[11]
+    Left = 536
+    Height = 28
+    Top = 112
+    Width = 140
+    ItemHeight = 20
+    TabOrder = 2
+  end
+end

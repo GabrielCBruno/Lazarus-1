@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="prjCardapio.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+      </Unit>
+      <Unit>
+        <Filename Value="cardapio.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CardapioF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Cardapio"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="79"/>
+        <CursorPos X="8" Y="114"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="21">
+      <Position>
+        <Filename Value="cardapio.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="cardapio.pas"/>
+        <Caret Line="42" Column="39" TopLine="9"/>
+      </Position>
+      <Position>
+        <Filename Value="cardapio.pas"/>
+        <Caret Line="46" Column="46" TopLine="9"/>
+      </Position>
+      <Position>
+        <Filename Value="cardapio.pas"/>
+        <Caret Line="44" Column="47" TopLine="12"/>
+      </Position>
+      <Position>
+        <Filename Value="cardapio.pas"/>
+        <Caret Line="64" Column="20" TopLine="35"/>
+      </Position>
+      <Position>
+        <Filename Value="cardapio.pas"/>
+        <Caret Line="65" Column="20" TopLine="36"/>
+      </Position>
+      <Position>
+        <Filename Value="cardapio.pas"/>
+        <Caret Line="66" Column="20" TopLine="37"/>
+      </Position>
+      <Position>
+        <Filename Value="cardapio.pas"/>
+        <Caret Line="67" Column="20" TopLine="38"/>
+      </Position>
+      <Position>
+        <Filename Value="cardapio.pas"/>
+        <Caret Line="68" Column="20" TopLine="39"/>
+      </Position>
+      <Position>
+        <Filename Value="cardapio.pas"/>
+        <Caret Line="69" Column="20" TopLine="40"/>
+      </Position>
+      <Position>
+        <Filename Value="cardapio.pas"/>
+        <Caret Line="70" Column="20" TopLine="41"/>
+      </Position>
+      <Position>
+        <Filename Value="cardapio.pas"/>
+        <Caret Line="71" Column="20" TopLine="42"/>
+      </Position>
+      <Position>
+        <Filename Value="cardapio.pas"/>
+        <Caret Line="72" Column="20" TopLine="43"/>
+      </Position>
+      <Position>
+        <Filename Value="cardapio.pas"/>
+        <Caret Line="73" Column="20" TopLine="44"/>
+      </Position>
+      <Position>
+        <Filename Value="cardapio.pas"/>
+        <Caret Line="74" Column="20" TopLine="45"/>
+      </Position>
+      <Position>
+        <Filename Value="cardapio.pas"/>
+        <Caret Line="75" Column="20" TopLine="46"/>
+      </Position>
+      <Position>
+        <Filename Value="cardapio.pas"/>
+        <Caret Line="108" Column="9" TopLine="69"/>
+      </Position>
+      <Position>
+        <Filename Value="cardapio.pas"/>
+        <Caret Line="94" Column="12" TopLine="73"/>
+      </Position>
+      <Position>
+        <Filename Value="cardapio.pas"/>
+        <Caret Line="103" Column="12" TopLine="47"/>
+      </Position>
+      <Position>
+        <Filename Value="cardapio.pas"/>
+        <Caret Line="104" Column="12" TopLine="66"/>
+      </Position>
+      <Position>
+        <Filename Value="cardapio.pas"/>
+        <Caret Line="106" Column="12" TopLine="68"/>
+      </Position>
+      <Position>
+        <Filename Value="cardapio.pas"/>
+        <Caret Line="105" Column="12" TopLine="74"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

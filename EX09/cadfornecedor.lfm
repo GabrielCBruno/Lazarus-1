@@ -1,0 +1,197 @@
+inherited CadFornecedorF: TCadFornecedorF
+  Caption = 'Cadastro de Fornecedor'
+  object lblTituloCadFornecedor: TLabel[1]
+    Left = 112
+    Height = 50
+    Top = 32
+    Width = 544
+    Caption = 'Cadastro de Fornecedores'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -43
+    Font.Name = 'Century'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lblIdFornecedor: TLabel[2]
+    Left = 24
+    Height = 28
+    Top = 112
+    Width = 159
+    Caption = 'ID Fornecedor:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -23
+    Font.Name = 'Century'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblIdClientes1: TLabel[3]
+    Left = 360
+    Height = 28
+    Top = 112
+    Width = 123
+    Caption = 'CPF/CNPJ:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -23
+    Font.Name = 'Century'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblRazaoSocial: TLabel[4]
+    Left = 24
+    Height = 28
+    Top = 208
+    Width = 141
+    Caption = 'Razão Social:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -23
+    Font.Name = 'Century'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblNomeFantasia: TLabel[5]
+    Left = 24
+    Height = 28
+    Top = 160
+    Width = 170
+    Caption = 'Nome Fantasia:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -23
+    Font.Name = 'Century'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblEndereco: TLabel[6]
+    Left = 24
+    Height = 28
+    Top = 256
+    Width = 106
+    Caption = 'Endereço:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -23
+    Font.Name = 'Century'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblNumero: TLabel[7]
+    Left = 360
+    Height = 28
+    Top = 256
+    Width = 25
+    Caption = 'N:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -23
+    Font.Name = 'Century'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblCep: TLabel[8]
+    Left = 496
+    Height = 28
+    Top = 256
+    Width = 48
+    Caption = 'Cep:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -23
+    Font.Name = 'Century'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblEmail: TLabel[9]
+    Left = 32
+    Height = 28
+    Top = 336
+    Width = 78
+    Caption = 'E-mail:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -23
+    Font.Name = 'Century'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object lblTelefone: TLabel[10]
+    Left = 360
+    Height = 28
+    Top = 336
+    Width = 98
+    Caption = 'Telefone:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -23
+    Font.Name = 'Century'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object edtIdCliente: TEdit[11]
+    Left = 184
+    Height = 28
+    Top = 112
+    Width = 168
+    TabOrder = 1
+  end
+  object edtCpfCnpj: TEdit[12]
+    Left = 488
+    Height = 28
+    Top = 112
+    Width = 208
+    TabOrder = 2
+  end
+  object edtNomeFantasia: TEdit[13]
+    Left = 200
+    Height = 28
+    Top = 160
+    Width = 496
+    TabOrder = 3
+  end
+  object edtRazaoSocial: TEdit[14]
+    Left = 176
+    Height = 28
+    Top = 208
+    Width = 520
+    TabOrder = 4
+  end
+  object edtEndereco: TEdit[15]
+    Left = 136
+    Height = 28
+    Top = 256
+    Width = 208
+    TabOrder = 5
+  end
+  object edtNumero: TEdit[16]
+    Left = 385
+    Height = 28
+    Top = 256
+    Width = 97
+    TabOrder = 6
+  end
+  object edtCep: TEdit[17]
+    Left = 544
+    Height = 28
+    Top = 256
+    Width = 152
+    TabOrder = 7
+  end
+  object edtEmail: TEdit[18]
+    Left = 112
+    Height = 28
+    Top = 336
+    Width = 232
+    TabOrder = 8
+  end
+  object edtTelefone: TEdit[19]
+    Left = 464
+    Height = 28
+    Top = 336
+    Width = 232
+    TabOrder = 9
+  end
+end

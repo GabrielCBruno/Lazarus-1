@@ -1,0 +1,237 @@
+object CardapioF: TCardapioF
+  Left = 374
+  Height = 498
+  Top = 207
+  Width = 806
+  Caption = 'Cardapio'
+  ClientHeight = 498
+  ClientWidth = 806
+  DesignTimePPI = 120
+  LCLVersion = '3.4.0.0'
+  object Titulo: TLabel
+    Left = 352
+    Height = 20
+    Top = 24
+    Width = 67
+    Caption = 'Cardapio'
+    Font.CharSet = ANSI_CHARSET
+    Font.Name = 'Segoe UI Black'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object CheckBox1: TCheckBox
+    Left = 400
+    Height = 20
+    Top = 96
+    Width = 21
+    TabOrder = 0
+  end
+  object lblCachorroQ: TLabel
+    Left = 80
+    Height = 20
+    Top = 100
+    Width = 122
+    Caption = 'Cachorro Quente'
+    Font.CharSet = ANSI_CHARSET
+    Font.Name = 'Segoe UI Black'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object edtValor1: TEdit
+    Left = 280
+    Height = 28
+    Top = 96
+    Width = 100
+    TabOrder = 1
+    Text = '12.00'
+  end
+  object lblBauroS: TLabel
+    Left = 80
+    Height = 20
+    Top = 144
+    Width = 106
+    Caption = 'Bauro Simples'
+    Font.CharSet = ANSI_CHARSET
+    Font.Name = 'Segoe UI Black'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object edtValor2: TEdit
+    Left = 280
+    Height = 28
+    Top = 136
+    Width = 100
+    TabOrder = 2
+    Text = '10.00'
+  end
+  object CheckBox2: TCheckBox
+    Left = 400
+    Height = 20
+    Top = 136
+    Width = 21
+    TabOrder = 3
+  end
+  object btnCalcular: TButton
+    Left = 664
+    Height = 31
+    Top = 432
+    Width = 94
+    Caption = 'Calcular'
+    TabOrder = 4
+    OnClick = btnCalcularClick
+  end
+  object edtCalcular: TEdit
+    Left = 280
+    Height = 28
+    Top = 440
+    Width = 100
+    TabOrder = 5
+    Text = 'Valor Total'
+  end
+  object lblBauroOvo1: TLabel
+    Left = 80
+    Height = 20
+    Top = 178
+    Width = 113
+    Caption = 'Bauro com Ovo'
+    Font.CharSet = ANSI_CHARSET
+    Font.Name = 'Segoe UI Black'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object edtValor3: TEdit
+    Left = 280
+    Height = 28
+    Top = 176
+    Width = 100
+    TabOrder = 6
+    Text = '15.00'
+  end
+  object lblBauroOvo2: TLabel
+    Left = 80
+    Height = 20
+    Top = 216
+    Width = 85
+    Caption = 'Hamburger'
+    Font.CharSet = ANSI_CHARSET
+    Font.Name = 'Segoe UI Black'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object edtValor4: TEdit
+    Left = 280
+    Height = 28
+    Top = 210
+    Width = 100
+    TabOrder = 7
+    Text = '12.00'
+  end
+  object CheckBox3: TCheckBox
+    Left = 400
+    Height = 20
+    Top = 178
+    Width = 21
+    TabOrder = 8
+  end
+  object CheckBox4: TCheckBox
+    Left = 400
+    Height = 20
+    Top = 216
+    Width = 21
+    TabOrder = 9
+  end
+  object lblBauroOvo3: TLabel
+    Left = 80
+    Height = 20
+    Top = 256
+    Width = 109
+    Caption = 'CheeseBurguer'
+    Font.CharSet = ANSI_CHARSET
+    Font.Name = 'Segoe UI Black'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object edtValor5: TEdit
+    Left = 280
+    Height = 28
+    Top = 248
+    Width = 100
+    TabOrder = 10
+    Text = '13.00'
+  end
+  object CheckBox5: TCheckBox
+    Left = 400
+    Height = 20
+    Top = 256
+    Width = 21
+    TabOrder = 11
+  end
+  object lblBauroOvo4: TLabel
+    Left = 80
+    Height = 20
+    Top = 290
+    Width = 92
+    Caption = 'Refrigerante'
+    Font.CharSet = ANSI_CHARSET
+    Font.Name = 'Segoe UI Black'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object edtValor6: TEdit
+    Left = 280
+    Height = 28
+    Top = 288
+    Width = 100
+    TabOrder = 12
+    Text = '5.00'
+  end
+  object CheckBox6: TCheckBox
+    Left = 400
+    Height = 20
+    Top = 296
+    Width = 21
+    TabOrder = 13
+  end
+  object lblBauroOvo5: TLabel
+    Left = 80
+    Height = 20
+    Top = 328
+    Width = 56
+    Caption = 'Entrega'
+    Font.CharSet = ANSI_CHARSET
+    Font.Name = 'Segoe UI Black'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object edtValor7: TEdit
+    Left = 280
+    Height = 28
+    Top = 328
+    Width = 100
+    TabOrder = 14
+    Text = '4.00'
+  end
+  object CheckBox7: TCheckBox
+    Left = 400
+    Height = 20
+    Top = 336
+    Width = 21
+    TabOrder = 15
+  end
+end

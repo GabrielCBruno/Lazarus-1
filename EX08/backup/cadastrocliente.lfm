@@ -1,0 +1,9 @@
+object CadastraClientesF: TCadastraClientesF
+  Left = 339
+  Height = 240
+  Top = 154
+  Width = 320
+  Caption = 'CadastraCliente'
+  DesignTimePPI = 120
+  LCLVersion = '3.4.0.0'
+end

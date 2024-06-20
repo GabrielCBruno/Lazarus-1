@@ -1,0 +1,50 @@
+object MenuPrincipalF: TMenuPrincipalF
+  Left = 373
+  Height = 513
+  Top = 265
+  Width = 698
+  Caption = 'Menu Principal'
+  Color = clMoneyGreen
+  DesignTimePPI = 120
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  LCLVersion = '3.4.0.0'
+  object MainMenu1: TMainMenu
+    Left = 48
+    Top = 48
+    object MenuCadastro1: TMenuItem
+      Caption = 'Cadastros'
+      object MenuCadastrodeProdutos: TMenuItem
+        Caption = 'Cadastro de Produtos'
+        OnClick = MenuCadastrodeProdutosClick
+      end
+      object MenuCadastroDeClientes: TMenuItem
+        Caption = 'Cadastro de Clientes'
+        OnClick = MenuCadastroDeClientesClick
+      end
+      object MenuCadastroDeUsuarios: TMenuItem
+        Caption = 'Cadastro De Usuarios'
+        OnClick = MenuCadastroDeUsuariosClick
+      end
+      object MenuCadastroDeFornecedor: TMenuItem
+        Caption = 'Cadastro de Fornecedores'
+        OnClick = MenuCadastroDeFornecedorClick
+      end
+      object MenuCadastroDeVendedores: TMenuItem
+        Caption = 'Cadastro de Vendedores'
+        OnClick = MenuCadastroDeVendedoresClick
+      end
+    end
+    object MenuManutencao1: TMenuItem
+      Caption = 'Manutenção'
+    end
+    object MenuSobre1: TMenuItem
+      Caption = 'Sobre'
+      OnClick = MenuSobre1Click
+    end
+    object MenuSair1: TMenuItem
+      Caption = 'Sair'
+      OnClick = MenuSair1Click
+    end
+  end
+end

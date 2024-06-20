@@ -1,0 +1,104 @@
+object BimestralF: TBimestralF
+  Left = 339
+  Height = 506
+  Top = 154
+  Width = 677
+  Caption = 'Bimestral'
+  ClientHeight = 506
+  ClientWidth = 677
+  DesignTimePPI = 120
+  LCLVersion = '3.4.0.0'
+  object nota1: TEdit
+    Left = 112
+    Height = 28
+    Top = 80
+    Width = 100
+    TabOrder = 0
+  end
+  object nota2: TEdit
+    Left = 112
+    Height = 28
+    Top = 128
+    Width = 100
+    TabOrder = 1
+  end
+  object nota3: TEdit
+    Left = 112
+    Height = 28
+    Top = 184
+    Width = 100
+    TabOrder = 2
+  end
+  object nota4: TEdit
+    Left = 112
+    Height = 28
+    Top = 240
+    Width = 100
+    TabOrder = 3
+  end
+  object btnCalcMedia: TButton
+    Left = 320
+    Height = 31
+    Top = 240
+    Width = 112
+    Caption = 'Calcular Media'
+    TabOrder = 4
+    OnClick = btnCalcMediaClick
+  end
+  object lblMedia: TLabel
+    Left = 128
+    Height = 20
+    Top = 304
+    Width = 49
+    Caption = 'Media :'
+  end
+  object lblResult: TLabel
+    Left = 211
+    Height = 20
+    Top = 304
+    Width = 66
+    Caption = 'Resultado'
+  end
+  object Faltas: TEdit
+    Left = 112
+    Height = 28
+    Top = 40
+    Width = 100
+    TabOrder = 5
+  end
+  object Label1: TLabel
+    Left = 57
+    Height = 20
+    Top = 40
+    Width = 37
+    Caption = 'Faltas'
+  end
+  object Label2: TLabel
+    Left = 24
+    Height = 20
+    Top = 80
+    Width = 76
+    Caption = '1º Bimestre'
+  end
+  object Label3: TLabel
+    Left = 25
+    Height = 20
+    Top = 128
+    Width = 76
+    Caption = '2º Bimestre'
+  end
+  object Label4: TLabel
+    Left = 24
+    Height = 20
+    Top = 184
+    Width = 76
+    Caption = '3º Bimestre'
+  end
+  object Label5: TLabel
+    Left = 25
+    Height = 20
+    Top = 240
+    Width = 76
+    Caption = '4º Bimestre'
+  end
+end

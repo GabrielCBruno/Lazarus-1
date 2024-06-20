@@ -1,0 +1,22 @@
+object MenuPrincipalF: TMenuPrincipalF
+  Left = 339
+  Height = 331
+  Top = 154
+  Width = 371
+  Caption = 'MenuPrincipal'
+  DesignTimePPI = 120
+  Menu = MainMenu1
+  OnClose = FormClose
+  LCLVersion = '3.4.0.0'
+  object MainMenu1: TMainMenu
+    Left = 55
+    Top = 37
+    object ClienteF: TMenuItem
+      Caption = 'Cliente'
+      object CadastroF: TMenuItem
+        Caption = 'Cadastro'
+        OnClick = CadastroFClick
+      end
+    end
+  end
+end
