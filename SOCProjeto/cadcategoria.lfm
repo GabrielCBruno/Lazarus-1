@@ -1,11 +1,17 @@
 inherited CadCategoriaF: TCadCategoriaF
-  Left = 724
-  Top = 266
+  Left = 597
+  Top = 223
   Caption = 'Cadastro de Categoria'
+  OnClose = FormClose
   inherited psCadastrar: TPageControl
     ActivePage = tsPesquisa
     TabIndex = 0
     inherited tsPesquisa: TTabSheet
+      inherited Panel2: TPanel
+        inherited btnFecha: TBitBtn
+          OnClick = btnFechaClick
+        end
+      end
       inherited DBGrid1: TDBGrid
         Columns = <        
           item
@@ -33,15 +39,29 @@ inherited CadCategoriaF: TCadCategoriaF
       end
     end
     inherited tsCadastrar: TTabSheet
+      inherited Panel3: TPanel
+        inherited btnCancelar: TBitBtn
+          Left = 720
+          Anchors = [akRight]
+          OnClick = btnCancelarClick
+        end
+        inherited btnGravar: TBitBtn
+          Left = 144
+        end
+        inherited btnExcluir: TBitBtn
+          Left = 328
+        end
+      end
       inherited lbCadastros1: TLabel
         Left = 280
         Width = 370
+        Anchors = [akTop]
         Caption = 'Cadastro de Categoria'
       end
-      object lbIdCategoria: TLabel[2]
-        Left = 344
+      object lbID: TLabel[2]
+        Left = 312
         Height = 24
-        Top = 104
+        Top = 160
         Width = 28
         Caption = 'ID:'
         Font.CharSet = ANSI_CHARSET
@@ -51,10 +71,10 @@ inherited CadCategoriaF: TCadCategoriaF
         Font.Quality = fqDraft
         ParentFont = False
       end
-      object lbDescricaoProduto1: TLabel[3]
-        Left = 176
+      object lbDescricao: TLabel[3]
+        Left = 144
         Height = 24
-        Top = 160
+        Top = 200
         Width = 196
         Caption = 'Descrição do Produto:'
         Font.CharSet = ANSI_CHARSET
@@ -65,24 +85,24 @@ inherited CadCategoriaF: TCadCategoriaF
         ParentFont = False
       end
       object edtID: TEdit[4]
-        Left = 376
+        Left = 352
         Height = 28
-        Top = 100
-        Width = 64
+        Top = 160
+        Width = 100
         TabOrder = 1
       end
-      object edtIDescricao: TEdit[5]
-        Left = 376
+      object edtDescricaoDoProduto: TEdit[5]
+        Left = 352
         Height = 28
-        Top = 156
-        Width = 496
+        Top = 200
+        Width = 484
         TabOrder = 2
       end
     end
   end
   object dsCategoria: TDataSource[1]
     DataSet = DataModuleF.qryCategoria
-    Left = 856
+    Left = 1784
     Top = 40
   end
 end

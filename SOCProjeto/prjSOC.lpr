@@ -21,8 +21,6 @@ begin
   Application.Initialize;
   Application.CreateForm(TDataModuleF, DataModuleF);
   Application.CreateForm(TMenuPrincipalF, MenuPrincipalF);
-  Application.CreateForm(TCadModeloF, CadModeloF);
-  Application.CreateForm(TCadCategoriaF, CadCategoriaF);
   Application.Run;
 end.
 

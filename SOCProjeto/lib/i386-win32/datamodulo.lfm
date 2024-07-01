@@ -27,6 +27,11 @@ object DataModuleF: TDataModuleF
     Top = 80
   end
   object qryCategoria: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'select * from categoria_produto;'
+    )
     Params = <>
     Left = 464
     Top = 160
