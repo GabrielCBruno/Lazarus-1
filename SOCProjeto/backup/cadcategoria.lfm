@@ -1,0 +1,61 @@
+inherited CadCategoriaF: TCadCategoriaF
+  Left = 724
+  Top = 266
+  Caption = 'Cadastro de Categoria'
+  inherited psCadastrar: TPageControl
+    ActivePage = tsPesquisa
+    TabIndex = 0
+    inherited tsCadastrar: TTabSheet
+      inherited lbCadastros1: TLabel
+        Left = 280
+        Width = 370
+        Caption = 'Cadastro de Categoria'
+      end
+      object lbIdCategoria: TLabel[2]
+        Left = 344
+        Height = 24
+        Top = 104
+        Width = 28
+        Caption = 'ID:'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -20
+        Font.Name = 'Tahoma'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object lbDescricaoProduto1: TLabel[3]
+        Left = 176
+        Height = 24
+        Top = 160
+        Width = 196
+        Caption = 'Descrição do Produto:'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -20
+        Font.Name = 'Tahoma'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object edtID: TEdit[4]
+        Left = 376
+        Height = 28
+        Top = 100
+        Width = 64
+        TabOrder = 1
+      end
+      object edtIDescricao: TEdit[5]
+        Left = 376
+        Height = 28
+        Top = 156
+        Width = 496
+        TabOrder = 2
+      end
+    end
+  end
+  object dsCategoria: TDataSource[1]
+    DataSet = DataModuleF.qryCategoria
+    Left = 808
+    Top = 40
+  end
+end

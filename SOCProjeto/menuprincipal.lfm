@@ -1,0 +1,60 @@
+object MenuPrincipalF: TMenuPrincipalF
+  Left = 316
+  Height = 505
+  Top = 155
+  Width = 900
+  Caption = 'Menu Principal SCO'
+  DesignTimePPI = 120
+  Menu = MainMenu1
+  LCLVersion = '3.4.0.0'
+  object MainMenu1: TMainMenu
+    Left = 108
+    Top = 136
+    object mnCadastrar: TMenuItem
+      Caption = 'Cadastrar'
+      object mnCategoria: TMenuItem
+        Caption = 'Categoria'
+      end
+      object mnCliente: TMenuItem
+        Caption = 'Cliente'
+      end
+      object mnProdutos: TMenuItem
+        Caption = 'Produtos'
+      end
+      object mnUsuarios: TMenuItem
+        Caption = 'Usuários'
+      end
+    end
+    object mnVendas: TMenuItem
+      Caption = 'Vendas'
+      object mnOrcamento: TMenuItem
+        Caption = 'Orçamento'
+      end
+    end
+    object mnRelatorios: TMenuItem
+      Caption = 'Relatórios'
+      object mnClienteR: TMenuItem
+        Caption = 'Cliente'
+      end
+      object mnProdutosR: TMenuItem
+        Caption = 'Produtos'
+      end
+      object mnOrcamentoR: TMenuItem
+        Caption = 'Orçamento'
+      end
+      object mnCategoriaR: TMenuItem
+        Caption = 'Categoria'
+      end
+      object mnRelTesteCliente: TMenuItem
+        Caption = 'Rel Teste Cliente'
+      end
+    end
+    object mnSobre: TMenuItem
+      Caption = 'Sobre'
+    end
+    object mnSair: TMenuItem
+      Caption = 'Sair'
+      OnClick = mnSairClick
+    end
+  end
+end
