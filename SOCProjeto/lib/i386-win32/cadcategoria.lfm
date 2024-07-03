@@ -1,21 +1,30 @@
 inherited CadCategoriaF: TCadCategoriaF
-  Left = 597
-  Top = 223
+  Left = 358
+  Top = 152
   Caption = 'Cadastro de Categoria'
   OnClose = FormClose
+  OnShow = FormShow
   inherited psCadastrar: TPageControl
-    ActivePage = tsPesquisa
-    TabIndex = 0
     inherited tsPesquisa: TTabSheet
+      inherited Panel1: TPanel
+        inherited btPesquisar: TBitBtn
+          OnClick = btPesquisarClick
+        end
+      end
       inherited Panel2: TPanel
         inherited btnFecha: TBitBtn
           OnClick = btnFechaClick
+        end
+        inherited btnNovo: TBitBtn
+          OnClick = btnNovoClick
         end
       end
       inherited DBGrid1: TDBGrid
         Columns = <        
           item
+            Alignment = taCenter
             PickList.Strings = (            )
+            Title.Alignment = taCenter
             Title.Font.CharSet = ANSI_CHARSET
             Title.Font.Height = -20
             Title.Font.Name = 'Tahoma'
@@ -36,6 +45,8 @@ inherited CadCategoriaF: TCadCategoriaF
             FieldName = 'ds_categoria_produto'
           end>
         DataSource = dsCategoria
+        ReadOnly = True
+        OnDblClick = DBGrid1DblClick
       end
     end
     inherited tsCadastrar: TTabSheet
@@ -47,9 +58,11 @@ inherited CadCategoriaF: TCadCategoriaF
         end
         inherited btnGravar: TBitBtn
           Left = 144
+          OnClick = btnGravarClick
         end
         inherited btnExcluir: TBitBtn
           Left = 328
+          OnClick = btnExcluirClick
         end
       end
       inherited lbCadastros1: TLabel
@@ -84,25 +97,33 @@ inherited CadCategoriaF: TCadCategoriaF
         Font.Quality = fqDraft
         ParentFont = False
       end
-      object edtID: TEdit[4]
+      object dbEditID: TDBEdit[4]
         Left = 352
         Height = 28
-        Top = 160
+        Top = 156
         Width = 100
+        DataField = 'categoriaprodutoid'
+        DataSource = dsCategoria
+        Alignment = taRightJustify
+        Enabled = False
+        MaxLength = 0
         TabOrder = 1
       end
-      object edtDescricaoDoProduto: TEdit[5]
+      object dbEditDescDoPro: TDBEdit[5]
         Left = 352
         Height = 28
         Top = 200
-        Width = 484
+        Width = 100
+        DataField = 'ds_categoria_produto'
+        DataSource = dsCategoria
+        MaxLength = 0
         TabOrder = 2
       end
     end
   end
   object dsCategoria: TDataSource[1]
     DataSet = DataModuleF.qryCategoria
-    Left = 1784
-    Top = 40
+    Left = 592
+    Top = 32
   end
 end

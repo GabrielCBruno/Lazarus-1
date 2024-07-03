@@ -7,6 +7,7 @@ object MenuPrincipalF: TMenuPrincipalF
   DesignTimePPI = 120
   Menu = MainMenu1
   LCLVersion = '3.4.0.0'
+  WindowState = wsMaximized
   object MainMenu1: TMainMenu
     Left = 108
     Top = 136
@@ -18,6 +19,7 @@ object MenuPrincipalF: TMenuPrincipalF
       end
       object mnCliente: TMenuItem
         Caption = 'Cliente'
+        OnClick = mnClienteClick
       end
       object mnProdutos: TMenuItem
         Caption = 'Produtos'
