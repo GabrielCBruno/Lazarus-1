@@ -1,0 +1,175 @@
+inherited CadProdutosF: TCadProdutosF
+  Caption = 'Cadastro de Produtos'
+  inherited psCadastrar: TPageControl
+    ActivePage = tsCadastrar
+    TabIndex = 1
+    inherited tsPesquisa: TTabSheet
+      inherited Panel1: TPanel
+        inherited lbCodigo: TLabel
+          Width = 36
+          Caption = 'ID:'
+        end
+      end
+    end
+    inherited tsCadastrar: TTabSheet
+      inherited Panel3: TPanel
+        inherited btnCancelar: TBitBtn
+          Anchors = [akRight]
+        end
+      end
+      inherited lbCadastros1: TLabel
+        Left = 768
+        Top = 56
+        Width = 358
+        Caption = 'Cadastro de Produtos'
+      end
+      object Label1: TLabel[2]
+        Left = 600
+        Height = 28
+        Top = 144
+        Width = 33
+        Caption = 'ID:'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -23
+        Font.Name = 'Tahoma'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object Label2: TLabel[3]
+        Left = 760
+        Height = 28
+        Top = 144
+        Width = 168
+        Caption = 'Categoria do ID:'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -23
+        Font.Name = 'Tahoma'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object Label3: TLabel[4]
+        Left = 600
+        Height = 28
+        Top = 192
+        Width = 105
+        Caption = 'Descrição:'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -23
+        Font.Name = 'Tahoma'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object Label4: TLabel[5]
+        Left = 600
+        Height = 28
+        Top = 240
+        Width = 125
+        Caption = 'Observação:'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -23
+        Font.Name = 'Tahoma'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object Label5: TLabel[6]
+        Left = 1064
+        Height = 28
+        Top = 144
+        Width = 184
+        Caption = 'Data de Cadastro:'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -23
+        Font.Name = 'Tahoma'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object Label6: TLabel[7]
+        Left = 600
+        Height = 28
+        Top = 296
+        Width = 59
+        Caption = 'Valor:'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -23
+        Font.Name = 'Tahoma'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object Label7: TLabel[8]
+        Left = 800
+        Height = 28
+        Top = 296
+        Width = 72
+        Caption = 'Status:'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -23
+        Font.Name = 'Tahoma'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object dbEditCategoriaID: TDBEdit[9]
+        Left = 928
+        Height = 28
+        Top = 144
+        Width = 100
+        MaxLength = 0
+        TabOrder = 1
+      end
+      object dbEditDatDeCadas: TDBEdit[10]
+        Left = 1256
+        Height = 28
+        Top = 144
+        Width = 148
+        MaxLength = 0
+        TabOrder = 2
+      end
+      object dbEditDescri: TDBEdit[11]
+        Left = 712
+        Height = 28
+        Top = 192
+        Width = 536
+        MaxLength = 0
+        TabOrder = 3
+      end
+      object dbEditObser: TDBEdit[12]
+        Left = 728
+        Height = 28
+        Top = 240
+        Width = 520
+        MaxLength = 0
+        TabOrder = 4
+      end
+      object dbEditValor: TDBEdit[13]
+        Left = 664
+        Height = 28
+        Top = 296
+        Width = 112
+        MaxLength = 0
+        TabOrder = 5
+      end
+      object dbEditStatus: TDBEdit[14]
+        Left = 872
+        Height = 28
+        Top = 296
+        Width = 112
+        MaxLength = 0
+        TabOrder = 6
+      end
+      object dbEditID: TDBEdit[15]
+        Left = 640
+        Height = 28
+        Top = 144
+        Width = 112
+        MaxLength = 0
+        TabOrder = 7
+      end
+    end
+  end
+end

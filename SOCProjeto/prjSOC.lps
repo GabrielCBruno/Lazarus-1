@@ -90,7 +90,7 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadCliente"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="19"/>
       </Unit>
       <Unit>
         <Filename Value="C:\lazarus\lcl\forms.pp"/>
@@ -98,7 +98,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="1590"/>
         <CursorPos X="15" Y="1638"/>
-        <UsageCount Value="12"/>
+        <UsageCount Value="11"/>
       </Unit>
       <Unit>
         <Filename Value="relclientes.pas"/>
