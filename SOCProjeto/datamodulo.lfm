@@ -2,8 +2,8 @@ object DataModuleF: TDataModuleF
   OnCreate = DataModuleCreate
   OldCreateOrder = False
   Height = 524
-  HorizontalOffset = 595
-  VerticalOffset = 353
+  HorizontalOffset = 744
+  VerticalOffset = 259
   Width = 659
   PPI = 120
   object ZConnection1: TZConnection
@@ -12,6 +12,7 @@ object DataModuleF: TDataModuleF
       'RawStringEncoding=DB_CP'
     )
     Connected = True
+    AfterConnect = ZConnection1AfterConnect
     DisableSavepoints = False
     HostName = 'localhost'
     Port = 5432

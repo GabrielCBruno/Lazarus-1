@@ -12,6 +12,10 @@ type
   { TDataModuleF }
 
   TDataModuleF = class(TDataModule)
+    qryCadClientesclienteid: TZIntegerField;
+    qryCadClientescpf_cnpj_cliente: TZRawStringField;
+    qryCadClientesnome_cliente: TZRawStringField;
+    qryCadClientestipo_cliente: TZRawStringField;
     qryCategoriacategoriaprodutoid: TZIntegerField;
     qryCategoriads_categoria_produto: TZRawStringField;
     ZConnection1: TZConnection;
@@ -65,7 +69,7 @@ end;
 
 procedure TDataModuleF.qryCadClientesNewRecord(DataSet: TDataSet);
 begin
-
+   qryCadClientesclienteid.AsInteger:= StrToInt(getSequence('cliente_clienteid'));
 end;
 
 procedure TDataModuleF.qryCategoriaNewRecord(DataSet: TDataSet);

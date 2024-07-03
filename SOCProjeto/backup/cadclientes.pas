@@ -30,6 +30,7 @@ type
     procedure btPesquisarClick(Sender: TObject);
     procedure DBGrid1DblClick(Sender: TObject);
     procedure edtCodigoChange(Sender: TObject);
+    procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormShow(Sender: TObject);
   private
 
@@ -81,6 +82,13 @@ end;
 procedure TCadClientesF.edtCodigoChange(Sender: TObject);
 begin
 
+end;
+
+procedure TCadClientesF.FormClose(Sender: TObject; var CloseAction: TCloseAction
+  );
+begin
+    DataModulo.DataModuleF.qryCadClientes.Close;
+    CloseAction:=caFree;
 end;
 
 procedure TCadClientesF.FormShow(Sender: TObject);

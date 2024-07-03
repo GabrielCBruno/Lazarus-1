@@ -5,6 +5,8 @@ inherited CadClientesF: TCadClientesF
   OnClose = FormClose
   OnShow = FormShow
   inherited psCadastrar: TPageControl
+    ActivePage = tsCadastrar
+    TabIndex = 1
     inherited tsPesquisa: TTabSheet
       inherited Panel1: TPanel
         inherited btPesquisar: TBitBtn
@@ -194,6 +196,7 @@ inherited CadClientesF: TCadClientesF
         DataField = 'clienteid'
         DataSource = dsCadastroClientes
         Alignment = taRightJustify
+        Enabled = False
         MaxLength = 0
         TabOrder = 4
       end

@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CONFIG>
+  <LazReport>
+    <Version Value="31"/>
+    <Title Value=""/>
+    <Subject Value=""/>
+    <KeyWords Value=""/>
+    <Comments Value=""/>
+    <ReportCreateDate Value="1899-12-30 00:00:00"/>
+    <ReportLastChange Value="2024-07-03 15:43:41"/>
+    <ReportVersionBuild Value=""/>
+    <ReportVersionMajor Value=""/>
+    <ReportVersionMinor Value=""/>
+    <ReportVersionRelease Value=""/>
+    <ReportAutor Value=""/>
+    <Script Value=""/>
+    <Pages>
+      <PrintToDefault Value="False"/>
+      <DoublePass Value="False"/>
+      <SelectedPrinter Value="Microsoft Print to PDF"/>
+      <PageCount Value="1"/>
+      <Page1>
+        <Name Value="Page1"/>
+        <ClassName Value="TfrPageReport"/>
+        <Visible Value="True"/>
+        <Width Value="595"/>
+        <Height Value="842"/>
+        <Script Value=""/>
+        <PgSize Value="9"/>
+        <Margins>
+          <left Value="0"/>
+          <Top Value="0"/>
+          <Right Value="0"/>
+          <Bottom Value="0"/>
+        </Margins>
+        <Orientation Value="poPortrait"/>
+        <UseMargins Value="True"/>
+        <PrintToPrevPage Value="False"/>
+        <ColCount Value="0"/>
+        <ColGap Value="0"/>
+        <LayoutOrder Value="loColumns"/>
+        <Object1>
+          <Name Value="MasterHeader1"/>
+          <ClassName Value="TfrBandView"/>
+          <Visible Value="True"/>
+          <Typ Value="gtBand"/>
+          <StreamMode Value="0"/>
+          <Size>
+            <Left Value="0"/>
+            <Top Value="92"/>
+            <Width Value="752"/>
+            <Height Value="28"/>
+          </Size>
+          <Flags Value="48"/>
+          <Data>
+            <Script Value=""/>
+            <GapX Value="0"/>
+            <GapY Value="0"/>
+          </Data>
+          <Tag Value=""/>
+          <FURLInfo Value=""/>
+          <Frames>
+            <Restrictions Value=""/>
+          </Frames>
+          <BandType Value="btMasterHeader"/>
+          <Condition Value=""/>
+          <DatasetStr Value=""/>
+          <Child Value=""/>
+        </Object1>
+        <Object2>
+          <Name Value="MasterData1"/>
+          <ClassName Value="TfrBandView"/>
+          <Visible Value="True"/>
+          <Typ Value="gtBand"/>
+          <StreamMode Value="0"/>
+          <Size>
+            <Left Value="0"/>
+            <Top Value="140"/>
+            <Width Value="752"/>
+            <Height Value="20"/>
+          </Size>
+          <Flags Value="48"/>
+          <Data>
+            <Script Value=""/>
+            <GapX Value="0"/>
+            <GapY Value="0"/>
+          </Data>
+          <Tag Value=""/>
+          <FURLInfo Value=""/>
+          <Frames>
+            <Restrictions Value=""/>
+          </Frames>
+          <BandType Value="btMasterData"/>
+          <Condition Value=""/>
+          <DatasetStr Value="frDBDataSet1"/>
+          <Child Value=""/>
+        </Object2>
+        <Object3>
+          <Name Value="PageHeader1"/>
+          <ClassName Value="TfrBandView"/>
+          <Visible Value="True"/>
+          <Typ Value="gtBand"/>
+          <StreamMode Value="0"/>
+          <Size>
+            <Left Value="0"/>
+            <Top Value="-12"/>
+            <Width Value="752"/>
+            <Height Value="92"/>
+          </Size>
+          <Flags Value="48"/>
+          <Data>
+            <Script Value=""/>
+            <GapX Value="0"/>
+            <GapY Value="0"/>
+          </Data>
+          <Tag Value=""/>
+          <FURLInfo Value=""/>
+          <Frames>
+            <Restrictions Value=""/>
+          </Frames>
+          <BandType Value="btPageHeader"/>
+          <Condition Value=""/>
+          <DatasetStr Value=""/>
+          <Child Value=""/>
+        </Object3>
+        <Object4>
+          <Name Value="Line2"/>
+          <ClassName Value="TfrLineView"/>
+          <Visible Value="True"/>
+          <Typ Value="gtLine"/>
+          <StreamMode Value="0"/>
+          <Size>
+            <Left Value="444"/>
+            <Top Value="96"/>
+            <Width Value="0"/>
+            <Height Value="0"/>
+          </Size>
+          <Flags Value="0"/>
+          <Frames>
+            <FrameColor Value="clBlack"/>
+            <FrameStyle Value="frsSolid"/>
+            <FrameWidth Value="2"/>
+            <Restrictions Value=""/>
+          </Frames>
+          <Tag Value=""/>
+          <FURLInfo Value=""/>
+          <Data>
+            <GapX Value="0"/>
+            <GapY Value="0"/>
+          </Data>
+        </Object4>
+        <Object5>
+          <Name Value="Line3"/>
+          <ClassName Value="TfrLineView"/>
+          <Visible Value="True"/>
+          <Typ Value="gtLine"/>
+          <StreamMode Value="0"/>
+          <Size>
+            <Left Value="548"/>
+            <Top Value="56"/>
+            <Width Value="0"/>
+            <Height Value="0"/>
+          </Size>
+          <Flags Value="0"/>
+          <Frames>
+            <FrameColor Value="clBlack"/>
+            <FrameStyle Value="frsSolid"/>
+            <FrameWidth Value="2"/>
+            <Restrictions Value=""/>
+          </Frames>
+          <Tag Value=""/>
+          <FURLInfo Value=""/>
+          <Data>
+            <GapX Value="0"/>
+            <GapY Value="0"/>
+          </Data>
+        </Object5>
+        <Object6>
+          <Name Value="Line4"/>
+          <ClassName Value="TfrLineView"/>
+          <Visible Value="True"/>
+          <Typ Value="gtLine"/>
+          <StreamMode Value="0"/>
+          <Size>
+            <Left Value="372"/>
+            <Top Value="96"/>
+            <Width Value="0"/>
+            <Height Value="0"/>
+          </Size>
+          <Flags Value="0"/>
+          <Frames>
+            <FrameColor Value="clBlack"/>
+            <FrameStyle Value="frsSolid"/>
+            <FrameWidth Value="2"/>
+            <Restrictions Value=""/>
+          </Frames>
+          <Tag Value=""/>
+          <FURLInfo Value=""/>
+          <Data>
+            <GapX Value="0"/>
+            <GapY Value="0"/>
+          </Data>
+        </Object6>
+        <Object7>
+          <Name Value="Memo3"/>
+          <ClassName Value="TfrMemoView"/>
+          <Visible Value="True"/>
+          <Typ Value="gtMemo"/>
+          <StreamMode Value="0"/>
+          <Size>
+            <Left Value="20"/>
+            <Top Value="100"/>
+            <Width Value="20"/>
+            <Height Value="18"/>
+          </Size>
+          <Flags Value="3"/>
+          <FillColor Value="clNone"/>
+          <Frames>
+            <FrameColor Value="clBlack"/>
+            <FrameStyle Value="frsSolid"/>
+            <FrameWidth Value="1"/>
+            <FrameBorders Value=""/>
+            <Restrictions Value=""/>
+          </Frames>
+          <Data>
+            <Format Value="556"/>
+            <FormatStr Value=""/>
+            <Memo Value="ID&#xD;&#xA;"/>
+            <Script Value=""/>
+            <GapX Value="0"/>
+            <GapY Value="0"/>
+            <OnClick Value=""/>
+            <OnMouseEnter Value=""/>
+            <OnMouseLeave Value=""/>
+            <DetailReport Value=""/>
+            <ParagraphGap Value="0"/>
+            <LineSpacing Value="2"/>
+          </Data>
+          <Tag Value=""/>
+          <FURLInfo Value=""/>
+          <Font>
+            <Name Value="Arial"/>
+            <Size Value="10"/>
+            <Color Value="clBlack"/>
+            <Charset Value="0"/>
+            <Style Value="fsBold"/>
+          </Font>
+          <Highlight>
+            <FontStyle Value="2"/>
+            <FontColor Value="clBlack"/>
+            <FillColor Value="clWhite"/>
+            <HighlightStr Value=""/>
+          </Highlight>
+          <Alignment Value="taLeftJustify"/>
+          <Layout Value="tlTop"/>
+          <Angle Value="0"/>
+          <Justify Value="False"/>
+          <Cursor Value="0"/>
+        </Object7>
+        <Object8>
+          <Name Value="Memo4"/>
+          <ClassName Value="TfrMemoView"/>
+          <Visible Value="True"/>
+          <Typ Value="gtMemo"/>
+          <StreamMode Value="0"/>
+          <Size>
+            <Left Value="68"/>
+            <Top Value="100"/>
+            <Width Value="36"/>
+            <Height Value="18"/>
+          </Size>
+          <Flags Value="3"/>
+          <FillColor Value="clNone"/>
+          <Frames>
+            <FrameColor Value="clBlack"/>
+            <FrameStyle Value="frsSolid"/>
+            <FrameWidth Value="1"/>
+            <FrameBorders Value=""/>
+            <Restrictions Value=""/>
+          </Frames>
+          <Data>
+            <Format Value="556"/>
+            <FormatStr Value=""/>
+            <Memo Value="Tipo&#xD;&#xA;"/>
+            <Script Value=""/>
+            <GapX Value="0"/>
+            <GapY Value="0"/>
+            <OnClick Value=""/>
+            <OnMouseEnter Value=""/>
+            <OnMouseLeave Value=""/>
+            <DetailReport Value=""/>
+            <ParagraphGap Value="0"/>
+            <LineSpacing Value="2"/>
+          </Data>
+          <Tag Value=""/>
+          <FURLInfo Value=""/>
+          <Font>
+            <Name Value="Arial"/>
+            <Size Value="10"/>
+            <Color Value="clBlack"/>
+            <Charset Value="0"/>
+            <Style Value="fsBold"/>
+          </Font>
+          <Highlight>
+            <FontStyle Value="2"/>
+            <FontColor Value="clBlack"/>
+            <FillColor Value="clWhite"/>
+            <HighlightStr Value=""/>
+          </Highlight>
+          <Alignment Value="taLeftJustify"/>
+          <Layout Value="tlTop"/>
+          <Angle Value="0"/>
+          <Justify Value="False"/>
+          <Cursor Value="0"/>
+        </Object8>
+        <Object9>
+          <Name Value="Memo5"/>
+          <ClassName Value="TfrMemoView"/>
+          <Visible Value="True"/>
+          <Typ Value="gtMemo"/>
+          <StreamMode Value="0"/>
+          <Size>
+            <Left Value="128"/>
+            <Top Value="100"/>
+            <Width Value="164"/>
+            <Height Value="18"/>
+          </Size>
+          <Flags Value="3"/>
+          <FillColor Value="clNone"/>
+          <Frames>
+            <FrameColor Value="clBlack"/>
+            <FrameStyle Value="frsSolid"/>
+            <FrameWidth Value="1"/>
+            <FrameBorders Value=""/>
+            <Restrictions Value=""/>
+          </Frames>
+          <Data>
+            <Format Value="556"/>
+            <FormatStr Value=""/>
+            <Memo Value="CPF/CNPJ&#xD;&#xA;"/>
+            <Script Value=""/>
+            <GapX Value="0"/>
+            <GapY Value="0"/>
+            <OnClick Value=""/>
+            <OnMouseEnter Value=""/>
+            <OnMouseLeave Value=""/>
+            <DetailReport Value=""/>
+            <ParagraphGap Value="0"/>
+            <LineSpacing Value="2"/>
+          </Data>
+          <Tag Value=""/>
+          <FURLInfo Value=""/>
+          <Font>
+            <Name Value="Arial"/>
+            <Size Value="10"/>
+            <Color Value="clBlack"/>
+            <Charset Value="0"/>
+            <Style Value="fsBold"/>
+          </Font>
+          <Highlight>
+            <FontStyle Value="2"/>
+            <FontColor Value="clBlack"/>
+            <FillColor Value="clWhite"/>
+            <HighlightStr Value=""/>
+          </Highlight>
+          <Alignment Value="taLeftJustify"/>
+          <Layout Value="tlTop"/>
+          <Angle Value="0"/>
+          <Justify Value="False"/>
+          <Cursor Value="0"/>
+        </Object9>
+        <Object10>
+          <Name Value="Memo6"/>
+          <ClassName Value="TfrMemoView"/>
+          <Visible Value="True"/>
+          <Typ Value="gtMemo"/>
+          <StreamMode Value="0"/>
+          <Size>
+            <Left Value="316"/>
+            <Top Value="100"/>
+            <Width Value="180"/>
+            <Height Value="18"/>
+          </Size>
+          <Flags Value="3"/>
+          <FillColor Value="clNone"/>
+          <Frames>
+            <FrameColor Value="clBlack"/>
+            <FrameStyle Value="frsSolid"/>
+            <FrameWidth Value="1"/>
+            <FrameBorders Value=""/>
+            <Restrictions Value=""/>
+          </Frames>
+          <Data>
+            <Format Value="556"/>
+            <FormatStr Value=""/>
+            <Memo Value="Nome Completo&#xD;&#xA;"/>
+            <Script Value=""/>
+            <GapX Value="0"/>
+            <GapY Value="0"/>
+            <OnClick Value=""/>
+            <OnMouseEnter Value=""/>
+            <OnMouseLeave Value=""/>
+            <DetailReport Value=""/>
+            <ParagraphGap Value="0"/>
+            <LineSpacing Value="2"/>
+          </Data>
+          <Tag Value=""/>
+          <FURLInfo Value=""/>
+          <Font>
+            <Name Value="Arial"/>
+            <Size Value="10"/>
+            <Color Value="clBlack"/>
+            <Charset Value="0"/>
+            <Style Value="fsBold"/>
+          </Font>
+          <Highlight>
+            <FontStyle Value="2"/>
+            <FontColor Value="clBlack"/>
+            <FillColor Value="clWhite"/>
+            <HighlightStr Value=""/>
+          </Highlight>
+          <Alignment Value="taLeftJustify"/>
+          <Layout Value="tlTop"/>
+          <Angle Value="0"/>
+          <Justify Value="False"/>
+          <Cursor Value="0"/>
+        </Object10>
+        <Object11>
+          <Name Value="Memo7"/>
+          <ClassName Value="TfrMemoView"/>
+          <Visible Value="True"/>
+          <Typ Value="gtMemo"/>
+          <StreamMode Value="0"/>
+          <Size>
+            <Left Value="16"/>
+            <Top Value="140"/>
+            <Width Value="24"/>
+            <Height Value="18"/>
+          </Size>
+          <Flags Value="3"/>
+          <FillColor Value="clNone"/>
+          <Frames>
+            <FrameColor Value="clBlack"/>
+            <FrameStyle Value="frsSolid"/>
+            <FrameWidth Value="1"/>
+            <FrameBorders Value=""/>
+            <Restrictions Value=""/>
+          </Frames>
+          <Data>
+            <Format Value="556"/>
+            <FormatStr Value=""/>
+            <Memo Value="[qryRelCliente.&quot;clienteid&quot;]&#xD;&#xA;"/>
+            <Script Value=""/>
+            <GapX Value="0"/>
+            <GapY Value="0"/>
+            <OnClick Value=""/>
+            <OnMouseEnter Value=""/>
+            <OnMouseLeave Value=""/>
+            <DetailReport Value=""/>
+            <ParagraphGap Value="0"/>
+            <LineSpacing Value="2"/>
+          </Data>
+          <Tag Value=""/>
+          <FURLInfo Value=""/>
+          <Font>
+            <Name Value="Arial"/>
+            <Size Value="10"/>
+            <Color Value="clBlack"/>
+            <Charset Value="0"/>
+            <Style Value="fsBold"/>
+          </Font>
+          <Highlight>
+            <FontStyle Value="2"/>
+            <FontColor Value="clBlack"/>
+            <FillColor Value="clWhite"/>
+            <HighlightStr Value=""/>
+          </Highlight>
+          <Alignment Value="taLeftJustify"/>
+          <Layout Value="tlTop"/>
+          <Angle Value="0"/>
+          <Justify Value="False"/>
+          <Cursor Value="0"/>
+        </Object11>
+        <Object12>
+          <Name Value="Memo8"/>
+          <ClassName Value="TfrMemoView"/>
+          <Visible Value="True"/>
+          <Typ Value="gtMemo"/>
+          <StreamMode Value="0"/>
+          <Size>
+            <Left Value="64"/>
+            <Top Value="140"/>
+            <Width Value="40"/>
+            <Height Value="18"/>
+          </Size>
+          <Flags Value="3"/>
+          <FillColor Value="clNone"/>
+          <Frames>
+            <FrameColor Value="clBlack"/>
+            <FrameStyle Value="frsSolid"/>
+            <FrameWidth Value="1"/>
+            <FrameBorders Value=""/>
+            <Restrictions Value=""/>
+          </Frames>
+          <Data>
+            <Format Value="556"/>
+            <FormatStr Value=""/>
+            <Memo Value="[qryRelCliente.&quot;tipo_cliente&quot;]&#xD;&#xA;"/>
+            <Script Value=""/>
+            <GapX Value="0"/>
+            <GapY Value="0"/>
+            <OnClick Value=""/>
+            <OnMouseEnter Value=""/>
+            <OnMouseLeave Value=""/>
+            <DetailReport Value=""/>
+            <ParagraphGap Value="0"/>
+            <LineSpacing Value="2"/>
+          </Data>
+          <Tag Value=""/>
+          <FURLInfo Value=""/>
+          <Font>
+            <Name Value="Arial"/>
+            <Size Value="10"/>
+            <Color Value="clBlack"/>
+            <Charset Value="0"/>
+            <Style Value="fsBold"/>
+          </Font>
+          <Highlight>
+            <FontStyle Value="2"/>
+            <FontColor Value="clBlack"/>
+            <FillColor Value="clWhite"/>
+            <HighlightStr Value=""/>
+          </Highlight>
+          <Alignment Value="taLeftJustify"/>
+          <Layout Value="tlTop"/>
+          <Angle Value="0"/>
+          <Justify Value="False"/>
+          <Cursor Value="0"/>
+        </Object12>
+        <Object13>
+          <Name Value="Memo9"/>
+          <ClassName Value="TfrMemoView"/>
+          <Visible Value="True"/>
+          <Typ Value="gtMemo"/>
+          <StreamMode Value="0"/>
+          <Size>
+            <Left Value="128"/>
+            <Top Value="140"/>
+            <Width Value="164"/>
+            <Height Value="18"/>
+          </Size>
+          <Flags Value="3"/>
+          <FillColor Value="clNone"/>
+          <Frames>
+            <FrameColor Value="clBlack"/>
+            <FrameStyle Value="frsSolid"/>
+            <FrameWidth Value="1"/>
+            <FrameBorders Value=""/>
+            <Restrictions Value=""/>
+          </Frames>
+          <Data>
+            <Format Value="556"/>
+            <FormatStr Value=""/>
+            <Memo Value="[qryRelCliente.&quot;cpf_cnpj_cliente&quot;]&#xD;&#xA;"/>
+            <Script Value=""/>
+            <GapX Value="0"/>
+            <GapY Value="0"/>
+            <OnClick Value=""/>
+            <OnMouseEnter Value=""/>
+            <OnMouseLeave Value=""/>
+            <DetailReport Value=""/>
+            <ParagraphGap Value="0"/>
+            <LineSpacing Value="2"/>
+          </Data>
+          <Tag Value=""/>
+          <FURLInfo Value=""/>
+          <Font>
+            <Name Value="Arial"/>
+            <Size Value="10"/>
+            <Color Value="clBlack"/>
+            <Charset Value="0"/>
+            <Style Value="fsBold"/>
+          </Font>
+          <Highlight>
+            <FontStyle Value="2"/>
+            <FontColor Value="clBlack"/>
+            <FillColor Value="clWhite"/>
+            <HighlightStr Value=""/>
+          </Highlight>
+          <Alignment Value="taLeftJustify"/>
+          <Layout Value="tlTop"/>
+          <Angle Value="0"/>
+          <Justify Value="False"/>
+          <Cursor Value="0"/>
+        </Object13>
+        <Object14>
+          <Name Value="Memo10"/>
+          <ClassName Value="TfrMemoView"/>
+          <Visible Value="True"/>
+          <Typ Value="gtMemo"/>
+          <StreamMode Value="0"/>
+          <Size>
+            <Left Value="316"/>
+            <Top Value="140"/>
+            <Width Value="180"/>
+            <Height Value="18"/>
+          </Size>
+          <Flags Value="3"/>
+          <FillColor Value="clNone"/>
+          <Frames>
+            <FrameColor Value="clBlack"/>
+            <FrameStyle Value="frsSolid"/>
+            <FrameWidth Value="1"/>
+            <FrameBorders Value=""/>
+            <Restrictions Value=""/>
+          </Frames>
+          <Data>
+            <Format Value="556"/>
+            <FormatStr Value=""/>
+            <Memo Value="[qryRelCliente.&quot;nome_cliente&quot;]&#xD;&#xA;"/>
+            <Script Value=""/>
+            <GapX Value="0"/>
+            <GapY Value="0"/>
+            <OnClick Value=""/>
+            <OnMouseEnter Value=""/>
+            <OnMouseLeave Value=""/>
+            <DetailReport Value=""/>
+            <ParagraphGap Value="0"/>
+            <LineSpacing Value="2"/>
+          </Data>
+          <Tag Value=""/>
+          <FURLInfo Value=""/>
+          <Font>
+            <Name Value="Arial"/>
+            <Size Value="10"/>
+            <Color Value="clBlack"/>
+            <Charset Value="0"/>
+            <Style Value="fsBold"/>
+          </Font>
+          <Highlight>
+            <FontStyle Value="2"/>
+            <FontColor Value="clBlack"/>
+            <FillColor Value="clWhite"/>
+            <HighlightStr Value=""/>
+          </Highlight>
+          <Alignment Value="taLeftJustify"/>
+          <Layout Value="tlTop"/>
+          <Angle Value="0"/>
+          <Justify Value="False"/>
+          <Cursor Value="0"/>
+        </Object14>
+        <Object15>
+          <Name Value="Memo1"/>
+          <ClassName Value="TfrMemoView"/>
+          <Visible Value="True"/>
+          <Typ Value="gtMemo"/>
+          <StreamMode Value="0"/>
+          <Size>
+            <Left Value="184"/>
+            <Top Value="20"/>
+            <Width Value="320"/>
+            <Height Value="26"/>
+          </Size>
+          <Flags Value="3"/>
+          <FillColor Value="clNone"/>
+          <Frames>
+            <FrameColor Value="clBlack"/>
+            <FrameStyle Value="frsSolid"/>
+            <FrameWidth Value="1"/>
+            <FrameBorders Value=""/>
+            <Restrictions Value=""/>
+          </Frames>
+          <Data>
+            <Format Value="556"/>
+            <FormatStr Value=""/>
+            <Memo Value="Relatório de Listagem de Clientes&#xD;&#xA;"/>
+            <Script Value=""/>
+            <GapX Value="0"/>
+            <GapY Value="0"/>
+            <OnClick Value=""/>
+            <OnMouseEnter Value=""/>
+            <OnMouseLeave Value=""/>
+            <DetailReport Value=""/>
+            <ParagraphGap Value="0"/>
+            <LineSpacing Value="2"/>
+          </Data>
+          <Tag Value=""/>
+          <FURLInfo Value=""/>
+          <Font>
+            <Name Value="Arial"/>
+            <Size Value="16"/>
+            <Color Value="clBlack"/>
+            <Charset Value="0"/>
+            <Style Value=""/>
+          </Font>
+          <Highlight>
+            <FontStyle Value="2"/>
+            <FontColor Value="clBlack"/>
+            <FillColor Value="clWhite"/>
+            <HighlightStr Value=""/>
+          </Highlight>
+          <Alignment Value="taLeftJustify"/>
+          <Layout Value="tlTop"/>
+          <Angle Value="0"/>
+          <Justify Value="False"/>
+          <Cursor Value="0"/>
+        </Object15>
+        <Object16>
+          <Name Value="Memo2"/>
+          <ClassName Value="TfrMemoView"/>
+          <Visible Value="True"/>
+          <Typ Value="gtMemo"/>
+          <StreamMode Value="0"/>
+          <Size>
+            <Left Value="548"/>
+            <Top Value="24"/>
+            <Width Value="104"/>
+            <Height Value="18"/>
+          </Size>
+          <Flags Value="3"/>
+          <FillColor Value="clNone"/>
+          <Frames>
+            <FrameColor Value="clBlack"/>
+            <FrameStyle Value="frsSolid"/>
+            <FrameWidth Value="1"/>
+            <FrameBorders Value=""/>
+            <Restrictions Value=""/>
+          </Frames>
+          <Data>
+            <Format Value="556"/>
+            <FormatStr Value=""/>
+            <Memo Value="Pagina: [PAGE#]&#xD;&#xA;"/>
+            <Script Value=""/>
+            <GapX Value="0"/>
+            <GapY Value="0"/>
+            <OnClick Value=""/>
+            <OnMouseEnter Value=""/>
+            <OnMouseLeave Value=""/>
+            <DetailReport Value=""/>
+            <ParagraphGap Value="0"/>
+            <LineSpacing Value="2"/>
+          </Data>
+          <Tag Value=""/>
+          <FURLInfo Value=""/>
+          <Font>
+            <Name Value="Arial"/>
+            <Size Value="10"/>
+            <Color Value="clBlack"/>
+            <Charset Value="0"/>
+            <Style Value=""/>
+          </Font>
+          <Highlight>
+            <FontStyle Value="2"/>
+            <FontColor Value="clBlack"/>
+            <FillColor Value="clWhite"/>
+            <HighlightStr Value=""/>
+          </Highlight>
+          <Alignment Value="taLeftJustify"/>
+          <Layout Value="tlTop"/>
+          <Angle Value="0"/>
+          <Justify Value="False"/>
+          <Cursor Value="0"/>
+        </Object16>
+        <Object17>
+          <Name Value="Line1"/>
+          <ClassName Value="TfrLineView"/>
+          <Visible Value="True"/>
+          <Typ Value="gtLine"/>
+          <StreamMode Value="0"/>
+          <Size>
+            <Left Value="3"/>
+            <Top Value="68"/>
+            <Width Value="752"/>
+            <Height Value="0"/>
+          </Size>
+          <Flags Value="0"/>
+          <Frames>
+            <FrameColor Value="clBlack"/>
+            <FrameStyle Value="frsSolid"/>
+            <FrameWidth Value="2"/>
+            <Restrictions Value=""/>
+          </Frames>
+          <Tag Value=""/>
+          <FURLInfo Value=""/>
+          <Data>
+            <GapX Value="0"/>
+            <GapY Value="0"/>
+          </Data>
+        </Object17>
+        <Object18>
+          <Name Value="Picture1"/>
+          <ClassName Value="TfrPictureView"/>
+          <Visible Value="True"/>
+          <Typ Value="gtPicture"/>
+          <StreamMode Value="0"/>
+          <Size>
+            <Left Value="140"/>
+            <Top Value="20"/>
+            <Width Value="32"/>
+            <Height Value="26"/>
+          </Size>
+          <Flags Value="5"/>
+          <FillColor Value="clNone"/>
+          <Frames>
+            <FrameColor Value="clBlack"/>
+            <FrameStyle Value="frsSolid"/>
+            <FrameWidth Value="1"/>
+            <FrameBorders Value=""/>
+            <Restrictions Value=""/>
+          </Frames>
+          <Data>
+            <Memo Value=""/>
+            <Script Value=""/>
+            <GapX Value="0"/>
+            <GapY Value="0"/>
+          </Data>
+          <Tag Value=""/>
+          <FURLInfo Value=""/>
+          <Picture>
+            <SharedName Value=""/>
+            <Type Ext="png" Value="255"/>
+            <Size Value="7238"/>
+            <Data Value="89504E470D0A1A0A0000000D4948445200000200000002000803000000C3A624C80000000373424954080808DBE14FE00000000970485973000016BF000016BF017E0173450000001974455874536F667477617265007777772E696E6B73636170652E6F72679BEE3C1A00000300504C5445FFFFFF0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000B23B7E1000000FF74524E53000102030405060708090A0B0C0D0E0F101112131415161718191A1B1C1D1E1F202122232425262728292A2B2C2D2E2F303132333435363738393A3B3C3D3E3F404142434445464748494A4B4C4D4E4F505152535455565758595A5B5C5D5E5F606162636465666768696A6B6C6D6E6F707172737475767778797A7B7C7D7E7F808182838485868788898A8B8C8D8E8F909192939495969798999A9B9C9D9E9FA0A1A2A3A4A5A6A7A8A9AAABACADAEAFB0B1B2B3B4B5B6B7B8B9BABBBCBDBEBFC0C1C2C3C4C5C6C7C8C9CACBCCCDCECFD0D1D2D3D4D5D6D7D8D9DADBDCDDDEDFE0E1E2E3E4E5E6E7E8E9EAEBECEDEEEFF0F1F2F3F4F5F6F7F8F9FAFBFCFDFEEB08D935000017AD494441541819EDC10980CF75FE3FF0E7F73BDF19C698318CFBDCA68CF223BFDC9D2A854A586D2DED2FE5485B4AA51CFFB674A82D6D25D28515D646FD76895AB77E96B239426C8E1522F7356306336366BECF7F4839E6F81E9FE3F5FECCEBF10094524A29A594524A29A594524A29A594524A29A594524A29A594524A29A594524A29A594524A29A594524A29A594524A29A594524A2907F953D2AEEAD4F3E1014386BEF8EA9BEF8C9B3475DA679F4D9B3A69DC3B6FBEFAE2D021031EEED9E9AAB4143F94A7F86B5F7BCFC0E1E33EF962C3810286A0E0C0C62F3E19377CE03DD7D6F64399CB57E3CABB9F1A3B7F732E2396BB79FED8A7EEBEB2860FCA24310DEE1C366363362D93BD71C6B03B1BC4408957A5ED63E35766D316D92BC73FD6B60A9450D5BAFE69DE1EDA6ECFBC3F75AD06258AEFD23E1F6CA683367FD0E7521F940465AE1A34E3205D7070C6A0ABCA40B929E6CAE797E4D045394B9EBF3206CA15D5EF9D7A88021C9A7A6F75286705AEFBE3EA20C508AEFEE375012887D4B8FFEF4728CE91BFDF5F03CA76551F5A5440A10A163D5415CA46297D17E453B4FC057D53A06C51B1D79C3C1A206F4EAF8A50162BDFE3B31334C689CF7A9487B24ECBB159344CD6D896509648EEF70D8DF44DBF64A8685D33F1388D757CE23550514819B09E865B3F20052A322D3FCCA507E47ED8122A6CBECE8BE9198B3BFBA0C211FFC0267ACAA607E2A14255E5B9FDF49CFDCF55810A4583F7B3E949D9EF37802A49AB19417A5670462BA8E234FD8C1EF75953A8A25C3E9DA5C0F4CBA10AD3F0E3204B85E0C70DA1CE9736B980A546C1E434A8B3A57E90CF5225FF8354A8332A8ECA63A99337AA22D44931FD0EB2543AD82F060A6DD7B1D45AD716A5DDC5D359AA4DBF18A559E22B392CE5725E494469E5BB6F0F15F7DCE743A974C572AA53965F81D227FE953CAA9FE4BD128F52E686CD5467D97C034A93E4B154E7199B8C52E38E3D5417D873074A879AD3A90A35BD26BCCFD73783AA08197D7DF0B81AF3A88A31AF063CADCB41AA621DEC02EF4A184355A23109F0A8E69BA842B0A939BCC83FE40455484E0CF1C373EA2CA20AD9A23AF098DFA6538521FDB7F0923263A8C234A60C3CA3EE72AAB02DAF0B8FB8E90055040EDC044F18924F1591FC21305FD234AA884D4B82E11A6EA48AC2C68630DA5D595451C9BA0BE68A798D2A6AAFC5C0500933A92C30330146AABE92CA122BABC3400DBFA7B2C8F70D619C1B33A82C9371230CD3E30495854EF480519EA5B2D8B33047EC042ACB4D8885212A2CA4B2C1C20A3042E5AFA96CF1756518A0C6B75436F9B606C4ABF71D956DBEAB07E1D27650D968471A446BBC97CA567B1B43B01687A86C76A805C4BA2E93CA7699D741A8F6C7A91C70BC3D44BA3597CA11B9B742A01BB2A91C927D03C4699D45E598ACD610A6493A9583D29B40944BF753396AFFA510E4A29D540EDB7911C4A8B595CA715B6B41882A1BA85CB0A10A44485E4DE58AD5C910A0CC17542EF9A20C5CE79B4AE59AA93EB8ED652A17BD0C97F5A172551FB8AA5D1E95ABF2DAC1458D8F50B9EC4863B8A6E60E2AD7EDA80997945F4525C0AAF27045CC6754227C1603378CA21262145CD08366CBDEF79F150BA67DF0C1B4052BFEB32F9B66EB01C75D914D33ED993FA2CF95975489C339E2AA5C72659F11F3F7D04CD957C06129DB689C238BDFEDD72605C54A69D3EFDDC547689C6D2970947F1E0DB3F6956B030851E0DA57D6D230F3FC70D2CB34C9D1190FD44198EA3C30E3284DF2321CD495E6D8F566BB32884899766FEEA239BAC2319765D210C1055D038842A0EBFC200D9179191C92B88166481FD10051ABFFFA619A6143221CE19B4623ACEC150F4BC4DFB78C4698E683131EA70182535AC0424DFF5240033C0E075C9E43F9E63785C59ACCA67C3997C37665D751BC5537C30637AEA478EBCAC26E2329DDD6BB7DB085AFDB164A3712366B1FA46C071E8D836DE2FA1FA06CC1F6B055E53D142D382A09B64A1A15A4687B2AC34E9F50B4ED37C276376EA7689FC0467D29DA84243820690245EB0BDBA41DA360FB3AC3219DF751B06369B049EC0A0A36AD0A1C53651A055B110B7B3C47B9327AC0513D3228D773B045C35C8AB53E150E4B5D4FB1721BC206FEA5146B5E0538AEC23C8AB5D40FEB3D42B1DE09C005817728D623B05CDD2C0A95DF1F2EE99F4FA1B2EAC26AFFA050476E816B6E3942A1FE018B75A750DB1AC1458DB651A8EEB054CA7ECAB4BC2A5C55753965DA9F022B4DA24C2B93E1B2E4959469122CD49E32ADA904D7555A4399DAC332F1DB28D2BACA10A0F23A8AB42D1E56194A91D657850855D753A4A1B048ED639468530D08516313253A561BD6984C89BEAB05316A7D478926C312AD8314685B5D0852771B050AB686057CCB2850E66510E5B24C0AB4CC87E8DD4381829D214CE72005BA07514BD845819E8538CF52A05D0988D6300A34DD07717CD329D03044A95E36E5F9361102257E4B79B2EB213A1F519EF44B20D225E994E72344A535E529E800A13A14509ED688C602CA3318620DA63C0B10853694672E049B4B79DA20728B29CE913A10ACCE118AB31811BB99F2F481687D28CFCD88D45714670E849B4371BE42843A529C2375205C9D2314A72322E25B45717A43BCDE1467950F91E84A71E6C00073284E5744C0FF6F4A93511B06A89D4169FEED47F8BA539CDE30426F8AD31D61F36DA034AB7C30826F15A5D9E043B83A529C7630443B8AD311E15A4469E6C318F329CD2284A939A5093685319A06294D7384670AA59902834CA1345310967AF914E6442A0C927A82C2E4D7433846509A5130CA284A330261A890496132ABC0285532294C6605846E10A5190AC30CA5348310B2D89D14E648220C937884C2EC8C45A8EEA13423619C9194E61E846A0D8509D68771EA0729CC1A84A835A5990503CDA234AD119A3F539A5B60A05B28CD9F1192A4A31466930F06F26DA2304793108A07284D7F18A93FA5F93D42F13585C94C8491123329CCD70841534AF3160CF516A5698A92BD4B61826930545A90C2BC8B12251CA1304B60AC2514E648024AD293D23C0A633D4A697AA2244B294CB00E8C5527486196A2048D28CD5730D85794A6118AF73AA51908830DA434AFA358BE1D942615064BA5343B7C28CED59466158CB68AD25C8DE28CA4344FC1684F519A9128867F37A56900A335A034BBFD285A1B4AB30E865B4769DAA0686F539A6130DC304AF3368A14B38FD2DC0CC3DD4C69F6C5A0286D294D7E220C97984F69DAA228EF539AD530DE6A4AF33E8A1038406946C378A329CD81000AD79EE27487F1BA539CF628DC7B14A72E8C5797E2BC87C26DA7343BE1013B29CD7614AA21C5F9081EF011C56988C20CA038FDE101FD29CE0014663EC569060F684671E6A3100939942637000F08E4529A9C045CA823C5D9084FD848713AE242A329CE2C78C22C8A331A17DA4271DE8227BC4571B6E0026994E73178C26394270DE7EB4F796E8727DC4E79FAE37CB329CF7FC113FE8BF2CCC679628F539C603C3C213E48718EC7E25CAD29CF2E78C42ECAD31AE77A82F22C86472CA63C4FE05CD328CF0478C404CA330DE7DA477986C22386529E7D38477D0AD41F1ED19F02D5C7D9EEA340BDE011BD28D07D38DB380A74173CE22E0A340E67DB40816E8347DC468136E02C2994A80D3CA20D254AC12F3A51A266F0886694A8137E319C1235804734A044C3F18B2F28516D78446D4AF4057EE6CBA244C9F088644A94E5C319A91429008F0850A4549CD18512E5C233722951179C31941265C2333229D1509CF1374A74029E718212FD0D676CA24831F088188AB4093F29574091CAC32312285241399CD6823255864754A64C2D705A6FCA54071E518732F5C6696F52A63478447DCAF4264EFB9C323581475C4E993EC7690729D395F088D694E9204EA94AA1BAC0233A51A8AA38A915857A101EF100856A8593BA51A817E011CF53A86E386908851A038F1843A186E0A4F728D4A7F0884F29D47B38692E855A098FF89A42CDC5499B28D44E78C46E0AB5093FF2E550A8BC1878424C3E85CAF101A849B12E81275C42B16A02B89A62DD0E4FE848B1AE06F03B8A35089E309062FD0EC0D3146B3C3C613CC57A1AC0388AF52F78C2BF28D63800B329563A3C218362CD06B09C72558707D4A05CCB016CA15C6DE1013752AE2D003228D7D3F080C1942B030850B059F08099142C806A142CDD07E3F90E51B06A6848C91AC2780D2959435C4BC9EE87F1EEA764D7A20B25FB00C69B48C9BAA03725DB04E37D47C97A631045AB0BC3D5A06883309CA23D0EC3F5A668C3318EA22D85E13EA168E3F031450BD686D1CA1EA5681F6306657B0C46BB95B2CDC01CCAF6258CF60E659B83CF295BB0164CF60365FB1C5F52B8FE30D87F53B82FB192C22D81C18651B895584BE18235612CDFF7146E2D3651BA4760AC1B28DD267C4FE9FE09634DA074DF6337A52BA80E43256451BADD3844F1FAC1503D28DE211CA5788B60A88514EF284E50BC606318E957418A770241CAF7218CF406E50B2297F2E55F0C03256552BE1C64D1006360A02768804C1CA601726BC13881ED34C041ECA50946C038DD6882DDD841131CAB0CD32CA709B6630B8D300C866943236CC6061A213D09665942237C8BB534C36018E5369A613556D20C7BE36110FF3734C3322CA5211E8641FE878658827FD210DB63618CB8AD34C4427C4A53F481311EA129FE814934C5A1AA3044A57D34C5648CA4313E8221FE42638CC27334471718A123CDF11C1EA5397627C300C9BB688EFEE841838C8301C6D320FF834E34495B88D79E26B915D7D2245BCB41B8C41D34492B34A2514640B8F76994FAA845A314B482686D69961494A359FE1D07C112B6D128C118209366791E828DA659D2017C43B39C680CB1AE0BD22C9B014CA361D62743A8729B6998CF01BC46D32C0840A6C934CD04000FD1386321D2201AE705001D689E4110E896021AE77E0069344FB02BC4699041F3B407105740F31C6F01612A6CA4812EC38F76D0407BEA429498593451027EB488265A9B08417C1369A24338693C8D343B06728CA291D6E0A4A769A6B721C60B34D34C9CD49D867A0C420CA0A146E3A4563454C1FD10A15790861A8093AAD058CF41805EF93455079C9245638D8981DB9EA0B9EAE2946F68AE99F170D74B3457960FA74CA7C196A6C045FE7769B0E538ED759A6C633DB826760A4D3601A7F5A3D17637814B5216D2688371DA2D34DB911BE18AC65B69B6DB715A1A0D97DB0D2EE89A45C35D8CD3E24ED070C101709AEFF9200D77DC8F9F2CA3F1FE5E098EAA309DC65B8D33DEA4F97EB81E0E6AB39DE69B8C33EEA20714BC148043E25E2DA0070CC01975E809CB2E86231AADA1275C839FEDA4271C1B1480EDFC8F65D313F2E2F1B3FFA547ACBB1A366BB5821EB11ABF789C5E111C5B0936AA3A3E48AF780FBF684DEFD8DF33063689E99F41EFE8855FC4E5D043FE735F0076B8752DBDA411CEB2949EB2B54F2C2C16D36D0D3D25CB8FB3BC468FD9FE601958A84CDFEFE831FF87B3DD41CFD9F948595824F1C9DDF49C5770B69AF4A03D03CAC302955F384C0FEA8A736CA7171D9BDA390E51F15FFFEE317A520D9C630A3D2A7D5C5B3F22E4BFFEEDBDF4A8F538577F7AD79E91AD103EFFF56FEFA5778DC6B95A50B6E0D2C10DBA1E63A4B6BED4320E61F05FFFF65E7ADAAF71AED8E3942B6756DFEAF851F33D8C5CEECAF77A3709A044318D7A8C5C729491CB1EBF93E21554C4791653A88CBFDE99889FD459CBE864FFEBAD7B1BFA5184C0E53D472F3DC6E8EC6A01DF35A37653B69538DF704A74F0DD9B637196C4598CDED16FBF9839E18DA71FEAD6AE796A72F245CD6EBAB3EFE0E163FE77C19A6C466F454D9CE4BF6EF41E0A361CE7EB427172FED63916E789194DD1A6C6E30CFFF5EFECA354ED70BE8A79946549DF8A284CFF7C8A157C06E788B971C2314A945B0E17984F41FE33F42214E5B62C0A75EC0E5C20E9811594E79FB8503F4A91F94E6B14A7C9168AB4E3BF51A8CB471DA6304371A15A418AB0BE5F224A903889027D590D4529DB7D6190925C85422CA3FBF2A7B54528BA655098BCA1011427F5C53D1463BF1F851842B7EDFF635D84A8DE128AB2A1394A52A6F7B714E2CF28CCA574D7B27BCA207431CFE4518CE0A87884C077EBE714E176146A035D34FB2A84A9F5160AF1C34D0855B30FF3E8BAA36551A83FD22DC14F9A237C891329C287C90843DD3732E9B269285C4BBAA3606A6344E68E1FE8BA43BF45982A0C3E4057F540E17C3BE982BC890D10B1841773E8AAE0E49A085FF96732E89EBC4A28C2683A2E774C2AA2923A832E5ADA0A91A9F8F231BAE57314A52D1D169C7A11A2D661235DB2A33B22576D640EDDF1288A12384C472D6E092BC43E9949171C7D261E51A93B2E8F6EA887224DA28336768655AA4F0CD261C1893511B5FA538274DC2A14EDD774CCBE0703B0508BE9413A69497358E2EAD574DA93285AB9E374C6B16189B0D865E34FD021C199D7C12AFE870ED3510535518C4FE888BFD5820D6ABF914507E48CBD1456AA3CA6800E9A8FE2DC4B07ECB81D36A9F8CC01DAECD08BD560B5E65FD139F7A23895F268B78237CBC33EF10F6FA38DB63E92001BF87AEDA7438E27A2580B69B3D5CD61AFC0ED1F65D316050BEE8C814D92DFA733A6A078F7D256C79E0CC07E493D1716D06ACB1EAD013BB5FF814EB80DC52B7B90369AFD2B38A4D6C06F68A1F54F5F0CBB254FA4FDF607508257699BE30FC2498D87EFA025B60F6F024774DE4BBB8D42495283B4C99A867098AFE98099E98C4AF6FF3D77B50F4EA9FC316DD612259A455B044794811BFC4D077C9AC18864CDFDC335717056B743B4D30694AC23EDB0B703DCE36FF6C4A7871896F44F07B60CC005D5E7D3468FA164FE6DB4DE3FAAC26D55AFEDF3A7999BF25882FC2DB3473DDCEE577EB8C5FF52907639968C100CA6D5721E8114B10D3A0D1C376BF1EAEFF61EE359720E6C5BB774EE98273B5D1607D7754CA74DFE8C5054CEA1B576B58444FEA45A9736BFE1861697D54E0E4094D4D5B447338464122DB5AC265478CA8EA71D962334AD69A54965A1C2D62787D6BB0F215A45CB143C01158966DFD36A87E311A2DEB44A7A07A8C8D458438BBD8150954BA73536A641452A69212D15AC8F908DA0259654808A5CDC145A693E429716A405E696838A86EF0D5AE83684611EA3F7F738A8283D19A455D6FA10862E8CDA8418A8A8DD7D8216F91DC211B383517ACB0765819B8FD312DB0208CB1F189D17A1ACD13E87567818E149C96434064159E5F6138CDEFE7884E90546E11928EBFC269F517B1AE1AA7098111B0565A5BB0B18A5AC8A08DBFF63A4FEEA83B254CF20A3F31AC297B08F9199150B65B1071995DC5A88C0E38CC8D27250961BC8688C4124CAEE6404D65584B2C1078C5C4E1D44E4F70CDFF735A1EC5066292336029189DDC670655F01658F6A3F3042595510A1FB18AE9E5076697A9C91198648C56C6478DE87B2CF6F1991C31510B16E0CCBF23250367A8991188CC8F9D6320C07EB42D9C93793E1DB530E51E8CCD015DC0C65AF4ABB19B67E88CA0A86EC0F5076BB95E1DA1687A8B467A896F8A06CF73EC3D403515AC2D0E43480B25FF92D0CCB721FA2D486A1790ACA09D714300CC12B11B5F90CC59A00942386330C9311BDA6F92C597E3328679459CB901DAD050BBCC192BD0AE594A6050CD5D3B042C2769664733C9463C63344DBCAC212B7B1246DA19C53E32843F31B58E423166F0E94938632248B6095EAE92C4EB0299493CAED64080A9AC0320FB0381F4339AB0743F036ACE3FB8245CB4F837296EF6B966867122CD43097451A0BE5B4362C512758EA051625BB3694E3E6B2041FC35A6536B108AF4339AF038B77B81A2C763D0B975B15CA79BE0D2C562F586E3C0BF521941B7ECFE22C84F52AED6761AE857243B9432CDAF18B6183DFB110FF8672C7CB2CDA20D8622E2FD40FCA1DB5F358945501D822F538CF773409CA255358849C46B0C9609E6F0C945BDAB0088FC22E81953CCF15506EF1EF63A1E6FA609BD40C9E631D947BC6B030076BC04677F01CAF40B9A7030BF36BD86A14CF760D947BE23278A171B057DC0AFEE2500C948BFECA0B6C2E0F9B5D94CE9FFD15CA4D77F07C79AD60BB5FF3677743B9A9DC719E67281C30823FC9AF04E5AA993CD78218382076194F5B02E5AE213CC7D61438A2DE619EF22C94BB6EE2D98E3686433AF194CE50EEAAC8B3047F03C7BCCE932E8272D916FE62189C13FB2F92993E28977DC49FCDF4C141750F915F42B96D20CF589F0447750CF21D28B7DDC09FA4A7C1617FE2EFA1DC9614E42905B7C069812FAF8272DD6E9E3218CEAB531ECA756B78D214A8526A2E7FB4AA1C5429F51792FBEB429556AF93796DA04AADC1643FA8D2AB27C7429562B72D8D832AC552AB4329A594524A29A594524A29A594524A29A594524A29A594524A29A594524A29A594524A29A594524A29A594524A29A594524A29A594E1FE3F8CADB8E827B6A5F30000000049454E44AE426082"/>
+          </Picture>
+        </Object18>
+        <ObjectCount Value="18"/>
+      </Page1>
+      <FVal>
+        <Count Value="0"/>
+      </FVal>
+      <ParentVars Value=""/>
+    </Pages>
+    <DetailReports>
+      <Count Value="0"/>
+    </DetailReports>
+  </LazReport>
+</CONFIG>
