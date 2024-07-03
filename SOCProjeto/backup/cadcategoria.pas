@@ -87,7 +87,6 @@ end;
 procedure TCadCategoriaF.DBGrid1DblClick(Sender: TObject);
 begin
   psCadastrar.ActivePage:= tsCadastrar;
-  //dbEditID.Text :=DataModuleF.qryCategoriacategoriaprodutoid.AsString;
 end;
 
 procedure TCadCategoriaF.FormClose(Sender: TObject;

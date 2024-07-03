@@ -2,6 +2,8 @@ inherited CadCategoriaF: TCadCategoriaF
   Left = 358
   Top = 152
   Caption = 'Cadastro de Categoria'
+  ClientHeight = 0
+  ClientWidth = 0
   OnClose = FormClose
   OnShow = FormShow
   inherited psCadastrar: TPageControl

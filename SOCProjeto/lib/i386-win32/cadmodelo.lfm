@@ -14,9 +14,9 @@ object CadModeloF: TCadModeloF
     Height = 538
     Top = 0
     Width = 975
-    ActivePage = tsCadastrar
+    ActivePage = tsPesquisa
     Align = alClient
-    TabIndex = 1
+    TabIndex = 0
     TabOrder = 0
     object tsPesquisa: TTabSheet
       Caption = 'Pesquisa'
@@ -86,7 +86,7 @@ object CadModeloF: TCadModeloF
         object edtCodigo: TEdit
           Left = 200
           Height = 28
-          Top = 16
+          Top = 18
           Width = 100
           TabOrder = 0
         end

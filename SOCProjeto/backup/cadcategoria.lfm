@@ -1,12 +1,12 @@
 inherited CadCategoriaF: TCadCategoriaF
-  Left = 599
-  Top = 112
+  Left = 358
+  Top = 152
   Caption = 'Cadastro de Categoria'
   OnClose = FormClose
   OnShow = FormShow
   inherited psCadastrar: TPageControl
-    ActivePage = tsPesquisa
-    TabIndex = 0
+    ActivePage = tsCadastrar
+    TabIndex = 1
     inherited tsPesquisa: TTabSheet
       inherited Panel1: TPanel
         inherited btPesquisar: TBitBtn
@@ -107,6 +107,7 @@ inherited CadCategoriaF: TCadCategoriaF
         DataField = 'categoriaprodutoid'
         DataSource = dsCategoria
         Alignment = taRightJustify
+        Enabled = False
         MaxLength = 0
         TabOrder = 1
       end

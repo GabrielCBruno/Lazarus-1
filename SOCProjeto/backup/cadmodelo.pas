@@ -22,6 +22,7 @@ type
     DBGrid1: TDBGrid;
     edtCodigo: TEdit;
     lbCodigo: TLabel;
+    lbCadastros1: TLabel;
     Panel1: TPanel;
     Panel2: TPanel;
     Panel3: TPanel;

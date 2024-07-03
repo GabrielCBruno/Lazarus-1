@@ -29,6 +29,7 @@ type
     mnVendas: TMenuItem;
     mnCadastrar: TMenuItem;
     procedure mnCategoriaClick(Sender: TObject);
+    procedure mnClienteClick(Sender: TObject);
     procedure mnSairClick(Sender: TObject);
   private
 
@@ -54,6 +55,11 @@ procedure TMenuPrincipalF.mnCategoriaClick(Sender: TObject);
 begin
   CadCategoriaF:=TCadCategoriaF.Create(Self);
   CadCategoriaF.ShowModal;
+end;
+
+procedure TMenuPrincipalF.mnClienteClick(Sender: TObject);
+begin
+
 end;
 
 end.

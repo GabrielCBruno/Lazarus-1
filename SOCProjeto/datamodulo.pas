@@ -12,12 +12,18 @@ type
   { TDataModuleF }
 
   TDataModuleF = class(TDataModule)
+    qryCadClientesclienteid: TZIntegerField;
+    qryCadClientescpf_cnpj_cliente: TZRawStringField;
+    qryCadClientesnome_cliente: TZRawStringField;
+    qryCadClientestipo_cliente: TZRawStringField;
     qryCategoriacategoriaprodutoid: TZIntegerField;
     qryCategoriads_categoria_produto: TZRawStringField;
     ZConnection1: TZConnection;
     qryGenerica: TZQuery;
     qryCategoria: TZQuery;
+    qryCadClientes: TZQuery;
     procedure DataModuleCreate(Sender: TObject);
+    procedure qryCadClientesNewRecord(DataSet: TDataSet);
     procedure qryCategoriaNewRecord(DataSet: TDataSet);
 
   private
@@ -59,6 +65,11 @@ begin
   ZConnection1.Port     := 5432;
   ZConnection1.Protocol := 'postgresql';
   ZConnection1.Connected := True;
+end;
+
+procedure TDataModuleF.qryCadClientesNewRecord(DataSet: TDataSet);
+begin
+
 end;
 
 procedure TDataModuleF.qryCategoriaNewRecord(DataSet: TDataSet);

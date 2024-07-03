@@ -1,0 +1,206 @@
+inherited CadClientesF: TCadClientesF
+  Left = 379
+  Top = 262
+  Caption = 'Cadastro de Clientes'
+  OnShow = FormShow
+  inherited psCadastrar: TPageControl
+    inherited tsPesquisa: TTabSheet
+      inherited Panel1: TPanel
+        inherited btPesquisar: TBitBtn
+          OnClick = btPesquisarClick
+        end
+        inherited edtCodigo: TEdit
+          Top = 16
+          OnChange = edtCodigoChange
+        end
+        inherited lbCodigo: TLabel
+          Left = 32
+          Top = 16
+          Width = 160
+          Caption = 'ID do Cliente:'
+        end
+      end
+      inherited Panel2: TPanel
+        Height = 38
+        Top = 467
+        ClientHeight = 38
+        inherited btnFecha: TBitBtn
+          Top = -3
+          OnClick = btnFechaClick
+        end
+        inherited btnNovo: TBitBtn
+          Top = -3
+          OnClick = btnNovoClick
+        end
+      end
+      inherited DBGrid1: TDBGrid
+        Height = 404
+        Columns = <        
+          item
+            Alignment = taCenter
+            PickList.Strings = (            )
+            Title.Alignment = taCenter
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'ID'
+            FieldName = 'clienteid'
+          end        
+          item
+            PickList.Strings = (            )
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'Nome Dos Clientes'
+            Width = 500
+            FieldName = 'nome_cliente'
+          end        
+          item
+            Alignment = taCenter
+            PickList.Strings = (            )
+            Title.Alignment = taCenter
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'Clientes'
+            FieldName = 'tipo_cliente'
+          end        
+          item
+            Alignment = taCenter
+            PickList.Strings = (            )
+            Title.Alignment = taCenter
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'CPF/CNPJ'
+            FieldName = 'cpf_cnpj_cliente'
+          end>
+        DataSource = dsCadastroClientes
+        ReadOnly = True
+        OnDblClick = DBGrid1DblClick
+      end
+    end
+    inherited tsCadastrar: TTabSheet
+      inherited Panel3: TPanel
+        inherited btnCancelar: TBitBtn
+          Anchors = [akRight]
+          OnClick = btnCancelarClick
+        end
+        inherited btnGravar: TBitBtn
+          OnClick = btnGravarClick
+        end
+        inherited btnExcluir: TBitBtn
+          OnClick = btnExcluirClick
+        end
+      end
+      inherited lbCadastros1: TLabel
+        Left = 288
+        Width = 343
+        Anchors = [akTop]
+        Caption = 'Cadastro de Clientes'
+      end
+      object Label1: TLabel[2]
+        Left = 664
+        Height = 28
+        Top = 176
+        Width = 33
+        Caption = 'ID:'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -23
+        Font.Name = 'Tahoma'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object Label2: TLabel[3]
+        Left = 512
+        Height = 28
+        Top = 128
+        Width = 66
+        Caption = 'Nome:'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -23
+        Font.Name = 'Tahoma'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object dbEditNome: TDBEdit[4]
+        Left = 584
+        Height = 28
+        Top = 128
+        Width = 313
+        DataField = 'nome_cliente'
+        DataSource = dsCadastroClientes
+        MaxLength = 100
+        TabOrder = 1
+      end
+      object Label3: TLabel[5]
+        Left = 869
+        Height = 28
+        Top = 176
+        Width = 159
+        Caption = 'Tipo de Pessoa:'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -23
+        Font.Name = 'Tahoma'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object dbEditTipoDPes: TDBEdit[6]
+        Left = 1040
+        Height = 28
+        Top = 176
+        Width = 64
+        DataField = 'tipo_cliente'
+        DataSource = dsCadastroClientes
+        MaxLength = 1
+        TabOrder = 2
+      end
+      object Label4: TLabel[7]
+        Left = 920
+        Height = 28
+        Top = 128
+        Width = 108
+        Caption = 'CPF/CNPJ:'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -23
+        Font.Name = 'Tahoma'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object dbEditCPF: TDBEdit[8]
+        Left = 1040
+        Height = 28
+        Top = 128
+        Width = 256
+        DataField = 'cpf_cnpj_cliente'
+        DataSource = dsCadastroClientes
+        MaxLength = 18
+        TabOrder = 3
+      end
+      object dbEditId: TDBEdit[9]
+        Left = 704
+        Height = 28
+        Top = 176
+        Width = 40
+        DataField = 'clienteid'
+        DataSource = dsCadastroClientes
+        Alignment = taRightJustify
+        MaxLength = 0
+        TabOrder = 4
+      end
+    end
+  end
+  object dsCadastroClientes: TDataSource[1]
+    DataSet = DataModuleF.qryCadClientes
+    Left = 640
+    Top = 32
+  end
+end

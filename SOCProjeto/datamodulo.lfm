@@ -2,8 +2,8 @@ object DataModuleF: TDataModuleF
   OnCreate = DataModuleCreate
   OldCreateOrder = False
   Height = 524
-  HorizontalOffset = 622
-  VerticalOffset = 270
+  HorizontalOffset = 595
+  VerticalOffset = 353
   Width = 659
   PPI = 120
   object ZConnection1: TZConnection
@@ -34,8 +34,8 @@ object DataModuleF: TDataModuleF
       'select * from categoria_produto;'
     )
     Params = <>
-    Left = 456
-    Top = 160
+    Left = 460
+    Top = 168
     object qryCategoriacategoriaprodutoid: TZIntegerField
       FieldKind = fkData
       FieldName = 'categoriaprodutoid'
@@ -54,6 +54,56 @@ object DataModuleF: TDataModuleF
       ReadOnly = False
       Required = True
       Size = 50
+    end
+  end
+  object qryCadClientes: TZQuery
+    Connection = ZConnection1
+    OnNewRecord = qryCadClientesNewRecord
+    Active = True
+    SQL.Strings = (
+      'select * from cliente;'
+    )
+    Params = <>
+    Left = 460
+    Top = 248
+    object qryCadClientesclienteid: TZIntegerField
+      FieldKind = fkData
+      FieldName = 'clienteid'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qryCadClientestipo_cliente: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'tipo_cliente'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 1
+    end
+    object qryCadClientescpf_cnpj_cliente: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'cpf_cnpj_cliente'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 18
+    end
+    object qryCadClientesnome_cliente: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'nome_cliente'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 100
     end
   end
 end

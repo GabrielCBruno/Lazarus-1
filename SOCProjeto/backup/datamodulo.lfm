@@ -2,8 +2,8 @@ object DataModuleF: TDataModuleF
   OnCreate = DataModuleCreate
   OldCreateOrder = False
   Height = 524
-  HorizontalOffset = 622
-  VerticalOffset = 270
+  HorizontalOffset = 595
+  VerticalOffset = 353
   Width = 659
   PPI = 120
   object ZConnection1: TZConnection
@@ -30,13 +30,12 @@ object DataModuleF: TDataModuleF
   object qryCategoria: TZQuery
     Connection = ZConnection1
     OnNewRecord = qryCategoriaNewRecord
-    Active = True
     SQL.Strings = (
       'select * from categoria_produto;'
     )
     Params = <>
-    Left = 456
-    Top = 160
+    Left = 460
+    Top = 168
     object qryCategoriacategoriaprodutoid: TZIntegerField
       FieldKind = fkData
       FieldName = 'categoriaprodutoid'
@@ -56,5 +55,16 @@ object DataModuleF: TDataModuleF
       Required = True
       Size = 50
     end
+  end
+  object qryCadClientes: TZQuery
+    Connection = ZConnection1
+    OnNewRecord = qryCadClientesNewRecord
+    Active = True
+    SQL.Strings = (
+      'select * from cliente;'
+    )
+    Params = <>
+    Left = 460
+    Top = 248
   end
 end
