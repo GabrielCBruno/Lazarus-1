@@ -2,8 +2,8 @@ object DataModuleF: TDataModuleF
   OnCreate = DataModuleCreate
   OldCreateOrder = False
   Height = 524
-  HorizontalOffset = 744
-  VerticalOffset = 259
+  HorizontalOffset = 690
+  VerticalOffset = 255
   Width = 659
   PPI = 120
   object ZConnection1: TZConnection
@@ -25,8 +25,8 @@ object DataModuleF: TDataModuleF
   object qryGenerica: TZQuery
     Connection = ZConnection1
     Params = <>
-    Left = 460
-    Top = 80
+    Left = 456
+    Top = 72
   end
   object qryCategoria: TZQuery
     Connection = ZConnection1
@@ -35,8 +35,8 @@ object DataModuleF: TDataModuleF
       'select * from categoria_produto;'
     )
     Params = <>
-    Left = 460
-    Top = 168
+    Left = 456
+    Top = 136
     object qryCategoriacategoriaprodutoid: TZIntegerField
       FieldKind = fkData
       FieldName = 'categoriaprodutoid'
@@ -65,8 +65,8 @@ object DataModuleF: TDataModuleF
       'select * from cliente;'
     )
     Params = <>
-    Left = 460
-    Top = 248
+    Left = 832
+    Top = 48
     object qryCadClientesclienteid: TZIntegerField
       FieldKind = fkData
       FieldName = 'clienteid'
@@ -105,6 +105,137 @@ object DataModuleF: TDataModuleF
       ReadOnly = False
       Required = True
       Size = 100
+    end
+  end
+  object qryCadProdutos: TZQuery
+    Connection = ZConnection1
+    OnNewRecord = qryCadProdutosNewRecord
+    Active = True
+    SQL.Strings = (
+      'select * from produto;'
+    )
+    Params = <>
+    Left = 456
+    Top = 280
+    object qryCadProdutosprodutoid: TZIntegerField
+      FieldKind = fkData
+      FieldName = 'produtoid'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qryCadProdutoscategoriaprodutoid: TZIntegerField
+      FieldKind = fkData
+      FieldName = 'categoriaprodutoid'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qryCadProdutosds_produto: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'ds_produto'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 50
+    end
+    object qryCadProdutosobs_produto: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'obs_produto'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 300
+    end
+    object qryCadProdutosvl_venda_produto: TZBCDField
+      FieldKind = fkData
+      FieldName = 'vl_venda_produto'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Precision = 15
+      Currency = False
+      MaxValue = 0
+      MinValue = 0
+      Size = 2
+    end
+    object qryCadProdutosdt_cadastro_produto: TZDateTimeField
+      FieldKind = fkData
+      FieldName = 'dt_cadastro_produto'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qryCadProdutosstatus_produto: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'status_produto'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 10
+    end
+  end
+  object qryCadUsuarios: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'select * from usuarios;'
+    )
+    Params = <>
+    Left = 456
+    Top = 360
+    object qryCadUsuariosid: TZIntegerField
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryCadUsuariosusuario: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'usuario'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 30
+    end
+    object qryCadUsuariosnome_completo: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'nome_completo'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 60
+    end
+    object qryCadUsuariossenha: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'senha'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
     end
   end
 end

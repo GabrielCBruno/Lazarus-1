@@ -34,6 +34,9 @@ type
     procedure btnGravarClick(Sender: TObject);
     procedure btnNovoClick(Sender: TObject);
     procedure btPesquisarClick(Sender: TObject);
+    procedure DBGrid1DblClick(Sender: TObject);
+    procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
+    procedure FormShow(Sender: TObject);
 
   private
 
@@ -76,6 +79,24 @@ begin
     end
 end;
 
+procedure TCadProdutosF.DBGrid1DblClick(Sender: TObject);
+begin
+  psCadastrar.ActivePage:= tsCadastrar;
+end;
+
+procedure TCadProdutosF.FormClose(Sender: TObject; var CloseAction: TCloseAction
+  );
+begin
+  DataModulo.DataModuleF.qryCadProdutos.Close;
+  CloseAction:=caFree;
+end;
+
+procedure TCadProdutosF.FormShow(Sender: TObject);
+begin
+   DataModulo.DataModuleF.qryCadProdutos.Open;
+   psCadastrar.ActivePage:= tsPesquisa;
+end;
+
 procedure TCadProdutosF.btnFechaClick(Sender: TObject);
 begin
    Close;
@@ -92,7 +113,7 @@ end;
 
 procedure TCadProdutosF.btnCancelarClick(Sender: TObject);
 begin
-  DataModulo.DataModuleF.qryCategoria.Cancel;
+  DataModulo.DataModuleF.qryCadProdutos.Cancel;
   psCadastrar.ActivePage:= tsPesquisa;
 end;
 

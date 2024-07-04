@@ -2,13 +2,18 @@ inherited CadProdutosF: TCadProdutosF
   Left = 473
   Top = 335
   Caption = 'Cadastro de Produtos'
+  OnClose = FormClose
+  OnShow = FormShow
   inherited psCadastrar: TPageControl
+    ActivePage = tsCadastrar
+    TabIndex = 1
     inherited tsPesquisa: TTabSheet
       inherited Panel1: TPanel
         inherited btPesquisar: TBitBtn
           OnClick = btPesquisarClick
         end
         inherited lbCodigo: TLabel
+          Left = 160
           Width = 36
           Caption = 'ID:'
         end
@@ -104,6 +109,7 @@ inherited CadProdutosF: TCadProdutosF
           end>
         DataSource = dsCadProdutos
         ReadOnly = True
+        OnDblClick = DBGrid1DblClick
       end
     end
     inherited tsCadastrar: TTabSheet

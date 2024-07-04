@@ -1,0 +1,194 @@
+inherited CadUsuariosF: TCadUsuariosF
+  Left = 529
+  Top = 294
+  Caption = 'Cadastro de Usuários'
+  OnClose = FormClose
+  OnShow = FormShow
+  inherited psCadastrar: TPageControl
+    inherited tsPesquisa: TTabSheet
+      inherited Panel1: TPanel
+        inherited btPesquisar: TBitBtn
+          OnClick = btPesquisarClick
+        end
+        inherited lbCodigo: TLabel
+          Left = 152
+          Width = 36
+          Caption = 'ID:'
+        end
+      end
+      inherited Panel2: TPanel
+        inherited btnFecha: TBitBtn
+          OnClick = btnFechaClick
+        end
+        inherited btnNovo: TBitBtn
+          OnClick = btnNovoClick
+        end
+      end
+      inherited DBGrid1: TDBGrid
+        Columns = <        
+          item
+            Alignment = taCenter
+            PickList.Strings = (            )
+            Title.Alignment = taCenter
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'ID'
+            Width = 50
+            FieldName = 'id'
+          end        
+          item
+            PickList.Strings = (            )
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'Nome Completo'
+            Width = 300
+            FieldName = 'nome_completo'
+          end        
+          item
+            PickList.Strings = (            )
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'Usuários'
+            Width = 150
+            FieldName = 'usuario'
+          end        
+          item
+            PickList.Strings = (            )
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'Senhas'
+            Width = 150
+            FieldName = 'senha'
+          end>
+        DataSource = dsCadUsuarios
+        ReadOnly = True
+      end
+    end
+    inherited tsCadastrar: TTabSheet
+      inherited Panel3: TPanel
+        inherited btnCancelar: TBitBtn
+          OnClick = btnCancelarClick
+        end
+        inherited btnGravar: TBitBtn
+          OnClick = btnGravarClick
+        end
+        inherited btnExcluir: TBitBtn
+          OnClick = btnExcluirClick
+        end
+      end
+      inherited lbCadastros1: TLabel
+        Left = 320
+        Top = 48
+        Width = 352
+        Caption = 'Cadastro de Usuários'
+      end
+      object Label1: TLabel[2]
+        Left = 184
+        Height = 28
+        Top = 144
+        Width = 33
+        Caption = 'ID:'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -23
+        Font.Name = 'Tahoma'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object Label2: TLabel[3]
+        Left = 184
+        Height = 28
+        Top = 264
+        Width = 83
+        Caption = 'Usuário:'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -23
+        Font.Name = 'Tahoma'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object Label3: TLabel[4]
+        Left = 184
+        Height = 28
+        Top = 200
+        Width = 168
+        Caption = 'Nome Completo:'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -23
+        Font.Name = 'Tahoma'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object Label4: TLabel[5]
+        Left = 424
+        Height = 28
+        Top = 264
+        Width = 71
+        Caption = 'Senha:'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -23
+        Font.Name = 'Tahoma'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object dbEditNomComp: TDBEdit[6]
+        Left = 368
+        Height = 28
+        Top = 200
+        Width = 100
+        DataField = 'nome_completo'
+        DataSource = dsCadUsuarios
+        MaxLength = 60
+        TabOrder = 1
+      end
+      object dbEditSenha: TDBEdit[7]
+        Left = 512
+        Height = 28
+        Top = 264
+        Width = 100
+        DataField = 'senha'
+        DataSource = dsCadUsuarios
+        MaxLength = 50
+        TabOrder = 2
+      end
+      object dbEditID: TDBEdit[8]
+        Left = 232
+        Height = 28
+        Top = 144
+        Width = 100
+        DataField = 'id'
+        DataSource = dsCadUsuarios
+        Alignment = taRightJustify
+        Enabled = False
+        MaxLength = 0
+        TabOrder = 3
+      end
+    end
+  end
+  object dbEditUsuario: TDBEdit[1]
+    Left = 280
+    Height = 28
+    Top = 296
+    Width = 100
+    DataField = 'usuario'
+    DataSource = dsCadUsuarios
+    MaxLength = 30
+    TabOrder = 1
+  end
+  object dsCadUsuarios: TDataSource[2]
+    DataSet = DataModuleF.qryCadUsuarios
+    Left = 824
+    Top = 32
+  end
+end

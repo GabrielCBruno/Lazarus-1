@@ -23,6 +23,10 @@ type
     qryCadProdutosprodutoid: TZIntegerField;
     qryCadProdutosstatus_produto: TZRawStringField;
     qryCadProdutosvl_venda_produto: TZBCDField;
+    qryCadUsuariosid: TZIntegerField;
+    qryCadUsuariosnome_completo: TZRawStringField;
+    qryCadUsuariossenha: TZRawStringField;
+    qryCadUsuariosusuario: TZRawStringField;
     qryCategoriacategoriaprodutoid: TZIntegerField;
     qryCategoriads_categoria_produto: TZRawStringField;
     ZConnection1: TZConnection;
@@ -30,8 +34,12 @@ type
     qryCategoria: TZQuery;
     qryCadClientes: TZQuery;
     qryCadProdutos: TZQuery;
+    qryCadUsuarios: TZQuery;
     procedure DataModuleCreate(Sender: TObject);
     procedure qryCadClientesNewRecord(DataSet: TDataSet);
+    procedure qryCadProdutosNewRecord(DataSet: TDataSet);
+    procedure qryCadUsuariosNewRecord(DataSet: TDataSet);
+
     procedure qryCategoriaNewRecord(DataSet: TDataSet);
     procedure ZConnection1AfterConnect(Sender: TObject);
 
@@ -80,6 +88,17 @@ procedure TDataModuleF.qryCadClientesNewRecord(DataSet: TDataSet);
 begin
    qryCadClientesclienteid.AsInteger:= StrToInt(getSequence('cliente_clienteid'));
 end;
+
+procedure TDataModuleF.qryCadProdutosNewRecord(DataSet: TDataSet);
+begin
+   qryCadProdutosprodutoid.AsInteger:= StrToInt(getSequence('produto_produtoid'));
+end;
+
+procedure TDataModuleF.qryCadUsuariosNewRecord(DataSet: TDataSet);
+begin
+    qryCadUsuariosid.AsInteger:= StrToInt(getSequence('usuarios_id_seq'));
+end;
+
 
 procedure TDataModuleF.qryCategoriaNewRecord(DataSet: TDataSet);
 begin

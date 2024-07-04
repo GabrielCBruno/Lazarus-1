@@ -11,6 +11,7 @@ inherited CadProdutosF: TCadProdutosF
           OnClick = btPesquisarClick
         end
         inherited lbCodigo: TLabel
+          Left = 160
           Width = 36
           Caption = 'ID:'
         end

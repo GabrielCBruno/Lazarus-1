@@ -2,6 +2,8 @@ inherited CadCategoriaF: TCadCategoriaF
   Left = 358
   Top = 152
   Caption = 'Cadastro de Categoria'
+  ClientHeight = 0
+  ClientWidth = 0
   OnClose = FormClose
   OnShow = FormShow
   inherited psCadastrar: TPageControl
@@ -9,6 +11,11 @@ inherited CadCategoriaF: TCadCategoriaF
       inherited Panel1: TPanel
         inherited btPesquisar: TBitBtn
           OnClick = btPesquisarClick
+        end
+        inherited lbCodigo: TLabel
+          Left = 160
+          Width = 36
+          Caption = 'ID:'
         end
       end
       inherited Panel2: TPanel

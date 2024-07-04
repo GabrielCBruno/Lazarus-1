@@ -16,14 +16,29 @@ type
     qryCadClientescpf_cnpj_cliente: TZRawStringField;
     qryCadClientesnome_cliente: TZRawStringField;
     qryCadClientestipo_cliente: TZRawStringField;
+    qryCadProdutoscategoriaprodutoid: TZIntegerField;
+    qryCadProdutosds_produto: TZRawStringField;
+    qryCadProdutosdt_cadastro_produto: TZDateTimeField;
+    qryCadProdutosobs_produto: TZRawStringField;
+    qryCadProdutosprodutoid: TZIntegerField;
+    qryCadProdutosstatus_produto: TZRawStringField;
+    qryCadProdutosvl_venda_produto: TZBCDField;
+    qryCadUsuariosid: TZIntegerField;
+    qryCadUsuariosnome_completo: TZRawStringField;
+    qryCadUsuariossenha: TZRawStringField;
+    qryCadUsuariosusuario: TZRawStringField;
     qryCategoriacategoriaprodutoid: TZIntegerField;
     qryCategoriads_categoria_produto: TZRawStringField;
     ZConnection1: TZConnection;
     qryGenerica: TZQuery;
     qryCategoria: TZQuery;
     qryCadClientes: TZQuery;
+    qryCadProdutos: TZQuery;
+    qryCadUsuarios: TZQuery;
     procedure DataModuleCreate(Sender: TObject);
     procedure qryCadClientesNewRecord(DataSet: TDataSet);
+    procedure qryCadProdutosNewRecord(DataSet: TDataSet);
+
     procedure qryCategoriaNewRecord(DataSet: TDataSet);
     procedure ZConnection1AfterConnect(Sender: TObject);
 
@@ -72,6 +87,12 @@ procedure TDataModuleF.qryCadClientesNewRecord(DataSet: TDataSet);
 begin
    qryCadClientesclienteid.AsInteger:= StrToInt(getSequence('cliente_clienteid'));
 end;
+
+procedure TDataModuleF.qryCadProdutosNewRecord(DataSet: TDataSet);
+begin
+   qryCadProdutosprodutoid.AsInteger:= StrToInt(getSequence('produto_produtoid'));
+end;
+
 
 procedure TDataModuleF.qryCategoriaNewRecord(DataSet: TDataSet);
 begin
