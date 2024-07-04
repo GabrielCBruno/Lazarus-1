@@ -44,6 +44,7 @@ object MenuPrincipalF: TMenuPrincipalF
       end
       object mnProdutosR: TMenuItem
         Caption = 'Produtos'
+        OnClick = mnProdutosRClick
       end
       object mnOrcamentoR: TMenuItem
         Caption = 'Orçamento'
