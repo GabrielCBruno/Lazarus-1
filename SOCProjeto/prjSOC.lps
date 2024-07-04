@@ -12,7 +12,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="45"/>
+        <UsageCount Value="47"/>
       </Unit>
       <Unit>
         <Filename Value="menuprincipal.pas"/>
@@ -24,7 +24,7 @@
         <TopLine Value="66"/>
         <CursorPos X="17" Y="91"/>
         <ComponentState Value="1"/>
-        <UsageCount Value="45"/>
+        <UsageCount Value="47"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -38,7 +38,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="19"/>
         <CursorPos X="16" Y="29"/>
-        <UsageCount Value="45"/>
+        <UsageCount Value="47"/>
       </Unit>
       <Unit>
         <Filename Value="cadcategoria.pas"/>
@@ -51,7 +51,7 @@
         <TopLine Value="17"/>
         <CursorPos X="21" Y="30"/>
         <ComponentState Value="1"/>
-        <UsageCount Value="43"/>
+        <UsageCount Value="45"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -65,7 +65,8 @@
         <EditorIndex Value="5"/>
         <TopLine Value="65"/>
         <CursorPos X="71" Y="99"/>
-        <UsageCount Value="43"/>
+        <ComponentState Value="1"/>
+        <UsageCount Value="45"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -79,7 +80,8 @@
         <EditorIndex Value="2"/>
         <TopLine Value="17"/>
         <CursorPos X="22" Y="34"/>
-        <UsageCount Value="33"/>
+        <ComponentState Value="1"/>
+        <UsageCount Value="35"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -90,11 +92,11 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="RelClientes"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="6"/>
         <TopLine Value="33"/>
         <CursorPos Y="49"/>
-        <ComponentState Value="1"/>
-        <UsageCount Value="30"/>
+        <UsageCount Value="32"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -108,7 +110,8 @@
         <EditorIndex Value="3"/>
         <TopLine Value="21"/>
         <CursorPos X="25" Y="39"/>
-        <UsageCount Value="27"/>
+        <ComponentState Value="1"/>
+        <UsageCount Value="29"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -122,7 +125,8 @@
         <EditorIndex Value="4"/>
         <TopLine Value="12"/>
         <CursorPos X="20" Y="33"/>
-        <UsageCount Value="24"/>
+        <ComponentState Value="1"/>
+        <UsageCount Value="26"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -148,27 +152,21 @@
         <ComponentName Value="RelProdutosF"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="RelProdutos"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="8"/>
+        <EditorIndex Value="7"/>
         <TopLine Value="30"/>
         <CursorPos X="29" Y="53"/>
-        <UsageCount Value="21"/>
+        <UsageCount Value="23"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="relclientes.lfm"/>
-        <EditorIndex Value="7"/>
+        <EditorIndex Value="-1"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="cadusuarios.pas"/>
-        <Caret Line="57" Column="40" TopLine="29"/>
-      </Position>
       <Position>
         <Filename Value="datamodulo.pas"/>
         <Caret Line="33" Column="5" TopLine="19"/>
@@ -283,6 +281,10 @@
       <Position>
         <Filename Value="relprodutos.pas"/>
         <Caret Line="53" Column="29" TopLine="30"/>
+      </Position>
+      <Position>
+        <Filename Value="relclientes.pas"/>
+        <Caret Line="49" TopLine="33"/>
       </Position>
     </JumpHistory>
     <RunParams>

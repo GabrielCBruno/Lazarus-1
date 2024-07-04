@@ -23,6 +23,7 @@
         <UnitName Value="MenuPrincipal"/>
         <TopLine Value="66"/>
         <CursorPos X="17" Y="91"/>
+        <ComponentState Value="1"/>
         <UsageCount Value="45"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -92,6 +93,7 @@
         <EditorIndex Value="6"/>
         <TopLine Value="33"/>
         <CursorPos Y="49"/>
+        <ComponentState Value="1"/>
         <UsageCount Value="30"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -147,19 +149,22 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="RelProdutos"/>
         <IsVisibleTab Value="True"/>
-        <EditorIndex Value="7"/>
+        <EditorIndex Value="8"/>
         <TopLine Value="30"/>
         <CursorPos X="29" Y="53"/>
         <UsageCount Value="21"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
+      <Unit>
+        <Filename Value="relclientes.lfm"/>
+        <EditorIndex Value="7"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="cadusuarios.pas"/>
-        <Caret Line="51" Column="40" TopLine="23"/>
-      </Position>
       <Position>
         <Filename Value="cadusuarios.pas"/>
         <Caret Line="57" Column="40" TopLine="29"/>
@@ -274,6 +279,10 @@
       <Position>
         <Filename Value="relprodutos.pas"/>
         <Caret Line="58" Column="3" TopLine="30"/>
+      </Position>
+      <Position>
+        <Filename Value="relprodutos.pas"/>
+        <Caret Line="53" Column="29" TopLine="30"/>
       </Position>
     </JumpHistory>
     <RunParams>

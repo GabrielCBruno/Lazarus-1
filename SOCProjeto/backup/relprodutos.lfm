@@ -1,7 +1,7 @@
 object RelProdutosF: TRelProdutosF
-  Left = 674
+  Left = 707
   Height = 387
-  Top = 358
+  Top = 340
   Width = 742
   Caption = 'Relatorio de Produtos'
   ClientHeight = 387
