@@ -28,6 +28,7 @@ type
     procedure btnGravarClick(Sender: TObject);
     procedure btnNovoClick(Sender: TObject);
     procedure btPesquisarClick(Sender: TObject);
+    procedure DBGrid1DblClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormShow(Sender: TObject);
   private
@@ -76,6 +77,11 @@ begin
       DataModulo.DataModuleF.qryCadUsuarios.SQL.Text := 'select * from usuarios where id = ' + IntToStr(CodPes) + ';';
       DataModulo.DataModuleF.qryCadUsuarios.Open;
     end
+end;
+
+procedure TCadUsuariosF.DBGrid1DblClick(Sender: TObject);
+begin
+  psCadastrar.ActivePage:= tsCadastrar;
 end;
 
 procedure TCadUsuariosF.btnFechaClick(Sender: TObject);

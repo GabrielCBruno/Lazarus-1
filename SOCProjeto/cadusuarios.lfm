@@ -70,6 +70,7 @@ inherited CadUsuariosF: TCadUsuariosF
           end>
         DataSource = dsCadUsuarios
         ReadOnly = True
+        OnDblClick = DBGrid1DblClick
       end
     end
     inherited tsCadastrar: TTabSheet
@@ -85,13 +86,15 @@ inherited CadUsuariosF: TCadUsuariosF
         end
       end
       inherited lbCadastros1: TLabel
-        Left = 320
-        Top = 48
-        Width = 352
+        Left = 768
+        Height = 48
+        Top = 32
+        Width = 429
         Caption = 'Cadastro de Usuários'
+        Font.Height = -40
       end
       object Label1: TLabel[2]
-        Left = 184
+        Left = 784
         Height = 28
         Top = 144
         Width = 33
@@ -104,9 +107,9 @@ inherited CadUsuariosF: TCadUsuariosF
         ParentFont = False
       end
       object Label2: TLabel[3]
-        Left = 184
+        Left = 720
         Height = 28
-        Top = 264
+        Top = 240
         Width = 83
         Caption = 'Usuário:'
         Font.CharSet = ANSI_CHARSET
@@ -117,9 +120,9 @@ inherited CadUsuariosF: TCadUsuariosF
         ParentFont = False
       end
       object Label3: TLabel[4]
-        Left = 184
+        Left = 649
         Height = 28
-        Top = 200
+        Top = 192
         Width = 168
         Caption = 'Nome Completo:'
         Font.CharSet = ANSI_CHARSET
@@ -130,9 +133,9 @@ inherited CadUsuariosF: TCadUsuariosF
         ParentFont = False
       end
       object Label4: TLabel[5]
-        Left = 424
+        Left = 952
         Height = 28
-        Top = 264
+        Top = 240
         Width = 71
         Caption = 'Senha:'
         Font.CharSet = ANSI_CHARSET
@@ -143,19 +146,19 @@ inherited CadUsuariosF: TCadUsuariosF
         ParentFont = False
       end
       object dbEditNomComp: TDBEdit[6]
-        Left = 368
+        Left = 824
         Height = 28
-        Top = 200
-        Width = 100
+        Top = 192
+        Width = 316
         DataField = 'nome_completo'
         DataSource = dsCadUsuarios
         MaxLength = 60
         TabOrder = 1
       end
       object dbEditSenha: TDBEdit[7]
-        Left = 512
+        Left = 1040
         Height = 28
-        Top = 264
+        Top = 240
         Width = 100
         DataField = 'senha'
         DataSource = dsCadUsuarios
@@ -163,10 +166,10 @@ inherited CadUsuariosF: TCadUsuariosF
         TabOrder = 2
       end
       object dbEditID: TDBEdit[8]
-        Left = 232
+        Left = 824
         Height = 28
         Top = 144
-        Width = 100
+        Width = 36
         DataField = 'id'
         DataSource = dsCadUsuarios
         Alignment = taRightJustify
@@ -177,9 +180,9 @@ inherited CadUsuariosF: TCadUsuariosF
     end
   end
   object dbEditUsuario: TDBEdit[1]
-    Left = 280
+    Left = 824
     Height = 28
-    Top = 296
+    Top = 272
     Width = 100
     DataField = 'usuario'
     DataSource = dsCadUsuarios
@@ -188,7 +191,7 @@ inherited CadUsuariosF: TCadUsuariosF
   end
   object dsCadUsuarios: TDataSource[2]
     DataSet = DataModuleF.qryCadUsuarios
-    Left = 824
-    Top = 32
+    Left = 1704
+    Top = 56
   end
 end

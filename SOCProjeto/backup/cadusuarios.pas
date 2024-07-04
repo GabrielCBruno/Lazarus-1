@@ -64,17 +64,17 @@ var
 begin
   if edtCodigo.Text = ''  then
     begin
-      DataModulo.DataModuleF.qryCadProdutos.Close;
-      DataModulo.DataModuleF.qryCadProdutos.SQL.Text := 'select * from usuarios';
-      DataModulo.DataModuleF.qryCadProdutos.Open;
+      DataModulo.DataModuleF.qryCadUsuarios.Close;
+      DataModulo.DataModuleF.qryCadUsuarios.SQL.Text := 'select * from usuarios';
+      DataModulo.DataModuleF.qryCadUsuarios.Open;
     end
 
     else
     begin
       CodPes:= StrToInt(edtCodigo.Text);
-      DataModulo.DataModuleF.qryCadProdutos.Close;
-      DataModulo.DataModuleF.qryCadProdutos.SQL.Text := 'select * from usuarios where id = ' + IntToStr(CodPes) + ';';
-      DataModulo.DataModuleF.qryCadProdutos.Open;
+      DataModulo.DataModuleF.qryCadUsuarios.Close;
+      DataModulo.DataModuleF.qryCadUsuarios.SQL.Text := 'select * from usuarios where id = ' + IntToStr(CodPes) + ';';
+      DataModulo.DataModuleF.qryCadUsuarios.Open;
     end
 end;
 
