@@ -23,6 +23,7 @@ object MenuPrincipalF: TMenuPrincipalF
       end
       object mnProdutos: TMenuItem
         Caption = 'Produtos'
+        OnClick = mnProdutosClick
       end
       object mnUsuarios: TMenuItem
         Caption = 'Usuários'

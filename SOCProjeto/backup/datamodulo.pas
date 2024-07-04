@@ -25,6 +25,7 @@ type
     procedure DataModuleCreate(Sender: TObject);
     procedure qryCadClientesNewRecord(DataSet: TDataSet);
     procedure qryCategoriaNewRecord(DataSet: TDataSet);
+    procedure ZConnection1AfterConnect(Sender: TObject);
 
   private
 
@@ -75,6 +76,11 @@ end;
 procedure TDataModuleF.qryCategoriaNewRecord(DataSet: TDataSet);
 begin
   qryCategoriacategoriaprodutoid.AsInteger:= StrToInt(getSequence('categoria_produto_categoriaprodutoid_seq'));
+end;
+
+procedure TDataModuleF.ZConnection1AfterConnect(Sender: TObject);
+begin
+
 end;
 
 end.

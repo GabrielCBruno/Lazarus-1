@@ -1,20 +1,122 @@
 inherited CadProdutosF: TCadProdutosF
+  Left = 473
+  Top = 335
   Caption = 'Cadastro de Produtos'
   inherited psCadastrar: TPageControl
-    ActivePage = tsCadastrar
-    TabIndex = 1
     inherited tsPesquisa: TTabSheet
       inherited Panel1: TPanel
+        inherited btPesquisar: TBitBtn
+          OnClick = btPesquisarClick
+        end
         inherited lbCodigo: TLabel
           Width = 36
           Caption = 'ID:'
         end
+      end
+      inherited Panel2: TPanel
+        inherited btnFecha: TBitBtn
+          OnClick = btnFechaClick
+        end
+        inherited btnNovo: TBitBtn
+          OnClick = btnNovoClick
+        end
+      end
+      inherited DBGrid1: TDBGrid
+        Columns = <        
+          item
+            Alignment = taCenter
+            Layout = tlCenter
+            PickList.Strings = (            )
+            Title.Alignment = taCenter
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'ID'
+            Width = 50
+            FieldName = 'produtoid'
+          end        
+          item
+            Alignment = taCenter
+            PickList.Strings = (            )
+            Title.Alignment = taCenter
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'ID Categoria do Produto'
+            Width = 180
+            FieldName = 'categoriaprodutoid'
+          end        
+          item
+            PickList.Strings = (            )
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'Descrição do Produto'
+            Width = 160
+            FieldName = 'ds_produto'
+          end        
+          item
+            PickList.Strings = (            )
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'Observação Do Produto'
+            Width = 180
+            FieldName = 'obs_produto'
+          end        
+          item
+            Alignment = taCenter
+            PickList.Strings = (            )
+            Title.Alignment = taCenter
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'Valor'
+            Width = 70
+            FieldName = 'vl_venda_produto'
+          end        
+          item
+            Alignment = taCenter
+            PickList.Strings = (            )
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'Data de Cadastro'
+            Width = 130
+            FieldName = 'dt_cadastro_produto'
+          end        
+          item
+            Alignment = taCenter
+            PickList.Strings = (            )
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'Status'
+            Width = 60
+            FieldName = 'status_produto'
+          end>
+        DataSource = dsCadProdutos
+        ReadOnly = True
       end
     end
     inherited tsCadastrar: TTabSheet
       inherited Panel3: TPanel
         inherited btnCancelar: TBitBtn
           Anchors = [akRight]
+          OnClick = btnCancelarClick
+        end
+        inherited btnGravar: TBitBtn
+          OnClick = btnGravarClick
+        end
+        inherited btnExcluir: TBitBtn
+          OnClick = btnExcluirClick
         end
       end
       inherited lbCadastros1: TLabel
@@ -119,6 +221,9 @@ inherited CadProdutosF: TCadProdutosF
         Height = 28
         Top = 144
         Width = 100
+        DataField = 'categoriaprodutoid'
+        DataSource = dsCadProdutos
+        Alignment = taRightJustify
         MaxLength = 0
         TabOrder = 1
       end
@@ -127,6 +232,8 @@ inherited CadProdutosF: TCadProdutosF
         Height = 28
         Top = 144
         Width = 148
+        DataField = 'dt_cadastro_produto'
+        DataSource = dsCadProdutos
         MaxLength = 0
         TabOrder = 2
       end
@@ -135,7 +242,9 @@ inherited CadProdutosF: TCadProdutosF
         Height = 28
         Top = 192
         Width = 536
-        MaxLength = 0
+        DataField = 'ds_produto'
+        DataSource = dsCadProdutos
+        MaxLength = 50
         TabOrder = 3
       end
       object dbEditObser: TDBEdit[12]
@@ -143,7 +252,9 @@ inherited CadProdutosF: TCadProdutosF
         Height = 28
         Top = 240
         Width = 520
-        MaxLength = 0
+        DataField = 'obs_produto'
+        DataSource = dsCadProdutos
+        MaxLength = 300
         TabOrder = 4
       end
       object dbEditValor: TDBEdit[13]
@@ -151,6 +262,9 @@ inherited CadProdutosF: TCadProdutosF
         Height = 28
         Top = 296
         Width = 112
+        DataField = 'vl_venda_produto'
+        DataSource = dsCadProdutos
+        Alignment = taRightJustify
         MaxLength = 0
         TabOrder = 5
       end
@@ -159,7 +273,9 @@ inherited CadProdutosF: TCadProdutosF
         Height = 28
         Top = 296
         Width = 112
-        MaxLength = 0
+        DataField = 'status_produto'
+        DataSource = dsCadProdutos
+        MaxLength = 10
         TabOrder = 6
       end
       object dbEditID: TDBEdit[15]
@@ -167,9 +283,18 @@ inherited CadProdutosF: TCadProdutosF
         Height = 28
         Top = 144
         Width = 112
+        DataField = 'produtoid'
+        DataSource = dsCadProdutos
+        Alignment = taRightJustify
+        Enabled = False
         MaxLength = 0
         TabOrder = 7
       end
     end
+  end
+  object dsCadProdutos: TDataSource[1]
+    DataSet = DataModuleF.qryCadProdutos
+    Left = 696
+    Top = 40
   end
 end
