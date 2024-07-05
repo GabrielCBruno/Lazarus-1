@@ -13,7 +13,9 @@ type
   { TOrcamentoVendasF }
 
   TOrcamentoVendasF = class(TCadModeloF)
+    btnNovoItem: TBitBtn;
     btnBusca: TBitBtn;
+    btnRemoverItem: TBitBtn;
     DBEdit2: TDBEdit;
     DBEdit3: TDBEdit;
     dbEditIdOrc1: TDBEdit;

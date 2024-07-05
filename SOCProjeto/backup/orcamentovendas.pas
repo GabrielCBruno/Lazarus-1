@@ -13,7 +13,9 @@ type
   { TOrcamentoVendasF }
 
   TOrcamentoVendasF = class(TCadModeloF)
+    btnNovoItem: TBitBtn;
     btnBusca: TBitBtn;
+    btnRemoverItem: TBitBtn;
     DBEdit2: TDBEdit;
     DBEdit3: TDBEdit;
     dbEditIdOrc1: TDBEdit;
@@ -33,6 +35,7 @@ type
     procedure btnFechaClick(Sender: TObject);
     procedure btnGravarClick(Sender: TObject);
     procedure btnNovoClick(Sender: TObject);
+    procedure btPesquisarClick(Sender: TObject);
     procedure DBGrid1DblClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormShow(Sender: TObject);
@@ -72,6 +75,26 @@ procedure TOrcamentoVendasF.btnNovoClick(Sender: TObject);
 begin
   DataModuleF.qryOrcamento.Insert;
   psCadastrar.ActivePage:= tsCadastrar;
+end;
+
+procedure TOrcamentoVendasF.btPesquisarClick(Sender: TObject);
+var
+  CodID:Integer;
+begin
+  if edtCodigo.Text = ''  then
+    begin
+      DataModulo.DataModuleF.qryOrcamento.Close;
+      DataModulo.DataModuleF.qryOrcamento.SQL.Text := 'select * from orcamento';
+      DataModulo.DataModuleF.qryOrcamento.Open;
+    end
+
+    else
+    begin
+      CodId:= StrToInt(edtCodigo.Text);
+      DataModulo.DataModuleF.qryOrcamento.Close;
+      DataModulo.DataModuleF.qryOrcamento.SQL.Text := 'select * from orcamento where orcamentoid = ' + IntToStr(CodID) + ';';
+      DataModulo.DataModuleF.qryOrcamento.Open;
+    end
 end;
 
 procedure TOrcamentoVendasF.btnFechaClick(Sender: TObject);
