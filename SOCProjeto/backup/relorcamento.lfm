@@ -4,9 +4,11 @@ object RelOrcamentoF: TRelOrcamentoF
   Top = 340
   Width = 644
   Caption = 'Relatorio De Orçamento'
-  ClientHeight = 0
-  ClientWidth = 0
+  ClientHeight = 340
+  ClientWidth = 644
   DesignTimePPI = 120
+  OnClose = FormClose
+  OnShow = FormShow
   LCLVersion = '3.4.0.0'
   object btnRelOrcamento: TBitBtn
     Left = 112
@@ -58,6 +60,80 @@ object RelOrcamentoF: TRelOrcamentoF
       261E1A0F3B3B3B3B3B3B3B3B3B3B112E261E1A123B3B3B3B3B3B3B3B3B11302E
       261E1A123B3B3B3B3B3B3B3B3B1111111112123B3B3B3B3B3B3B
     }
+    OnClick = btnRelOrcamentoClick
     TabOrder = 0
+  end
+  object qryRelOrcamento: TZQuery
+    Connection = DataModuleF.ZConnection1
+    SQL.Strings = (
+      'select * from orcamento;'
+    )
+    Params = <>
+    Left = 512
+    Top = 280
+    object qryRelOrcamentoorcamentoid: TZIntegerField
+      FieldKind = fkData
+      FieldName = 'orcamentoid'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qryRelOrcamentoclienteid: TZIntegerField
+      FieldKind = fkData
+      FieldName = 'clienteid'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qryRelOrcamentodt_orcamento: TZDateTimeField
+      FieldKind = fkData
+      FieldName = 'dt_orcamento'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qryRelOrcamentodt_validade_orcamento: TZDateTimeField
+      FieldKind = fkData
+      FieldName = 'dt_validade_orcamento'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qryRelOrcamentovl_total_orcamento: TZBCDField
+      FieldKind = fkData
+      FieldName = 'vl_total_orcamento'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Precision = 15
+      Currency = False
+      MaxValue = 0
+      MinValue = 0
+      Size = 2
+    end
+  end
+  object dataSetRelOrc: TfrDBDataSet
+    DataSet = qryRelOrcamento
+    Left = 384
+    Top = 280
+  end
+  object frReport1: TfrReport
+    Dataset = dataSetRelOrc
+    InitialZoom = pzDefault
+    Options = []
+    PreviewButtons = [pbZoom, pbLoad, pbSave, pbPrint, pbFind, pbHelp, pbExit, pbSettings, pbPageSetup]
+    DataType = dtDataSet
+    Left = 272
+    Top = 280
   end
 end

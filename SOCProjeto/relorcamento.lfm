@@ -1,11 +1,11 @@
 object RelOrcamentoF: TRelOrcamentoF
-  Left = 708
+  Left = 646
   Height = 340
   Top = 340
-  Width = 644
+  Width = 706
   Caption = 'Relatorio De Orçamento'
   ClientHeight = 340
-  ClientWidth = 644
+  ClientWidth = 706
   DesignTimePPI = 120
   OnClose = FormClose
   OnShow = FormShow
@@ -65,6 +65,7 @@ object RelOrcamentoF: TRelOrcamentoF
   end
   object qryRelOrcamento: TZQuery
     Connection = DataModuleF.ZConnection1
+    Active = True
     SQL.Strings = (
       'select * from orcamento;'
     )

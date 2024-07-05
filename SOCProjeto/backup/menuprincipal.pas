@@ -82,7 +82,7 @@ end;
 
 procedure TMenuPrincipalF.mnOrcamentoRClick(Sender: TObject);
 begin
-    RelOrcamentoF := TRelOrcamentoF.Create(Self);
+    RelOrcamentoF:=TRelOrcamentoF.Create(Self);
     RelOrcamentoF.ShowModal;
 end;
 
