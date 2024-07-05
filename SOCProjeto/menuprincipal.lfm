@@ -48,12 +48,10 @@ object MenuPrincipalF: TMenuPrincipalF
       end
       object mnOrcamentoR: TMenuItem
         Caption = 'Orçamento'
+        OnClick = mnOrcamentoRClick
       end
       object mnCategoriaR: TMenuItem
         Caption = 'Categoria'
-      end
-      object mnRelTesteCliente: TMenuItem
-        Caption = 'Rel Teste Cliente'
       end
     end
     object mnSobre: TMenuItem
