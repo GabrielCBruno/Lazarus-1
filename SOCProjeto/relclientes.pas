@@ -55,6 +55,7 @@ procedure TRelClientesF.FormClose(Sender: TObject; var CloseAction: TCloseAction
   );
 begin
    qryRelCliente.Close;
+   CloseAction:=caFree;
 end;
 
 end.

@@ -2,8 +2,6 @@ inherited CadClientesF: TCadClientesF
   Left = 379
   Top = 262
   Caption = 'Cadastro de Clientes'
-  ClientHeight = 0
-  ClientWidth = 0
   OnClose = FormClose
   OnShow = FormShow
   inherited psCadastrar: TPageControl

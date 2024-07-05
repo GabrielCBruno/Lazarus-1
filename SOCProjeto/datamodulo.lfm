@@ -26,7 +26,7 @@ object DataModuleF: TDataModuleF
     Connection = ZConnection1
     Params = <>
     Left = 456
-    Top = 72
+    Top = 24
   end
   object qryCategoria: TZQuery
     Connection = ZConnection1
@@ -35,8 +35,8 @@ object DataModuleF: TDataModuleF
       'select * from categoria_produto;'
     )
     Params = <>
-    Left = 456
-    Top = 136
+    Left = 460
+    Top = 88
     object qryCategoriacategoriaprodutoid: TZIntegerField
       FieldKind = fkData
       FieldName = 'categoriaprodutoid'
@@ -65,8 +65,8 @@ object DataModuleF: TDataModuleF
       'select * from cliente;'
     )
     Params = <>
-    Left = 456
-    Top = 224
+    Left = 460
+    Top = 152
     object qryCadClientesclienteid: TZIntegerField
       FieldKind = fkData
       FieldName = 'clienteid'
@@ -115,8 +115,8 @@ object DataModuleF: TDataModuleF
       'select * from produto;'
     )
     Params = <>
-    Left = 456
-    Top = 304
+    Left = 464
+    Top = 216
     object qryCadProdutosprodutoid: TZIntegerField
       FieldKind = fkData
       FieldName = 'produtoid'
@@ -197,8 +197,8 @@ object DataModuleF: TDataModuleF
       'select * from usuarios;'
     )
     Params = <>
-    Left = 456
-    Top = 360
+    Left = 464
+    Top = 280
     object qryCadUsuariosid: TZIntegerField
       FieldKind = fkData
       FieldName = 'id'
@@ -237,6 +237,155 @@ object DataModuleF: TDataModuleF
       ReadOnly = False
       Required = False
       Size = 50
+    end
+  end
+  object qryOrcamento: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'select * from orcamento;'
+    )
+    Params = <>
+    Left = 464
+    Top = 352
+    object qryOrcamentoorcamentoid: TZIntegerField
+      FieldKind = fkData
+      FieldName = 'orcamentoid'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qryOrcamentoclienteid: TZIntegerField
+      FieldKind = fkData
+      FieldName = 'clienteid'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qryOrcamentodt_orcamento: TZDateTimeField
+      FieldKind = fkData
+      FieldName = 'dt_orcamento'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qryOrcamentodt_validade_orcamento: TZDateTimeField
+      FieldKind = fkData
+      FieldName = 'dt_validade_orcamento'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qryOrcamentovl_total_orcamento: TZBCDField
+      FieldKind = fkData
+      FieldName = 'vl_total_orcamento'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Precision = 15
+      Currency = False
+      MaxValue = 0
+      MinValue = 0
+      Size = 2
+    end
+  end
+  object qryOrcamentoItens: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'select * from orcamento_item;'
+    )
+    Params = <>
+    Left = 464
+    Top = 424
+    object qryOrcamentoItensorcamentoid: TZIntegerField
+      FieldKind = fkData
+      FieldName = 'orcamentoid'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qryOrcamentoItensorcamentoitemid: TZIntegerField
+      FieldKind = fkData
+      FieldName = 'orcamentoitemid'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qryOrcamentoItensprodutoid: TZIntegerField
+      FieldKind = fkData
+      FieldName = 'produtoid'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qryOrcamentoItensprodutodesc: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'produtodesc'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryOrcamentoItensqt_produto: TZBCDField
+      FieldKind = fkData
+      FieldName = 'qt_produto'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Precision = 15
+      Currency = False
+      MaxValue = 0
+      MinValue = 0
+      Size = 2
+    end
+    object qryOrcamentoItensvl_unitario: TZBCDField
+      FieldKind = fkData
+      FieldName = 'vl_unitario'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Precision = 15
+      Currency = False
+      MaxValue = 0
+      MinValue = 0
+      Size = 2
+    end
+    object qryOrcamentoItensvl_total: TZBCDField
+      FieldKind = fkData
+      FieldName = 'vl_total'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Precision = 15
+      Currency = False
+      MaxValue = 0
+      MinValue = 0
+      Size = 2
     end
   end
 end

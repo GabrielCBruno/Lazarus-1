@@ -69,7 +69,7 @@ object RelProdutosF: TRelProdutosF
       'select * from produto;'
     )
     Params = <>
-    Left = 544
+    Left = 568
     Top = 296
     object qryRelProdutosprodutoid: TZIntegerField
       FieldKind = fkData
@@ -145,7 +145,7 @@ object RelProdutosF: TRelProdutosF
   end
   object datasetRelProdutos: TfrDBDataSet
     DataSet = qryRelProdutos
-    Left = 456
+    Left = 432
     Top = 296
   end
   object frReport1: TfrReport
@@ -154,7 +154,7 @@ object RelProdutosF: TRelProdutosF
     Options = []
     PreviewButtons = [pbZoom, pbLoad, pbSave, pbPrint, pbFind, pbHelp, pbExit, pbSettings, pbPageSetup]
     DataType = dtDataSet
-    Left = 384
+    Left = 304
     Top = 296
   end
 end

@@ -14,7 +14,7 @@ object RelCategoriaF: TRelCategoriaF
     Left = 112
     Height = 72
     Top = 88
-    Width = 484
+    Width = 472
     Caption = 'Imprimir Relatorio de Categorias'
     Glyph.Data = {
       36050000424D3605000000000000360400002800000010000000100000000100
@@ -65,7 +65,6 @@ object RelCategoriaF: TRelCategoriaF
   end
   object qryRelCategoria: TZQuery
     Connection = DataModuleF.ZConnection1
-    Active = True
     SQL.Strings = (
       'select * from categoria_produto;'
     )

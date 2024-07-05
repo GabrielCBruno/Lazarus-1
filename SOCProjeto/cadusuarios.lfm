@@ -5,6 +5,8 @@ inherited CadUsuariosF: TCadUsuariosF
   OnClose = FormClose
   OnShow = FormShow
   inherited psCadastrar: TPageControl
+    ActivePage = tsCadastrar
+    TabIndex = 1
     inherited tsPesquisa: TTabSheet
       inherited Panel1: TPanel
         inherited btPesquisar: TBitBtn
@@ -191,6 +193,7 @@ inherited CadUsuariosF: TCadUsuariosF
   end
   object dsCadUsuarios: TDataSource[2]
     DataSet = DataModuleF.qryCadUsuarios
+    OnDataChange = dsCadUsuariosDataChange
     Left = 1704
     Top = 56
   end

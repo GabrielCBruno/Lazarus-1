@@ -29,6 +29,7 @@ type
     procedure btnNovoClick(Sender: TObject);
     procedure btPesquisarClick(Sender: TObject);
     procedure DBGrid1DblClick(Sender: TObject);
+    procedure dsCadUsuariosDataChange(Sender: TObject; Field: TField);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormShow(Sender: TObject);
   private
@@ -82,6 +83,11 @@ end;
 procedure TCadUsuariosF.DBGrid1DblClick(Sender: TObject);
 begin
   psCadastrar.ActivePage:= tsCadastrar;
+end;
+
+procedure TCadUsuariosF.dsCadUsuariosDataChange(Sender: TObject; Field: TField);
+begin
+
 end;
 
 procedure TCadUsuariosF.btnFechaClick(Sender: TObject);

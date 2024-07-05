@@ -46,6 +46,7 @@ procedure TRelProdutosF.FormClose(Sender: TObject; var CloseAction: TCloseAction
   );
 begin
   qryRelProdutos.Close;
+  CloseAction:=caFree;
 end;
 
 procedure TRelProdutosF.btnRelatorioCliClick(Sender: TObject);

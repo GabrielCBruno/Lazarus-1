@@ -6,7 +6,8 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Menus, CadCategoria,
-  CadClientes, RelClientes, CadProdutos, CadUsuarios,RelProdutos,RelOrcamento;
+  CadClientes, RelClientes, CadProdutos, CadUsuarios,RelProdutos,RelOrcamento,
+  RelCategoria,VendaOrcamento;
 
 type
 
@@ -29,8 +30,10 @@ type
     mnVendas: TMenuItem;
     mnCadastrar: TMenuItem;
     procedure mnCategoriaClick(Sender: TObject);
+    procedure mnCategoriaRClick(Sender: TObject);
     procedure mnClienteClick(Sender: TObject);
     procedure mnClienteRClick(Sender: TObject);
+    procedure mnOrcamentoClick(Sender: TObject);
     procedure mnOrcamentoRClick(Sender: TObject);
     procedure mnProdutosClick(Sender: TObject);
     procedure mnProdutosRClick(Sender: TObject);
@@ -68,6 +71,12 @@ begin
   CadCategoriaF.ShowModal;
 end;
 
+procedure TMenuPrincipalF.mnCategoriaRClick(Sender: TObject);
+begin
+    RelCategoriaF:=TRelCategoriaF.Create(Self);
+    RelCategoriaF.ShowModal;
+end;
+
 procedure TMenuPrincipalF.mnClienteClick(Sender: TObject);
 begin
     CadClientesF:=TCadClientesF.Create(Self);
@@ -78,6 +87,12 @@ procedure TMenuPrincipalF.mnClienteRClick(Sender: TObject);
 begin
     RelClientesF := TRelClientesF.Create(Self);
     RelClientesF.ShowModal;
+end;
+
+procedure TMenuPrincipalF.mnOrcamentoClick(Sender: TObject);
+begin
+    VendaOrcamentoF:=TVendaOrcamentoF.Create(Self);
+    VendaOrcamentoF.ShowModal;
 end;
 
 procedure TMenuPrincipalF.mnOrcamentoRClick(Sender: TObject);

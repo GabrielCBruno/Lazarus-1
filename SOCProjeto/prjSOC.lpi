@@ -122,6 +122,7 @@
         <Filename Value="relorcamento.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="RelOrcamentoF"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="RelOrcamento"/>
       </Unit>
@@ -129,8 +130,17 @@
         <Filename Value="relcategoria.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="RelCategoriaF"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="RelCategoria"/>
+      </Unit>
+      <Unit>
+        <Filename Value="orcamentovendas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="OrcamentoVendasF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="OrcamentoVendas"/>
       </Unit>
     </Units>
   </ProjectOptions>

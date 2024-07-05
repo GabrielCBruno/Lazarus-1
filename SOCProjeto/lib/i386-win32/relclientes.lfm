@@ -65,7 +65,6 @@ object RelClientesF: TRelClientesF
   end
   object qryRelCliente: TZQuery
     Connection = DataModuleF.ZConnection1
-    Active = True
     SQL.Strings = (
       'Select * from cliente;'
     )

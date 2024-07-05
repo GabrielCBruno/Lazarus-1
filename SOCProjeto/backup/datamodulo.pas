@@ -29,15 +29,22 @@ type
     qryCadUsuariosusuario: TZRawStringField;
     qryCategoriacategoriaprodutoid: TZIntegerField;
     qryCategoriads_categoria_produto: TZRawStringField;
+    qryOrcamentoclienteid: TZIntegerField;
+    qryOrcamentodt_orcamento: TZDateTimeField;
+    qryOrcamentodt_validade_orcamento: TZDateTimeField;
+    qryOrcamentoorcamentoid: TZIntegerField;
+    qryOrcamentovl_total_orcamento: TZBCDField;
     ZConnection1: TZConnection;
     qryGenerica: TZQuery;
     qryCategoria: TZQuery;
     qryCadClientes: TZQuery;
     qryCadProdutos: TZQuery;
     qryCadUsuarios: TZQuery;
+    qryOrcamento: TZReadOnlyQuery;
     procedure DataModuleCreate(Sender: TObject);
     procedure qryCadClientesNewRecord(DataSet: TDataSet);
     procedure qryCadProdutosNewRecord(DataSet: TDataSet);
+    procedure qryCadUsuariosNewRecord(DataSet: TDataSet);
 
     procedure qryCategoriaNewRecord(DataSet: TDataSet);
     procedure ZConnection1AfterConnect(Sender: TObject);
@@ -91,6 +98,11 @@ end;
 procedure TDataModuleF.qryCadProdutosNewRecord(DataSet: TDataSet);
 begin
    qryCadProdutosprodutoid.AsInteger:= StrToInt(getSequence('produto_produtoid'));
+end;
+
+procedure TDataModuleF.qryCadUsuariosNewRecord(DataSet: TDataSet);
+begin
+    qryCadUsuariosid.AsInteger:= StrToInt(getSequence('usuarios_id_seq'));
 end;
 
 
