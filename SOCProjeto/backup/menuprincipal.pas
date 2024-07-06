@@ -7,7 +7,7 @@ interface
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Menus, CadCategoria,
   CadClientes, RelClientes, CadProdutos, CadUsuarios,RelProdutos,RelOrcamento,
-  RelCategoria,VendaOrcamento;
+  RelCategoria,OrcamentoVendas,;
 
 type
 
@@ -91,8 +91,8 @@ end;
 
 procedure TMenuPrincipalF.mnOrcamentoClick(Sender: TObject);
 begin
-    VendaOrcamentoF:=TVendaOrcamentoF.Create(Self);
-    VendaOrcamentoF.ShowModal;
+    OrcamentoVendasF:=TOrcamentoVendasF.Create(Self);
+    OrcamentoVendasF.ShowModal;
 end;
 
 procedure TMenuPrincipalF.mnOrcamentoRClick(Sender: TObject);

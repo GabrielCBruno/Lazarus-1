@@ -7,7 +7,7 @@ interface
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Menus, CadCategoria,
   CadClientes, RelClientes, CadProdutos, CadUsuarios,RelProdutos,RelOrcamento,
-  RelCategoria,OrcamentoVendas;
+  RelCategoria,OrcamentoVendas, AdicionarItens;
 
 type
 

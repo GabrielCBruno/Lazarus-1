@@ -28,7 +28,6 @@ inherited CadProdutosF: TCadProdutosF
         Columns = <        
           item
             Alignment = taCenter
-            Layout = tlCenter
             PickList.Strings = (            )
             Title.Alignment = taCenter
             Title.Font.CharSet = ANSI_CHARSET

@@ -1,6 +1,6 @@
 inherited OrcamentoVendasF: TOrcamentoVendasF
-  Left = 516
-  Top = 256
+  Left = 362
+  Top = 251
   Caption = 'Orçamento de Vendas'
   OnClose = FormClose
   OnShow = FormShow
@@ -336,11 +336,15 @@ inherited OrcamentoVendasF: TOrcamentoVendasF
           ParentFont = False
         end
         object btnRemoverItem: TBitBtn
-          Left = 816
+          Left = 912
           Height = 32
-          Top = 60
-          Width = 118
+          Top = 58
+          Width = 150
           Caption = 'Remover Item'
+          Font.CharSet = ANSI_CHARSET
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
           Glyph.Data = {
             86020000424D8802000000000000460000002800000018000000180000000100
             08000000000000000000210B0000210B00000400000004000000001CD400FF00
@@ -364,17 +368,44 @@ inherited OrcamentoVendasF: TOrcamentoVendasF
             0101010101010101010101010101010101010101010101010101010101010101
             01010101010101010101
           }
+          ParentFont = False
           TabOrder = 5
+        end
+        object Label6: TLabel
+          Left = 1120
+          Height = 24
+          Top = 24
+          Width = 205
+          Caption = 'Total do Orçamento:'
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -20
+          Font.Name = 'Tahoma'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ParentFont = False
+        end
+        object dbEditTotalOrcamento: TDBEdit
+          Left = 1336
+          Height = 28
+          Top = 24
+          Width = 160
+          MaxLength = 0
+          TabOrder = 6
         end
       end
     end
   end
   object btnNovoItem: TBitBtn[1]
-    Left = 632
+    Left = 744
     Height = 32
     Top = 88
     Width = 150
     Caption = 'Adicionar Item'
+    Font.CharSet = ANSI_CHARSET
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
     Glyph.Data = {
       9E020000424DA0020000000000005E0000002800000018000000180000000100
       08000000000000000000210B0000210B00000A0000000A000000116A16001C8F
@@ -399,16 +430,18 @@ inherited OrcamentoVendasF: TOrcamentoVendasF
       0808080808080808080808080808080808080808080808080808080808080808
       0808
     }
+    OnClick = btnNovoItemClick
+    ParentFont = False
     TabOrder = 1
   end
   object dsOrcamento: TDataSource[2]
     DataSet = DataModuleF.qryOrcamento
-    Left = 1352
-    Top = 56
+    Left = 1848
+    Top = 88
   end
   object dsOrcamentoItens: TDataSource[3]
     DataSet = DataModuleF.qryOrcamentoItens
-    Left = 1192
-    Top = 56
+    Left = 1784
+    Top = 88
   end
 end

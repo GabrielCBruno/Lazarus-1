@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, DB, Forms, Controls, Graphics, Dialogs, ExtCtrls, DBGrids,
-  DBCtrls, StdCtrls, Buttons, CadModelo, DataModulo;
+  DBCtrls, StdCtrls, Buttons, CadModelo, DataModulo, AdicionarItens;
 
 type
 
@@ -18,6 +18,7 @@ type
     btnRemoverItem: TBitBtn;
     DBEdit2: TDBEdit;
     DBEdit3: TDBEdit;
+    dbEditTotalOrcamento: TDBEdit;
     dbEditIdOrc1: TDBEdit;
     dbEditIdOrc2: TDBEdit;
     DBGrid2: TDBGrid;
@@ -28,6 +29,7 @@ type
     Label3: TLabel;
     Label4: TLabel;
     Label5: TLabel;
+    Label6: TLabel;
     Panel4: TPanel;
     Panel5: TPanel;
     procedure btnCancelarClick(Sender: TObject);
@@ -35,6 +37,7 @@ type
     procedure btnFechaClick(Sender: TObject);
     procedure btnGravarClick(Sender: TObject);
     procedure btnNovoClick(Sender: TObject);
+    procedure btnNovoItemClick(Sender: TObject);
     procedure btPesquisarClick(Sender: TObject);
     procedure DBGrid1DblClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
@@ -75,6 +78,12 @@ procedure TOrcamentoVendasF.btnNovoClick(Sender: TObject);
 begin
   DataModuleF.qryOrcamento.Insert;
   psCadastrar.ActivePage:= tsCadastrar;
+end;
+
+procedure TOrcamentoVendasF.btnNovoItemClick(Sender: TObject);
+begin
+    AdicionarItensF:=TAdicionarItensF.Create(Self);
+    AdicionarItensF.ShowModal;
 end;
 
 procedure TOrcamentoVendasF.btPesquisarClick(Sender: TObject);
