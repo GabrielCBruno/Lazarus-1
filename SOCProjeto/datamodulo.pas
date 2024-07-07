@@ -55,6 +55,9 @@ type
     procedure qryCadUsuariosNewRecord(DataSet: TDataSet);
 
     procedure qryCategoriaNewRecord(DataSet: TDataSet);
+    procedure qryOrcamentoAfterInsert(DataSet: TDataSet);
+    procedure qryOrcamentoItensAfterInsert(DataSet: TDataSet);
+    procedure qryOrcamentoNewRecord(DataSet: TDataSet);
     procedure ZConnection1AfterConnect(Sender: TObject);
 
   private
@@ -117,6 +120,23 @@ end;
 procedure TDataModuleF.qryCategoriaNewRecord(DataSet: TDataSet);
 begin
   qryCategoriacategoriaprodutoid.AsInteger:= StrToInt(getSequence('categoria_produto_categoriaprodutoid_seq'));
+end;
+
+procedure TDataModuleF.qryOrcamentoAfterInsert(DataSet: TDataSet);
+begin
+   qryOrcamentoorcamentoid.AsInteger:= StrToInt(getSequence('orcamento_orcamentoid_seq'));
+end;
+
+procedure TDataModuleF.qryOrcamentoItensAfterInsert(DataSet: TDataSet);
+begin
+  qryOrcamentoItensorcamentoitemid.AsInteger := StrToInt(getSequence('orcamento_itens_id_seq'));
+end;
+
+procedure TDataModuleF.qryOrcamentoNewRecord(DataSet: TDataSet);
+begin
+  qryOrcamentodt_orcamento.AsDateTime:=now;
+  qryOrcamentodt_validade_orcamento.AsDateTime:=now + 15;
+
 end;
 
 procedure TDataModuleF.ZConnection1AfterConnect(Sender: TObject);

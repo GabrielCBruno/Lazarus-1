@@ -60,7 +60,6 @@ object DataModuleF: TDataModuleF
   object qryCadClientes: TZQuery
     Connection = ZConnection1
     OnNewRecord = qryCadClientesNewRecord
-    Active = True
     SQL.Strings = (
       'select * from cliente;'
     )
@@ -110,7 +109,6 @@ object DataModuleF: TDataModuleF
   object qryCadProdutos: TZQuery
     Connection = ZConnection1
     OnNewRecord = qryCadProdutosNewRecord
-    Active = True
     SQL.Strings = (
       'select * from produto;'
     )
@@ -192,7 +190,6 @@ object DataModuleF: TDataModuleF
   object qryCadUsuarios: TZQuery
     Connection = ZConnection1
     OnNewRecord = qryCadUsuariosNewRecord
-    Active = True
     SQL.Strings = (
       'select * from usuarios;'
     )
@@ -241,7 +238,8 @@ object DataModuleF: TDataModuleF
   end
   object qryOrcamento: TZQuery
     Connection = ZConnection1
-    Active = True
+    AfterInsert = qryOrcamentoAfterInsert
+    OnNewRecord = qryOrcamentoNewRecord
     SQL.Strings = (
       'select * from orcamento;'
     )
@@ -301,13 +299,13 @@ object DataModuleF: TDataModuleF
   end
   object qryOrcamentoItens: TZQuery
     Connection = ZConnection1
-    Active = True
+    AfterInsert = qryOrcamentoItensAfterInsert
     SQL.Strings = (
       'select * from orcamento_item;'
     )
     Params = <>
     Left = 464
-    Top = 424
+    Top = 416
     object qryOrcamentoItensorcamentoid: TZIntegerField
       FieldKind = fkData
       FieldName = 'orcamentoid'

@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, DBCtrls,
-  Buttons;
+  Buttons, AdicionaProdutos, DataModulo;
 
 type
 
@@ -26,7 +26,10 @@ type
     Label4: TLabel;
     Label5: TLabel;
     SpeedButton1: TSpeedButton;
+    procedure btnCancelarItemClick(Sender: TObject);
+    procedure btnInserirClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
+    procedure SpeedButton1Click(Sender: TObject);
   private
 
   public
@@ -46,6 +49,25 @@ procedure TAdicionarItensF.FormClose(Sender: TObject;
   var CloseAction: TCloseAction);
 begin
   CloseAction:=caFree;
+end;
+
+procedure TAdicionarItensF.btnInserirClick(Sender: TObject);
+begin
+  DataModuleF.qryOrcamentoItensorcamentoid.AsInteger := DataModuleF.qryOrcamentoorcamentoid.AsInteger;
+  DataModuleF.qryOrcamentoItens.Post;
+  Close;
+end;
+
+procedure TAdicionarItensF.btnCancelarItemClick(Sender: TObject);
+begin
+  DataModuleF.qryOrcamentoItens.Cancel;
+  Close;
+end;
+
+procedure TAdicionarItensF.SpeedButton1Click(Sender: TObject);
+begin
+  AdicionaProdutosF:=TAdicionaProdutosF.Create(Self);
+  AdicionaProdutosF.ShowModal;
 end;
 
 end.

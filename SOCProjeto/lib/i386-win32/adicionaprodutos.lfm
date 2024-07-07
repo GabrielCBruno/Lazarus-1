@@ -1,12 +1,14 @@
 object AdicionaProdutosF: TAdicionaProdutosF
-  Left = 524
+  Left = 274
   Height = 285
-  Top = 316
+  Top = 288
   Width = 1378
   Caption = 'Localizar Produtos'
   ClientHeight = 285
   ClientWidth = 1378
   DesignTimePPI = 120
+  OnClose = FormClose
+  OnShow = FormShow
   LCLVersion = '3.4.0.0'
   object Panel1: TPanel
     Left = 0
@@ -188,11 +190,93 @@ object AdicionaProdutosF: TAdicionaProdutosF
         FieldName = 'status_produto'
       end>
     DataSource = dsProdutos
+    ReadOnly = True
     TabOrder = 1
+    OnDblClick = DBGrid1DblClick
   end
   object dsProdutos: TDataSource
-    DataSet = DataModuleF.qryCadProdutos
+    DataSet = qryAdicionaProdutos
     Left = 496
     Top = 16
+  end
+  object qryAdicionaProdutos: TZQuery
+    Connection = DataModuleF.ZConnection1
+    SQL.Strings = (
+      'select * from produto;'
+    )
+    Params = <>
+    Left = 736
+    Top = 16
+    object qryAdicionaProdutosprodutoid: TZIntegerField
+      FieldKind = fkData
+      FieldName = 'produtoid'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qryAdicionaProdutoscategoriaprodutoid: TZIntegerField
+      FieldKind = fkData
+      FieldName = 'categoriaprodutoid'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qryAdicionaProdutosds_produto: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'ds_produto'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 50
+    end
+    object qryAdicionaProdutosobs_produto: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'obs_produto'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 300
+    end
+    object qryAdicionaProdutosvl_venda_produto: TZBCDField
+      FieldKind = fkData
+      FieldName = 'vl_venda_produto'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Precision = 15
+      Currency = False
+      MaxValue = 0
+      MinValue = 0
+      Size = 2
+    end
+    object qryAdicionaProdutosdt_cadastro_produto: TZDateTimeField
+      FieldKind = fkData
+      FieldName = 'dt_cadastro_produto'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qryAdicionaProdutosstatus_produto: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'status_produto'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 10
+    end
   end
 end

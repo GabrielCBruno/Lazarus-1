@@ -6,15 +6,15 @@ interface
 
 uses
   Classes, SysUtils, DB, Forms, Controls, Graphics, Dialogs, ExtCtrls, DBGrids,
-  DBCtrls, StdCtrls, Buttons, CadModelo, DataModulo,;
+  DBCtrls, StdCtrls, Buttons, CadModelo, DataModulo, AdicionarItens;
 
 type
 
   { TOrcamentoVendasF }
 
   TOrcamentoVendasF = class(TCadModeloF)
-    btnNovoItem: TBitBtn;
     btnBusca: TBitBtn;
+    btnNovoItem: TBitBtn;
     btnRemoverItem: TBitBtn;
     DBEdit2: TDBEdit;
     DBEdit3: TDBEdit;
@@ -41,11 +41,14 @@ type
     procedure btPesquisarClick(Sender: TObject);
     procedure DBGrid1DblClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
+    procedure FormDblClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
+    procedure psCadastrarChange(Sender: TObject);
+
   private
 
   public
-
+        procedure AbreOrcItens(orcamentoid : Integer);
   end;
 
 var
@@ -53,37 +56,79 @@ var
 
 implementation
 
+
 {$R *.lfm}
 
 { TOrcamentoVendasF }
+
+procedure TOrcamentoVendasF.AbreOrcItens(orcamentoid : Integer);
+begin
+   if orcamentoid <> 0 then
+  begin
+      DataModuleF.qryOrcamentoItens.Close;
+      DataModuleF.qryOrcamentoItens.SQL.Clear;
+      DataModuleF.qryOrcamentoItens.SQL.Add(
+                      'SELECT '+
+                      'ORCAMENTOITEMID, '+
+                      'ORCAMENTOID, '+
+                      'PRODUTOID, '+
+                      'produtodesc, '+
+                      'QT_PRODUTO, '+
+                      'VL_UNITARIO, '+
+                      'VL_TOTAL '+
+                      'FROM ORCAMENTO_ITEM ' +
+                      'WHERE ORCAMENTOID = '+ inttostr(orcamentoid) + ' ' +
+                      'ORDER BY ORCAMENTOID');
+       DataModuleF.qryOrcamentoItens.Open;
+  end;
+end;
+
 
 procedure TOrcamentoVendasF.FormClose(Sender: TObject;
   var CloseAction: TCloseAction);
 begin
   DataModulo.DataModuleF.qryOrcamento.Close;
+  DataModuleF.qryOrcamentoItens.Close;
   CloseAction:=caFree;
+end;
+
+procedure TOrcamentoVendasF.FormDblClick(Sender: TObject);
+begin
+
 end;
 
 procedure TOrcamentoVendasF.FormShow(Sender: TObject);
 begin
-
+  psCadastrar.ActivePage := tsPesquisa;
+  DataModuleF.qryOrcamento.Open;
+  DataModuleF.qryOrcamentoItens.Open;
 end;
+
+procedure TOrcamentoVendasF.psCadastrarChange(Sender: TObject);
+begin
+  AbreOrcItens(DataModuleF.qryOrcamentoorcamentoid.AsInteger);
+end;
+
 
 procedure TOrcamentoVendasF.DBGrid1DblClick(Sender: TObject);
 begin
+  AbreOrcItens(DataModuleF.qryOrcamentoorcamentoid.AsInteger);
   psCadastrar.ActivePage:= tsCadastrar;
 end;
 
 procedure TOrcamentoVendasF.btnNovoClick(Sender: TObject);
 begin
-  DataModuleF.qryOrcamento.Insert;
   psCadastrar.ActivePage:= tsCadastrar;
+  DataModuleF.qryOrcamento.Insert;
+  AbreOrcItens(DataModuleF.qryOrcamentoorcamentoid.AsInteger);
 end;
 
 procedure TOrcamentoVendasF.btnNovoItemClick(Sender: TObject);
 begin
+    DataModuleF.qryOrcamentoItens.Insert;
     AdicionarItensF:=TAdicionarItensF.Create(Self);
     AdicionarItensF.ShowModal;
+
 end;
 
 procedure TOrcamentoVendasF.btPesquisarClick(Sender: TObject);
