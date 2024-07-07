@@ -2,11 +2,11 @@ inherited CadUsuariosF: TCadUsuariosF
   Left = 529
   Top = 294
   Caption = 'Cadastro de Usuários'
+  ClientHeight = 0
+  ClientWidth = 0
   OnClose = FormClose
   OnShow = FormShow
   inherited psCadastrar: TPageControl
-    ActivePage = tsCadastrar
-    TabIndex = 1
     inherited tsPesquisa: TTabSheet
       inherited Panel1: TPanel
         inherited btPesquisar: TBitBtn
@@ -179,19 +179,19 @@ inherited CadUsuariosF: TCadUsuariosF
         MaxLength = 0
         TabOrder = 3
       end
+      object dbEditUsuario: TDBEdit[9]
+        Left = 816
+        Height = 28
+        Top = 240
+        Width = 100
+        DataField = 'usuario'
+        DataSource = dsCadUsuarios
+        MaxLength = 30
+        TabOrder = 4
+      end
     end
   end
-  object dbEditUsuario: TDBEdit[1]
-    Left = 824
-    Height = 28
-    Top = 272
-    Width = 100
-    DataField = 'usuario'
-    DataSource = dsCadUsuarios
-    MaxLength = 30
-    TabOrder = 1
-  end
-  object dsCadUsuarios: TDataSource[2]
+  object dsCadUsuarios: TDataSource[1]
     DataSet = DataModuleF.qryCadUsuarios
     OnDataChange = dsCadUsuariosDataChange
     Left = 1704

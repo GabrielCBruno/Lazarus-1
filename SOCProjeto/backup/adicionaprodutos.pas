@@ -43,6 +43,9 @@ var
 
 implementation
 
+uses
+  AdicionarItens;
+
 {$R *.lfm}
 
 { TAdicionaProdutosF }

@@ -17,9 +17,9 @@ type
     btnCancelarItem: TBitBtn;
     DBEdit2: TDBEdit;
     DBEdit3: TDBEdit;
-    DBEdit4: TDBEdit;
-    DBEdit5: TDBEdit;
-    DBEdit6: TDBEdit;
+    dbEditQtd: TDBEdit;
+    dbEditValorUnit: TDBEdit;
+    dbEditValorTotal: TDBEdit;
     Label1: TLabel;
     Label2: TLabel;
     Label3: TLabel;
@@ -28,6 +28,7 @@ type
     SpeedButton1: TSpeedButton;
     procedure btnCancelarItemClick(Sender: TObject);
     procedure btnInserirClick(Sender: TObject);
+    procedure dbEditQtdKeyPress(Sender: TObject; var Key: char);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure SpeedButton1Click(Sender: TObject);
   private
@@ -58,8 +59,20 @@ begin
   Close;
 end;
 
+
+procedure TAdicionarItensF.dbEditQtdKeyPress(Sender: TObject; var Key: char);
+  var
+  valorTot: Double;
+  Quant:Integer;
+begin
+  Quant:=StrToInt(dbEditQtd.Text);
+  valorTot:= Quant * StrToFloat(dbEditValorUnit.Text);
+  DataModuleF.qryOrcamentoItensvl_total.AsFloat := valorTot;
+end;
+
 procedure TAdicionarItensF.btnCancelarItemClick(Sender: TObject);
 begin
+  DataModuleF.qryOrcamentoItens.Cancel;
   Close;
 end;
 

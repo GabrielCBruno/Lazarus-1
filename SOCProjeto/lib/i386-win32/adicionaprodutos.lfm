@@ -205,7 +205,7 @@ object AdicionaProdutosF: TAdicionaProdutosF
       'select * from produto;'
     )
     Params = <>
-    Left = 736
+    Left = 712
     Top = 16
     object qryAdicionaProdutosprodutoid: TZIntegerField
       FieldKind = fkData

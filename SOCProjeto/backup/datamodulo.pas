@@ -57,6 +57,7 @@ type
     procedure qryCategoriaNewRecord(DataSet: TDataSet);
     procedure qryOrcamentoAfterInsert(DataSet: TDataSet);
     procedure qryOrcamentoItensAfterInsert(DataSet: TDataSet);
+    procedure qryOrcamentoNewRecord(DataSet: TDataSet);
     procedure ZConnection1AfterConnect(Sender: TObject);
 
   private
@@ -129,6 +130,13 @@ end;
 procedure TDataModuleF.qryOrcamentoItensAfterInsert(DataSet: TDataSet);
 begin
   qryOrcamentoItensorcamentoitemid.AsInteger := StrToInt(getSequence('orcamento_itens_id_seq'));
+end;
+
+procedure TDataModuleF.qryOrcamentoNewRecord(DataSet: TDataSet);
+begin
+  qryOrcamentodt_orcamento.AsDateTime:=FormatDateTime('dd/mm/yyyy', now);
+  qryOrcamentodt_validade_orcamento.AsDateTime:FormatDateTime('dd/mm/yyyy',now + 15);
+
 end;
 
 procedure TDataModuleF.ZConnection1AfterConnect(Sender: TObject);

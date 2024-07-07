@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, DB, Forms, Controls, Graphics, Dialogs, ExtCtrls, DBGrids,
-  DBCtrls, StdCtrls, Buttons, CadModelo, DataModulo, AdicionarItens;
+  DBCtrls, StdCtrls, Buttons, CadModelo, DataModulo, AdicionarItens,OrcCliente;
 
 type
 
@@ -32,13 +32,16 @@ type
     Label6: TLabel;
     Panel4: TPanel;
     Panel5: TPanel;
+    procedure btnBuscaClick(Sender: TObject);
     procedure btnCancelarClick(Sender: TObject);
     procedure btnExcluirClick(Sender: TObject);
     procedure btnFechaClick(Sender: TObject);
     procedure btnGravarClick(Sender: TObject);
     procedure btnNovoClick(Sender: TObject);
     procedure btnNovoItemClick(Sender: TObject);
+    procedure btnRemoverItemClick(Sender: TObject);
     procedure btPesquisarClick(Sender: TObject);
+    procedure DBEdit2Change(Sender: TObject);
     procedure DBGrid1DblClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormDblClick(Sender: TObject);
@@ -49,6 +52,7 @@ type
 
   public
         procedure AbreOrcItens(orcamentoid : Integer);
+        procedure SomaItens;
   end;
 
 var
@@ -83,6 +87,25 @@ begin
   end;
 end;
 
+procedure TOrcamentoVendasF.SomaItens;
+begin
+
+  if not (DataModuleF.qryOrcamento.State in [dsEdit, dsInsert]) then
+     DataModuleF.qryOrcamento.Edit;
+
+  if not (DataModuleF.qryOrcamentoItens.State in [dsEdit, dsInsert]) then
+     DataModuleF.qryOrcamentoItens.Edit;
+
+  //Vai pro Primeiro
+  DataModuleF.qryOrcamentoItens.First;
+  DataModuleF.qryOrcamentovl_total_orcamento.AsFloat := 0;
+  while not DataModuleF.qryOrcamentoItens.Eof do
+  begin
+    DataModuleF.qryOrcamentovl_total_orcamento.AsFloat := DataModuleF.qryOrcamentovl_total_orcamento.AsFloat + DataModuleF.qryOrcamentoItensvl_total.AsFloat;
+    DataModuleF.qryOrcamentoItens.next;
+  end;
+end;
+
 
 procedure TOrcamentoVendasF.FormClose(Sender: TObject;
   var CloseAction: TCloseAction);
@@ -114,6 +137,7 @@ procedure TOrcamentoVendasF.DBGrid1DblClick(Sender: TObject);
 begin
   AbreOrcItens(DataModuleF.qryOrcamentoorcamentoid.AsInteger);
   psCadastrar.ActivePage:= tsCadastrar;
+  SomaItens;
 end;
 
 procedure TOrcamentoVendasF.btnNovoClick(Sender: TObject);
@@ -128,7 +152,17 @@ begin
     DataModuleF.qryOrcamentoItens.Insert;
     AdicionarItensF:=TAdicionarItensF.Create(Self);
     AdicionarItensF.ShowModal;
+    SomaItens;
+end;
 
+procedure TOrcamentoVendasF.btnRemoverItemClick(Sender: TObject);
+begin
+  begin
+      If  MessageDlg('Você tem certeza que deseja excluir o registro?', mtConfirmation,[mbyes,mbno],0)= mryes then
+      DataModuleF.qryOrcamentoItens.Delete;
+      SomaItens;
+
+  end;
 end;
 
 procedure TOrcamentoVendasF.btPesquisarClick(Sender: TObject);
@@ -151,6 +185,7 @@ begin
     end
 end;
 
+
 procedure TOrcamentoVendasF.btnFechaClick(Sender: TObject);
 begin
   Close;
@@ -171,9 +206,15 @@ begin
     psCadastrar.ActivePage:= tsPesquisa;
 end;
 
+procedure TOrcamentoVendasF.btnBuscaClick(Sender: TObject);
+begin
+    OrcClienteF:=TOrcClienteF.Create(Self);
+    OrcClienteF.ShowModal;
+end;
+
 procedure TOrcamentoVendasF.btnGravarClick(Sender: TObject);
 begin
-  DataModulo.DataModuleF.qryOrcamento.Post;
+  DataModuleF.qryOrcamento.Edit;
   psCadastrar.ActivePage:= tsPesquisa;
 end;
 

@@ -134,8 +134,8 @@ end;
 
 procedure TDataModuleF.qryOrcamentoNewRecord(DataSet: TDataSet);
 begin
-  qryOrcamentodt_orcamento.AsDateTime:=now;
-  qryOrcamentodt_validade_orcamento.AsDateTime:=now + 15;
+  qryOrcamentodt_orcamento.AsDateTime:= StrToDate(FormatDateTime('dd/mm/yyyy', now));
+  qryOrcamentodt_validade_orcamento.AsDateTime:=StrToDate(FormatDateTime('dd/mm/yyyy',now + 15));
 
 end;
 

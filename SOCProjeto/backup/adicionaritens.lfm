@@ -4,8 +4,9 @@ object AdicionarItensF: TAdicionarItensF
   Top = 320
   Width = 595
   Caption = 'Adicionar Itens'
-  ClientHeight = 345
-  ClientWidth = 595
+  ClientHeight = 0
+  ClientWidth = 0
+  Color = clWhite
   DesignTimePPI = 120
   OnClose = FormClose
   LCLVersion = '3.4.0.0'
@@ -106,7 +107,7 @@ object AdicionarItensF: TAdicionarItensF
     Font.Style = [fsBold]
     ParentFont = False
   end
-  object DBEdit4: TDBEdit
+  object dbEditQtd: TDBEdit
     Left = 40
     Height = 28
     Top = 240
@@ -115,8 +116,9 @@ object AdicionarItensF: TAdicionarItensF
     DataSource = OrcamentoVendasF.dsOrcamentoItens
     MaxLength = 0
     TabOrder = 2
+    OnKeyPress = dbEditQtdKeyPress
   end
-  object DBEdit5: TDBEdit
+  object dbEditValorUnit: TDBEdit
     Left = 224
     Height = 28
     Top = 240
@@ -128,14 +130,13 @@ object AdicionarItensF: TAdicionarItensF
     MaxLength = 0
     TabOrder = 3
   end
-  object DBEdit6: TDBEdit
+  object dbEditValorTotal: TDBEdit
     Left = 408
     Height = 28
     Top = 240
     Width = 120
     DataField = 'vl_total'
     DataSource = OrcamentoVendasF.dsOrcamentoItens
-    Enabled = False
     MaxLength = 0
     TabOrder = 4
   end

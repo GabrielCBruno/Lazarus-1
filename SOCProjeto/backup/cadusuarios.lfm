@@ -2,11 +2,11 @@ inherited CadUsuariosF: TCadUsuariosF
   Left = 529
   Top = 294
   Caption = 'Cadastro de Usuários'
-  ClientHeight = 0
-  ClientWidth = 0
   OnClose = FormClose
   OnShow = FormShow
   inherited psCadastrar: TPageControl
+    ActivePage = tsCadastrar
+    TabIndex = 1
     inherited tsPesquisa: TTabSheet
       inherited Panel1: TPanel
         inherited btPesquisar: TBitBtn
