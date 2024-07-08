@@ -12,7 +12,8 @@ uses
   Interfaces, // this includes the LCL widgetset
   Forms, zcomponent, MenuPrincipal, CadModelo, CadCategoria, DataModulo,
   CadClientes, RelClientes, CadProdutos, CadUsuarios, RelProdutos, RelOrcamento,
-  RelCategoria, OrcamentoVendas, AdicionarItens, AdicionaProdutos, OrcCliente;
+  RelCategoria, OrcamentoVendas, AdicionarItens, AdicionaProdutos, OrcCliente,
+  Sobre, CategoriaProdutoss;
 
 {$R *.res}
 

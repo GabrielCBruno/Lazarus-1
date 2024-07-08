@@ -166,8 +166,25 @@
         <Filename Value="orccliente.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="OrcClienteF"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="OrcCliente"/>
+      </Unit>
+      <Unit>
+        <Filename Value="sobre.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="SobreF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Sobre"/>
+      </Unit>
+      <Unit>
+        <Filename Value="categoriaprodutoss.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CategoriaProdutosF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="CategoriaProdutoss"/>
       </Unit>
     </Units>
   </ProjectOptions>

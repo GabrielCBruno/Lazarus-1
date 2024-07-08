@@ -26,7 +26,6 @@ type
     dsOrcamentoItens: TDataSource;
     Label1: TLabel;
     Label2: TLabel;
-    Label3: TLabel;
     Label4: TLabel;
     Label5: TLabel;
     Label6: TLabel;
@@ -41,7 +40,6 @@ type
     procedure btnNovoItemClick(Sender: TObject);
     procedure btnRemoverItemClick(Sender: TObject);
     procedure btPesquisarClick(Sender: TObject);
-    procedure DBEdit2Change(Sender: TObject);
     procedure DBGrid1DblClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormDblClick(Sender: TObject);

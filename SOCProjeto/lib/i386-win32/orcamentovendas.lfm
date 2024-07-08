@@ -113,7 +113,6 @@ inherited OrcamentoVendasF: TOrcamentoVendasF
         Width = 1017
         ClientWidth = 1017
         inherited btnCancelar: TBitBtn
-          Left = 809
           Top = 16
           Anchors = [akRight]
           OnClick = btnCancelarClick
@@ -141,6 +140,7 @@ inherited OrcamentoVendasF: TOrcamentoVendasF
         Width = 1017
         Align = alBottom
         Anchors = [akBottom]
+        ParentBackground = False
         TabOrder = 1
       end
       object DBGrid2: TDBGrid[3]
@@ -238,6 +238,7 @@ inherited OrcamentoVendasF: TOrcamentoVendasF
         Anchors = [akTop]
         ClientHeight = 104
         ClientWidth = 1017
+        ParentBackground = False
         TabOrder = 3
         object Label1: TLabel
           Left = 216
@@ -267,13 +268,6 @@ inherited OrcamentoVendasF: TOrcamentoVendasF
           Font.Style = [fsBold]
           ParentFont = False
         end
-        object Label3: TLabel
-          Left = 408
-          Height = 20
-          Top = 72
-          Width = 44
-          Caption = 'Label3'
-        end
         object btnBusca: TBitBtn
           Left = 352
           Height = 22
@@ -293,7 +287,7 @@ inherited OrcamentoVendasF: TOrcamentoVendasF
           Alignment = taRightJustify
           Enabled = False
           MaxLength = 0
-          TabOrder = 1
+          TabOrder = 3
         end
         object dbEditIdOrc2: TDBEdit
           Left = 304
@@ -305,7 +299,7 @@ inherited OrcamentoVendasF: TOrcamentoVendasF
           Alignment = taRightJustify
           Enabled = False
           MaxLength = 0
-          TabOrder = 2
+          TabOrder = 4
         end
         object DBEdit2: TDBEdit
           Left = 584
@@ -314,8 +308,9 @@ inherited OrcamentoVendasF: TOrcamentoVendasF
           Width = 140
           DataField = 'dt_orcamento'
           DataSource = dsOrcamento
+          Enabled = False
           MaxLength = 0
-          TabOrder = 3
+          TabOrder = 5
         end
         object DBEdit3: TDBEdit
           Left = 928
@@ -324,8 +319,9 @@ inherited OrcamentoVendasF: TOrcamentoVendasF
           Width = 160
           DataField = 'dt_validade_orcamento'
           DataSource = dsOrcamento
+          Enabled = False
           MaxLength = 0
-          TabOrder = 4
+          TabOrder = 6
         end
         object Label4: TLabel
           Left = 408
@@ -390,7 +386,7 @@ inherited OrcamentoVendasF: TOrcamentoVendasF
           }
           OnClick = btnRemoverItemClick
           ParentFont = False
-          TabOrder = 5
+          TabOrder = 2
         end
         object Label6: TLabel
           Left = 1120
@@ -413,8 +409,9 @@ inherited OrcamentoVendasF: TOrcamentoVendasF
           Width = 160
           DataField = 'vl_total_orcamento'
           DataSource = dsOrcamento
+          Enabled = False
           MaxLength = 0
-          TabOrder = 6
+          TabOrder = 7
         end
         object btnNovoItem: TBitBtn
           Left = 736
@@ -452,7 +449,7 @@ inherited OrcamentoVendasF: TOrcamentoVendasF
           }
           OnClick = btnNovoItemClick
           ParentFont = False
-          TabOrder = 7
+          TabOrder = 1
         end
       end
     end

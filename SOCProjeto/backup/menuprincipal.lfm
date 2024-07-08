@@ -1,7 +1,7 @@
 object MenuPrincipalF: TMenuPrincipalF
-  Left = 316
+  Left = 365
   Height = 505
-  Top = 155
+  Top = 202
   Width = 900
   Caption = 'Menu Principal SCO'
   DesignTimePPI = 120
@@ -58,6 +58,7 @@ object MenuPrincipalF: TMenuPrincipalF
     end
     object mnSobre: TMenuItem
       Caption = 'Sobre'
+      OnClick = mnSobreClick
     end
     object mnSair: TMenuItem
       Caption = 'Sair'

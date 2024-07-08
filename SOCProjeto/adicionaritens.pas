@@ -25,11 +25,13 @@ type
     Label3: TLabel;
     Label4: TLabel;
     Label5: TLabel;
+    Label6: TLabel;
     SpeedButton1: TSpeedButton;
     procedure btnCancelarItemClick(Sender: TObject);
     procedure btnInserirClick(Sender: TObject);
     procedure dbEditQtdKeyPress(Sender: TObject; var Key: char);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
+    procedure FormCreate(Sender: TObject);
     procedure SpeedButton1Click(Sender: TObject);
   private
 
@@ -50,6 +52,11 @@ procedure TAdicionarItensF.FormClose(Sender: TObject;
   var CloseAction: TCloseAction);
 begin
   CloseAction:=caFree;
+end;
+
+procedure TAdicionarItensF.FormCreate(Sender: TObject);
+begin
+
 end;
 
 procedure TAdicionarItensF.btnInserirClick(Sender: TObject);

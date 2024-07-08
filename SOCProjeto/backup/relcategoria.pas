@@ -46,6 +46,7 @@ procedure TRelCategoriaF.FormClose(Sender: TObject;
   var CloseAction: TCloseAction);
 begin
   qryRelCategoria.Close;
+  CloseAction:=caFree;
 end;
 
 procedure TRelCategoriaF.btnRelCategoriaClick(Sender: TObject);

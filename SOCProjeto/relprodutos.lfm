@@ -4,12 +4,13 @@ object RelProdutosF: TRelProdutosF
   Top = 340
   Width = 742
   Caption = 'Relatorio de Produtos'
-  ClientHeight = 0
-  ClientWidth = 0
+  ClientHeight = 387
+  ClientWidth = 742
   DesignTimePPI = 120
   OnClose = FormClose
   OnShow = FormShow
   LCLVersion = '3.4.0.0'
+  WindowState = wsMinimized
   object btnRelatorioCli: TBitBtn
     Left = 112
     Height = 72

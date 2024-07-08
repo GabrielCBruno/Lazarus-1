@@ -7,7 +7,7 @@ interface
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Menus, CadCategoria,
   CadClientes, RelClientes, CadProdutos, CadUsuarios,RelProdutos,RelOrcamento,
-  RelCategoria,OrcamentoVendas, AdicionarItens, AdicionaProdutos;
+  RelCategoria,OrcamentoVendas, AdicionarItens, AdicionaProdutos, Sobre;
 
 type
 
@@ -38,6 +38,7 @@ type
     procedure mnProdutosClick(Sender: TObject);
     procedure mnProdutosRClick(Sender: TObject);
     procedure mnSairClick(Sender: TObject);
+    procedure mnSobreClick(Sender: TObject);
     procedure mnUsuariosClick(Sender: TObject);
   private
 
@@ -57,6 +58,12 @@ implementation
 procedure TMenuPrincipalF.mnSairClick(Sender: TObject);
 begin
   Application.Terminate;
+end;
+
+procedure TMenuPrincipalF.mnSobreClick(Sender: TObject);
+begin
+  SobreF:=TSobreF.Create(Self);
+  SobreF.ShowModal
 end;
 
 procedure TMenuPrincipalF.mnUsuariosClick(Sender: TObject);

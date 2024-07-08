@@ -2,6 +2,8 @@ inherited CadProdutosF: TCadProdutosF
   Left = 473
   Top = 335
   Caption = 'Cadastro de Produtos'
+  ClientHeight = 538
+  ClientWidth = 975
   OnClose = FormClose
   OnShow = FormShow
   inherited psCadastrar: TPageControl

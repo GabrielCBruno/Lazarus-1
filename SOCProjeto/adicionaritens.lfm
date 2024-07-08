@@ -1,19 +1,20 @@
 object AdicionarItensF: TAdicionarItensF
-  Left = 631
-  Height = 345
+  Left = 567
+  Height = 442
   Top = 320
-  Width = 595
+  Width = 659
   Caption = 'Adicionar Itens'
-  ClientHeight = 345
-  ClientWidth = 595
+  ClientHeight = 442
+  ClientWidth = 659
   Color = clWhite
   DesignTimePPI = 120
   OnClose = FormClose
+  OnCreate = FormCreate
   LCLVersion = '3.4.0.0'
   object Label1: TLabel
     Left = 40
     Height = 28
-    Top = 16
+    Top = 104
     Width = 76
     Caption = 'Produto'
     Font.CharSet = ANSI_CHARSET
@@ -26,19 +27,19 @@ object AdicionarItensF: TAdicionarItensF
   object DBEdit2: TDBEdit
     Left = 40
     Height = 28
-    Top = 48
+    Top = 136
     Width = 76
     DataField = 'produtoid'
     DataSource = OrcamentoVendasF.dsOrcamentoItens
     Alignment = taRightJustify
     Enabled = False
     MaxLength = 0
-    TabOrder = 0
+    TabOrder = 3
   end
   object SpeedButton1: TSpeedButton
     Left = 128
     Height = 28
-    Top = 48
+    Top = 136
     Width = 29
     Caption = '...'
     OnClick = SpeedButton1Click
@@ -47,7 +48,7 @@ object AdicionarItensF: TAdicionarItensF
   object Label2: TLabel
     Left = 40
     Height = 28
-    Top = 104
+    Top = 192
     Width = 204
     Caption = 'Descrição do Produto'
     Font.CharSet = ANSI_CHARSET
@@ -60,18 +61,18 @@ object AdicionarItensF: TAdicionarItensF
   object DBEdit3: TDBEdit
     Left = 40
     Height = 28
-    Top = 144
+    Top = 232
     Width = 320
     DataField = 'produtodesc'
     DataSource = OrcamentoVendasF.dsOrcamentoItens
     Enabled = False
     MaxLength = 0
-    TabOrder = 1
+    TabOrder = 4
   end
   object Label3: TLabel
     Left = 40
     Height = 28
-    Top = 200
+    Top = 280
     Width = 110
     Caption = 'Quantidade'
     Font.CharSet = ANSI_CHARSET
@@ -84,7 +85,7 @@ object AdicionarItensF: TAdicionarItensF
   object Label4: TLabel
     Left = 224
     Height = 28
-    Top = 200
+    Top = 280
     Width = 131
     Caption = 'Valor Unitario'
     Font.CharSet = ANSI_CHARSET
@@ -97,7 +98,7 @@ object AdicionarItensF: TAdicionarItensF
   object Label5: TLabel
     Left = 416
     Height = 28
-    Top = 200
+    Top = 280
     Width = 101
     Caption = 'Valor Total'
     Font.CharSet = ANSI_CHARSET
@@ -110,40 +111,41 @@ object AdicionarItensF: TAdicionarItensF
   object dbEditQtd: TDBEdit
     Left = 40
     Height = 28
-    Top = 240
+    Top = 320
     Width = 110
     DataField = 'qt_produto'
     DataSource = OrcamentoVendasF.dsOrcamentoItens
     MaxLength = 0
-    TabOrder = 2
+    TabOrder = 0
     OnKeyPress = dbEditQtdKeyPress
   end
   object dbEditValorUnit: TDBEdit
     Left = 224
     Height = 28
-    Top = 240
+    Top = 320
     Width = 131
     DataField = 'vl_unitario'
     DataSource = OrcamentoVendasF.dsOrcamentoItens
     Alignment = taRightJustify
     Enabled = False
     MaxLength = 0
-    TabOrder = 3
+    TabOrder = 5
   end
   object dbEditValorTotal: TDBEdit
     Left = 408
     Height = 28
-    Top = 240
+    Top = 320
     Width = 120
     DataField = 'vl_total'
     DataSource = OrcamentoVendasF.dsOrcamentoItens
+    Enabled = False
     MaxLength = 0
-    TabOrder = 4
+    TabOrder = 6
   end
   object btnInserir: TBitBtn
     Left = 152
     Height = 38
-    Top = 288
+    Top = 368
     Width = 94
     Caption = 'Inserir'
     Glyph.Data = {
@@ -201,12 +203,12 @@ object AdicionarItensF: TAdicionarItensF
       0808080808080808080808080808080808080808080808080808
     }
     OnClick = btnInserirClick
-    TabOrder = 5
+    TabOrder = 1
   end
   object btnCancelarItem: TBitBtn
     Left = 352
     Height = 38
-    Top = 288
+    Top = 368
     Width = 94
     Caption = 'Cancelar'
     Glyph.Data = {
@@ -264,6 +266,19 @@ object AdicionarItensF: TAdicionarItensF
       0101010101010101010101010101010101010101010101010101
     }
     OnClick = btnCancelarItemClick
-    TabOrder = 6
+    TabOrder = 2
+  end
+  object Label6: TLabel
+    Left = 88
+    Height = 31
+    Top = 32
+    Width = 473
+    Caption = 'Pressionar Enter Para Calcular o Valor Total!!'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -23
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
   end
 end

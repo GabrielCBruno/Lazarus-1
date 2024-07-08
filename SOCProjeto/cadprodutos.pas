@@ -28,6 +28,7 @@ type
     Label5: TLabel;
     Label6: TLabel;
     Label7: TLabel;
+    SpeedButton1: TSpeedButton;
     procedure btnCancelarClick(Sender: TObject);
     procedure btnExcluirClick(Sender: TObject);
     procedure btnFechaClick(Sender: TObject);

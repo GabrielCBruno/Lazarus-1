@@ -26,6 +26,7 @@ type
     qryClientesOrctipo_cliente: TZRawStringField;
     procedure btnPesquisarClick(Sender: TObject);
     procedure DBGrid1DblClick(Sender: TObject);
+    procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
   private
 
   public
@@ -65,6 +66,12 @@ procedure TOrcClienteF.DBGrid1DblClick(Sender: TObject);
 begin
   DataModuleF.qryOrcamentoclienteid.AsInteger:= qryClientesOrcclienteid.AsInteger;
   Close;
+end;
+
+procedure TOrcClienteF.FormClose(Sender: TObject; var CloseAction: TCloseAction
+  );
+begin
+  CloseAction:=caFree;
 end;
 
 

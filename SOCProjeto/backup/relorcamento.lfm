@@ -65,7 +65,6 @@ object RelOrcamentoF: TRelOrcamentoF
   end
   object qryRelOrcamento: TZQuery
     Connection = DataModuleF.ZConnection1
-    Active = True
     SQL.Strings = (
       'select * from orcamento;'
     )

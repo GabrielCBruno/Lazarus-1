@@ -4,12 +4,13 @@ object RelCategoriaF: TRelCategoriaF
   Top = 350
   Width = 700
   Caption = 'Relatório de Categoria'
-  ClientHeight = 265
-  ClientWidth = 700
+  ClientHeight = 0
+  ClientWidth = 0
   DesignTimePPI = 120
   OnClose = FormClose
   OnShow = FormShow
   LCLVersion = '3.4.0.0'
+  WindowState = wsMinimized
   object btnRelCategoria: TBitBtn
     Left = 112
     Height = 72

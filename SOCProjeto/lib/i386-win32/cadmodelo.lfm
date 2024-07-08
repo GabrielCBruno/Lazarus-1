@@ -4,8 +4,9 @@ object CadModeloF: TCadModeloF
   Top = 358
   Width = 975
   Caption = 'Modelo'
-  ClientHeight = 538
-  ClientWidth = 975
+  ClientHeight = 0
+  ClientWidth = 0
+  Color = clWhite
   DesignTimePPI = 120
   LCLVersion = '3.4.0.0'
   WindowState = wsMaximized
@@ -14,9 +15,9 @@ object CadModeloF: TCadModeloF
     Height = 538
     Top = 0
     Width = 975
-    ActivePage = tsPesquisa
+    ActivePage = tsCadastrar
     Align = alClient
-    TabIndex = 0
+    TabIndex = 1
     TabOrder = 0
     object tsPesquisa: TTabSheet
       Caption = 'Pesquisa'
@@ -30,6 +31,7 @@ object CadModeloF: TCadModeloF
         Align = alTop
         ClientHeight = 63
         ClientWidth = 967
+        ParentBackground = False
         TabOrder = 0
         object btPesquisar: TBitBtn
           Left = 304
@@ -113,6 +115,7 @@ object CadModeloF: TCadModeloF
         Align = alBottom
         ClientHeight = 63
         ClientWidth = 967
+        ParentBackground = False
         TabOrder = 1
         object btnFecha: TBitBtn
           Left = 816
@@ -244,6 +247,7 @@ object CadModeloF: TCadModeloF
         Align = alBottom
         ClientHeight = 63
         ClientWidth = 967
+        ParentBackground = False
         TabOrder = 0
         object btnCancelar: TBitBtn
           Left = 808

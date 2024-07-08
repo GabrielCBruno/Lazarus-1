@@ -14,9 +14,9 @@ type
 
   TCadUsuariosF = class(TCadModeloF)
     dbEditNomComp: TDBEdit;
-    dbEditUsuario: TDBEdit;
     dbEditSenha: TDBEdit;
     dbEditID: TDBEdit;
+    dbEditUsuario: TDBEdit;
     dsCadUsuarios: TDataSource;
     Label1: TLabel;
     Label2: TLabel;

@@ -6,7 +6,9 @@ object OrcClienteF: TOrcClienteF
   Caption = 'Clientes'
   ClientHeight = 240
   ClientWidth = 756
+  Color = clWhite
   DesignTimePPI = 120
+  OnClose = FormClose
   LCLVersion = '3.4.0.0'
   object Panel1: TPanel
     Left = 0
@@ -16,6 +18,7 @@ object OrcClienteF: TOrcClienteF
     Align = alTop
     ClientHeight = 63
     ClientWidth = 756
+    ParentBackground = False
     TabOrder = 0
     object edtCodigo: TEdit
       Left = 168
@@ -168,7 +171,6 @@ object OrcClienteF: TOrcClienteF
   end
   object qryClientesOrc: TZQuery
     Connection = DataModuleF.ZConnection1
-    Active = True
     SQL.Strings = (
       'select * from cliente;'
     )

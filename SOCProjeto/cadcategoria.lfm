@@ -77,9 +77,9 @@ inherited CadCategoriaF: TCadCategoriaF
         Caption = 'Cadastro de Categoria'
       end
       object lbID: TLabel[2]
-        Left = 312
+        Left = 904
         Height = 24
-        Top = 160
+        Top = 128
         Width = 28
         Caption = 'ID:'
         Font.CharSet = ANSI_CHARSET
@@ -90,9 +90,9 @@ inherited CadCategoriaF: TCadCategoriaF
         ParentFont = False
       end
       object lbDescricao: TLabel[3]
-        Left = 144
+        Left = 736
         Height = 24
-        Top = 200
+        Top = 168
         Width = 196
         Caption = 'Descrição do Produto:'
         Font.CharSet = ANSI_CHARSET
@@ -103,9 +103,9 @@ inherited CadCategoriaF: TCadCategoriaF
         ParentFont = False
       end
       object dbEditID: TDBEdit[4]
-        Left = 352
+        Left = 944
         Height = 28
-        Top = 156
+        Top = 124
         Width = 100
         DataField = 'categoriaprodutoid'
         DataSource = dsCategoria
@@ -115,9 +115,9 @@ inherited CadCategoriaF: TCadCategoriaF
         TabOrder = 1
       end
       object dbEditDescDoPro: TDBEdit[5]
-        Left = 352
+        Left = 944
         Height = 28
-        Top = 200
+        Top = 168
         Width = 100
         DataField = 'ds_categoria_produto'
         DataSource = dsCategoria

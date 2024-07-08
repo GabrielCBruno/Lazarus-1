@@ -44,6 +44,7 @@ procedure TRelOrcamentoF.FormClose(Sender: TObject;
   var CloseAction: TCloseAction);
 begin
   qryRelOrcamento.Close;
+  CloseAction:=caFree;
 end;
 
 procedure TRelOrcamentoF.btnRelOrcamentoClick(Sender: TObject);

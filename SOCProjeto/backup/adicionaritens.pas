@@ -25,6 +25,7 @@ type
     Label3: TLabel;
     Label4: TLabel;
     Label5: TLabel;
+    Label6: TLabel;
     SpeedButton1: TSpeedButton;
     procedure btnCancelarItemClick(Sender: TObject);
     procedure btnInserirClick(Sender: TObject);
@@ -65,9 +66,19 @@ procedure TAdicionarItensF.dbEditQtdKeyPress(Sender: TObject; var Key: char);
   valorTot: Double;
   Quant:Integer;
 begin
+  if dbEditQtd.Text = '' then
+  begin
+    Quant := 0;
+    valorTot:= Quant * StrToFloat(dbEditValorUnit.Text);
+    DataModuleF.qryOrcamentoItensvl_total.AsFloat := valorTot;
+
+  end
+  else
+  begin
   Quant:=StrToInt(dbEditQtd.Text);
   valorTot:= Quant * StrToFloat(dbEditValorUnit.Text);
   DataModuleF.qryOrcamentoItensvl_total.AsFloat := valorTot;
+  end;
 end;
 
 procedure TAdicionarItensF.btnCancelarItemClick(Sender: TObject);
