@@ -10,7 +10,6 @@ object RelCategoriaF: TRelCategoriaF
   OnClose = FormClose
   OnShow = FormShow
   LCLVersion = '3.4.0.0'
-  WindowState = wsMinimized
   object btnRelCategoria: TBitBtn
     Left = 112
     Height = 72

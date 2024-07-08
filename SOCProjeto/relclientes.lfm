@@ -4,13 +4,12 @@ object RelClientesF: TRelClientesF
   Top = 280
   Width = 760
   Caption = 'Relatorio de Clientes'
-  ClientHeight = 483
-  ClientWidth = 760
+  ClientHeight = 0
+  ClientWidth = 0
   DesignTimePPI = 120
   OnClose = FormClose
   OnShow = FormShow
   LCLVersion = '3.4.0.0'
-  WindowState = wsMinimized
   object btnRelatorioCli: TBitBtn
     Left = 128
     Height = 72

@@ -93,6 +93,7 @@ end;
 
 procedure TCadClientesF.FormShow(Sender: TObject);
 begin
+  DataModuleF.qryCadClientes.Open;
   psCadastrar.ActivePage:= tsPesquisa;
 end;
 

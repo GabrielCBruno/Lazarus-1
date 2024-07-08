@@ -309,7 +309,6 @@ inherited OrcamentoVendasF: TOrcamentoVendasF
           Enabled = False
           MaxLength = 0
           TabOrder = 5
-          OnChange = DBEdit2Change
         end
         object DBEdit3: TDBEdit
           Left = 928

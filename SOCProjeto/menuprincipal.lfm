@@ -1,11 +1,11 @@
 object MenuPrincipalF: TMenuPrincipalF
   Left = 365
-  Height = 505
-  Top = 202
+  Height = 504
+  Top = 203
   Width = 900
   Caption = 'Menu Principal SCO'
-  ClientHeight = 0
-  ClientWidth = 0
+  ClientHeight = 504
+  ClientWidth = 900
   Color = clWhite
   DesignTimePPI = 120
   Menu = MainMenu1
@@ -13,7 +13,7 @@ object MenuPrincipalF: TMenuPrincipalF
   WindowState = wsMaximized
   object Image1: TImage
     Left = 0
-    Height = 505
+    Height = 504
     Top = 0
     Width = 900
     Align = alClient

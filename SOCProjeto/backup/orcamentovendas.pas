@@ -40,7 +40,6 @@ type
     procedure btnNovoItemClick(Sender: TObject);
     procedure btnRemoverItemClick(Sender: TObject);
     procedure btPesquisarClick(Sender: TObject);
-    procedure DBEdit2Change(Sender: TObject);
     procedure DBGrid1DblClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormDblClick(Sender: TObject);

@@ -13,7 +13,7 @@ uses
   Forms, zcomponent, MenuPrincipal, CadModelo, CadCategoria, DataModulo,
   CadClientes, RelClientes, CadProdutos, CadUsuarios, RelProdutos, RelOrcamento,
   RelCategoria, OrcamentoVendas, AdicionarItens, AdicionaProdutos, OrcCliente,
-  Sobre, CategoriaProdutoss;
+  Sobre, CategoriaProdutoss, TelaLogin;
 
 {$R *.res}
 
@@ -22,9 +22,8 @@ begin
   Application.Scaled:=True;
   Application.Initialize;
   Application.CreateForm(TDataModuleF, DataModuleF);
-  Application.CreateForm(TMenuPrincipalF, MenuPrincipalF);
+  Application.CreateForm(TTelaLoginF, TelaLoginF);
   Application.CreateForm(TCadModeloF, CadModeloF);
-  Application.CreateForm(TAdicionaProdutosF, AdicionaProdutosF);
   Application.Run;
 end.
 

@@ -9,6 +9,8 @@ inherited OrcamentoVendasF: TOrcamentoVendasF
   OnShow = FormShow
   inherited psCadastrar: TPageControl
     Width = 1025
+    ActivePage = tsPesquisa
+    TabIndex = 0
     OnChange = psCadastrarChange
     inherited tsPesquisa: TTabSheet
       ClientWidth = 1017

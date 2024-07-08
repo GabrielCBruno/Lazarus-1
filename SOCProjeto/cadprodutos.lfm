@@ -2,11 +2,11 @@ inherited CadProdutosF: TCadProdutosF
   Left = 473
   Top = 335
   Caption = 'Cadastro de Produtos'
-  ClientHeight = 0
-  ClientWidth = 0
   OnClose = FormClose
   OnShow = FormShow
   inherited psCadastrar: TPageControl
+    ActivePage = tsPesquisa
+    TabIndex = 0
     inherited tsPesquisa: TTabSheet
       inherited Panel1: TPanel
         inherited btPesquisar: TBitBtn

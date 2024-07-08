@@ -10,6 +10,7 @@ object SobreF: TSobreF
   DesignTimePPI = 120
   OnClose = FormClose
   LCLVersion = '3.4.0.0'
+  WindowState = wsMinimized
   object Label1: TLabel
     Left = 8
     Height = 41

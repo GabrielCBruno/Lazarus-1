@@ -5,6 +5,8 @@ inherited CadCategoriaF: TCadCategoriaF
   OnClose = FormClose
   OnShow = FormShow
   inherited psCadastrar: TPageControl
+    ActivePage = tsPesquisa
+    TabIndex = 0
     inherited tsPesquisa: TTabSheet
       inherited Panel1: TPanel
         inherited btPesquisar: TBitBtn

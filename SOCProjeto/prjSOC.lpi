@@ -186,6 +186,14 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CategoriaProdutoss"/>
       </Unit>
+      <Unit>
+        <Filename Value="telalogin.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="TelaLoginF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="TelaLogin"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

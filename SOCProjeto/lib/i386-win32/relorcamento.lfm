@@ -4,13 +4,12 @@ object RelOrcamentoF: TRelOrcamentoF
   Top = 340
   Width = 706
   Caption = 'Relatorio De Orçamento'
-  ClientHeight = 340
-  ClientWidth = 706
+  ClientHeight = 0
+  ClientWidth = 0
   DesignTimePPI = 120
   OnClose = FormClose
   OnShow = FormShow
   LCLVersion = '3.4.0.0'
-  WindowState = wsMinimized
   object btnRelOrcamento: TBitBtn
     Left = 112
     Height = 72
