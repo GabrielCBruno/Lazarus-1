@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, DB, Forms, Controls, Graphics, Dialogs, StdCtrls, Buttons,
-  DBCtrls, CadModelo, DataModulo;
+  DBCtrls, CadModelo, DataModulo,CategoriaProdutoss;
 
 type
 
@@ -38,6 +38,7 @@ type
     procedure DBGrid1DblClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormShow(Sender: TObject);
+    procedure SpeedButton1Click(Sender: TObject);
 
   private
 
@@ -96,6 +97,12 @@ procedure TCadProdutosF.FormShow(Sender: TObject);
 begin
    DataModulo.DataModuleF.qryCadProdutos.Open;
    psCadastrar.ActivePage:= tsPesquisa;
+end;
+
+procedure TCadProdutosF.SpeedButton1Click(Sender: TObject);
+begin
+  CategoriaProdutosF:=TCategoriaProdutosF.Create(Self);
+  CategoriaProdutosF.ShowModal;
 end;
 
 procedure TCadProdutosF.btnFechaClick(Sender: TObject);

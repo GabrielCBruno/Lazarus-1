@@ -94,7 +94,7 @@ begin
   if not (DataModuleF.qryOrcamentoItens.State in [dsEdit, dsInsert]) then
      DataModuleF.qryOrcamentoItens.Edit;
 
-  //Vai pro Primeiro
+
   DataModuleF.qryOrcamentoItens.First;
   DataModuleF.qryOrcamentovl_total_orcamento.AsFloat := 0;
   while not DataModuleF.qryOrcamentoItens.Eof do

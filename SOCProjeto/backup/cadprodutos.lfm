@@ -2,8 +2,6 @@ inherited CadProdutosF: TCadProdutosF
   Left = 473
   Top = 335
   Caption = 'Cadastro de Produtos'
-  ClientHeight = 538
-  ClientWidth = 975
   OnClose = FormClose
   OnShow = FormShow
   inherited psCadastrar: TPageControl
@@ -225,7 +223,7 @@ inherited CadProdutosF: TCadProdutosF
         Left = 928
         Height = 28
         Top = 144
-        Width = 100
+        Width = 72
         DataField = 'categoriaprodutoid'
         DataSource = dsCadProdutos
         Alignment = taRightJustify
@@ -294,6 +292,20 @@ inherited CadProdutosF: TCadProdutosF
         Enabled = False
         MaxLength = 0
         TabOrder = 7
+      end
+      object SpeedButton1: TSpeedButton[16]
+        Left = 1008
+        Height = 28
+        Top = 144
+        Width = 45
+        Caption = '...'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -20
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        OnClick = SpeedButton1Click
+        ParentFont = False
       end
     end
   end

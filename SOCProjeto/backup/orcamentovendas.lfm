@@ -3,15 +3,12 @@ inherited OrcamentoVendasF: TOrcamentoVendasF
   Top = 270
   Width = 1025
   Caption = 'Orçamento de Vendas'
-  ClientHeight = 0
-  ClientWidth = 0
+  ClientWidth = 1025
   OnClose = FormClose
   OnDblClick = FormDblClick
   OnShow = FormShow
   inherited psCadastrar: TPageControl
     Width = 1025
-    ActivePage = tsCadastrar
-    TabIndex = 1
     OnChange = psCadastrarChange
     inherited tsPesquisa: TTabSheet
       ClientWidth = 1017
@@ -141,6 +138,7 @@ inherited OrcamentoVendasF: TOrcamentoVendasF
         Width = 1017
         Align = alBottom
         Anchors = [akBottom]
+        ParentBackground = False
         TabOrder = 1
       end
       object DBGrid2: TDBGrid[3]
@@ -238,6 +236,7 @@ inherited OrcamentoVendasF: TOrcamentoVendasF
         Anchors = [akTop]
         ClientHeight = 104
         ClientWidth = 1017
+        ParentBackground = False
         TabOrder = 3
         object Label1: TLabel
           Left = 216
@@ -310,6 +309,7 @@ inherited OrcamentoVendasF: TOrcamentoVendasF
           Enabled = False
           MaxLength = 0
           TabOrder = 5
+          OnChange = DBEdit2Change
         end
         object DBEdit3: TDBEdit
           Left = 928
