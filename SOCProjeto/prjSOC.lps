@@ -85,7 +85,6 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="16"/>
         <CursorPos X="24" Y="58"/>
-        <ComponentState Value="1"/>
         <UsageCount Value="68"/>
       </Unit>
       <Unit>
@@ -107,11 +106,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadUsuarios"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="4"/>
-        <TopLine Value="78"/>
+        <TopLine Value="72"/>
         <CursorPos X="23" Y="54"/>
-        <ComponentState Value="1"/>
         <UsageCount Value="62"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -126,7 +123,6 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="19"/>
         <CursorPos X="24" Y="49"/>
-        <ComponentState Value="1"/>
         <UsageCount Value="59"/>
       </Unit>
       <Unit>
@@ -139,7 +135,6 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="17"/>
         <CursorPos X="3" Y="47"/>
-        <ComponentState Value="1"/>
         <UsageCount Value="56"/>
       </Unit>
       <Unit>
@@ -151,7 +146,6 @@
         <UnitName Value="RelCategoria"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="23" Y="49"/>
-        <ComponentState Value="1"/>
         <UsageCount Value="56"/>
       </Unit>
       <Unit>
@@ -209,7 +203,6 @@
         <UnitName Value="Sobre"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="23" Y="39"/>
-        <ComponentState Value="1"/>
         <UsageCount Value="31"/>
       </Unit>
       <Unit>
@@ -230,9 +223,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="TelaLogin"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="3"/>
-        <TopLine Value="33"/>
-        <CursorPos X="20" Y="20"/>
+        <TopLine Value="38"/>
+        <CursorPos X="29" Y="58"/>
         <UsageCount Value="24"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -286,7 +280,7 @@
         <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="9">
+    <JumpHistory HistoryIndex="17">
       <Position>
         <Filename Value="menuprincipal.pas"/>
         <Caret Line="67" Column="19" TopLine="67"/>
@@ -324,6 +318,38 @@
       <Position>
         <Filename Value="telalogin.pas"/>
         <Caret Line="56" Column="7" TopLine="36"/>
+      </Position>
+      <Position>
+        <Filename Value="telalogin.pas"/>
+        <Caret Line="51" Column="19" TopLine="37"/>
+      </Position>
+      <Position>
+        <Filename Value="telalogin.pas"/>
+        <Caret Line="55" Column="27" TopLine="37"/>
+      </Position>
+      <Position>
+        <Filename Value="telalogin.pas"/>
+        <Caret Line="51" Column="18" TopLine="37"/>
+      </Position>
+      <Position>
+        <Filename Value="telalogin.pas"/>
+        <Caret Line="53" Column="18" TopLine="39"/>
+      </Position>
+      <Position>
+        <Filename Value="telalogin.pas"/>
+        <Caret Line="49" Column="38" TopLine="35"/>
+      </Position>
+      <Position>
+        <Filename Value="telalogin.pas"/>
+        <Caret Line="53" Column="40" TopLine="38"/>
+      </Position>
+      <Position>
+        <Filename Value="telalogin.pas"/>
+        <Caret Line="59" Column="114" TopLine="41"/>
+      </Position>
+      <Position>
+        <Filename Value="telalogin.pas"/>
+        <Caret Line="55" Column="53" TopLine="41"/>
       </Position>
     </JumpHistory>
     <RunParams>

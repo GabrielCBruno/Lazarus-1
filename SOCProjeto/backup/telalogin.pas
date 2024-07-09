@@ -44,10 +44,12 @@ implementation
 procedure TTelaLoginF.btnEntrarUsuariosClick(Sender: TObject);
 var
   Usuario,Senha:String;
+
 begin
      if (edtUsuario.Text = '') or (edtSenha.Text = '')  then
     begin
-      DataModulo.DataModuleF.qryCadProdutos.SQL.Text := 'select * from usuarios'
+      DataModulo.DataModuleF.qryCadProdutos.SQL.Text := 'select * from usuarios';
+      ShowMessage('Login Ou Senha Vazio');
     end
 
     else
