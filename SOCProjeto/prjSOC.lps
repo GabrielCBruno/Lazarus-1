@@ -10,7 +10,7 @@
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="30" Y="8"/>
-        <UsageCount Value="83"/>
+        <UsageCount Value="84"/>
       </Unit>
       <Unit>
         <Filename Value="menuprincipal.pas"/>
@@ -19,12 +19,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="MenuPrincipal"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="47"/>
         <CursorPos X="19"/>
-        <UsageCount Value="83"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
+        <UsageCount Value="84"/>
       </Unit>
       <Unit>
         <Filename Value="cadmodelo.pas"/>
@@ -33,11 +31,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadModelo"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="-1"/>
         <CursorPos X="16" Y="29"/>
-        <UsageCount Value="83"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
+        <UsageCount Value="84"/>
       </Unit>
       <Unit>
         <Filename Value="cadcategoria.pas"/>
@@ -49,7 +45,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="67"/>
         <CursorPos Y="53"/>
-        <UsageCount Value="81"/>
+        <UsageCount Value="82"/>
       </Unit>
       <Unit>
         <Filename Value="datamodulo.pas"/>
@@ -58,8 +54,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="DataModule"/>
         <UnitName Value="DataModulo"/>
-        <CursorPos X="97" Y="138"/>
-        <UsageCount Value="81"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="111"/>
+        <CursorPos X="5" Y="116"/>
+        <UsageCount Value="82"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -73,7 +71,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="88"/>
         <CursorPos X="34" Y="96"/>
-        <UsageCount Value="71"/>
+        <UsageCount Value="72"/>
       </Unit>
       <Unit>
         <Filename Value="relclientes.pas"/>
@@ -85,7 +83,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="16"/>
         <CursorPos X="24" Y="58"/>
-        <UsageCount Value="68"/>
+        <UsageCount Value="69"/>
       </Unit>
       <Unit>
         <Filename Value="cadprodutos.pas"/>
@@ -97,7 +95,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="63"/>
         <CursorPos X="2" Y="68"/>
-        <UsageCount Value="65"/>
+        <UsageCount Value="66"/>
       </Unit>
       <Unit>
         <Filename Value="cadusuarios.pas"/>
@@ -106,12 +104,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadUsuarios"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="72"/>
         <CursorPos X="23" Y="54"/>
-        <UsageCount Value="62"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
+        <UsageCount Value="63"/>
       </Unit>
       <Unit>
         <Filename Value="relprodutos.pas"/>
@@ -123,7 +119,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="19"/>
         <CursorPos X="24" Y="49"/>
-        <UsageCount Value="59"/>
+        <UsageCount Value="60"/>
       </Unit>
       <Unit>
         <Filename Value="relorcamento.pas"/>
@@ -135,7 +131,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="17"/>
         <CursorPos X="3" Y="47"/>
-        <UsageCount Value="56"/>
+        <UsageCount Value="57"/>
       </Unit>
       <Unit>
         <Filename Value="relcategoria.pas"/>
@@ -146,7 +142,7 @@
         <UnitName Value="RelCategoria"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="23" Y="49"/>
-        <UsageCount Value="56"/>
+        <UsageCount Value="57"/>
       </Unit>
       <Unit>
         <Filename Value="orcamentovendas.pas"/>
@@ -158,7 +154,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="29"/>
         <CursorPos X="49" Y="42"/>
-        <UsageCount Value="48"/>
+        <UsageCount Value="49"/>
       </Unit>
       <Unit>
         <Filename Value="adicionaritens.pas"/>
@@ -169,7 +165,7 @@
         <UnitName Value="AdicionarItens"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="3" Y="98"/>
-        <UsageCount Value="43"/>
+        <UsageCount Value="44"/>
       </Unit>
       <Unit>
         <Filename Value="adicionaprodutos.pas"/>
@@ -181,7 +177,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="67"/>
         <CursorPos X="93" Y="76"/>
-        <UsageCount Value="42"/>
+        <UsageCount Value="43"/>
       </Unit>
       <Unit>
         <Filename Value="orccliente.pas"/>
@@ -192,7 +188,7 @@
         <UnitName Value="OrcCliente"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="82" Y="20"/>
-        <UsageCount Value="34"/>
+        <UsageCount Value="35"/>
       </Unit>
       <Unit>
         <Filename Value="sobre.pas"/>
@@ -203,7 +199,7 @@
         <UnitName Value="Sobre"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="23" Y="39"/>
-        <UsageCount Value="31"/>
+        <UsageCount Value="32"/>
       </Unit>
       <Unit>
         <Filename Value="categoriaprodutoss.pas"/>
@@ -214,7 +210,7 @@
         <UnitName Value="CategoriaProdutoss"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="24"/>
-        <UsageCount Value="26"/>
+        <UsageCount Value="27"/>
       </Unit>
       <Unit>
         <Filename Value="telalogin.pas"/>
@@ -224,10 +220,9 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="TelaLogin"/>
         <IsVisibleTab Value="True"/>
-        <EditorIndex Value="3"/>
-        <TopLine Value="38"/>
-        <CursorPos X="29" Y="58"/>
-        <UsageCount Value="24"/>
+        <TopLine Value="52"/>
+        <CursorPos X="12" Y="70"/>
+        <UsageCount Value="25"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -280,29 +275,7 @@
         <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="17">
-      <Position>
-        <Filename Value="menuprincipal.pas"/>
-        <Caret Line="67" Column="19" TopLine="67"/>
-      </Position>
-      <Position>
-        <Filename Value="telalogin.pas"/>
-      </Position>
-      <Position>
-        <Filename Value="telalogin.pas"/>
-      </Position>
-      <Position>
-        <Filename Value="telalogin.pas"/>
-        <Caret Line="61" Column="50" TopLine="37"/>
-      </Position>
-      <Position>
-        <Filename Value="telalogin.pas"/>
-        <Caret Line="48" Column="20" TopLine="34"/>
-      </Position>
-      <Position>
-        <Filename Value="telalogin.pas"/>
-        <Caret Line="10" Column="51"/>
-      </Position>
+    <JumpHistory HistoryIndex="29">
       <Position>
         <Filename Value="telalogin.pas"/>
         <Caret Line="48" Column="41" TopLine="34"/>
@@ -350,6 +323,78 @@
       <Position>
         <Filename Value="telalogin.pas"/>
         <Caret Line="55" Column="53" TopLine="41"/>
+      </Position>
+      <Position>
+        <Filename Value="telalogin.pas"/>
+        <Caret Line="45" Column="21" TopLine="38"/>
+      </Position>
+      <Position>
+        <Filename Value="telalogin.pas"/>
+        <Caret Line="61" Column="63" TopLine="46"/>
+      </Position>
+      <Position>
+        <Filename Value="telalogin.pas"/>
+        <Caret Line="52" Column="107" TopLine="51"/>
+      </Position>
+      <Position>
+        <Filename Value="telalogin.pas"/>
+        <Caret Line="58" Column="151" TopLine="44"/>
+      </Position>
+      <Position>
+        <Filename Value="datamodulo.pas"/>
+        <Caret Line="138" Column="97" TopLine="10"/>
+      </Position>
+      <Position>
+        <Filename Value="telalogin.pas"/>
+        <Caret Line="59" TopLine="51"/>
+      </Position>
+      <Position>
+        <Filename Value="telalogin.pas"/>
+        <Caret Line="58" TopLine="50"/>
+      </Position>
+      <Position>
+        <Filename Value="telalogin.pas"/>
+        <Caret Line="57" TopLine="49"/>
+      </Position>
+      <Position>
+        <Filename Value="telalogin.pas"/>
+        <Caret Line="56" TopLine="48"/>
+      </Position>
+      <Position>
+        <Filename Value="telalogin.pas"/>
+        <Caret Line="55" TopLine="47"/>
+      </Position>
+      <Position>
+        <Filename Value="telalogin.pas"/>
+        <Caret Line="56" TopLine="48"/>
+      </Position>
+      <Position>
+        <Filename Value="telalogin.pas"/>
+        <Caret Line="62" Column="78" TopLine="47"/>
+      </Position>
+      <Position>
+        <Filename Value="telalogin.pas"/>
+        <Caret Line="61" Column="78" TopLine="46"/>
+      </Position>
+      <Position>
+        <Filename Value="telalogin.pas"/>
+        <Caret Line="62" Column="78" TopLine="47"/>
+      </Position>
+      <Position>
+        <Filename Value="telalogin.pas"/>
+        <Caret Line="61" Column="78" TopLine="46"/>
+      </Position>
+      <Position>
+        <Filename Value="telalogin.pas"/>
+        <Caret Line="63" Column="17" TopLine="47"/>
+      </Position>
+      <Position>
+        <Filename Value="telalogin.pas"/>
+        <Caret Line="51" Column="15" TopLine="46"/>
+      </Position>
+      <Position>
+        <Filename Value="telalogin.pas"/>
+        <Caret Line="58" Column="25" TopLine="46"/>
       </Position>
     </JumpHistory>
     <RunParams>
